@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /scss/
+Disallow: /.editorconfig
+Disallow: /CNAME
+Disallow: /LICENSE

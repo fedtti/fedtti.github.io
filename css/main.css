@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+.site {
+  background: #fff;
+  color: #000;
+  font: 400 1rem/1 "Inconsolata", monospace;
+}
+.site__link--skip {
+  background: #fff;
+  color: #000;
+  border: 0.0625rem solid #000;
+  left: 0.5rem;
+  outline: 0;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  text-decoration: none;
+  top: -1.875rem;
+  transition: top 0.5s linear;
+}
+.site__link--skip:active, .site__link--skip:focus, .site__link--skip:hover {
+  top: 0.5rem;
+}
+.site__header {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+.site__header__name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.site__header__description {
+  margin: 0.5rem 0 0 0;
+}
+.site__sidebar {
+  padding: 0 1rem;
+}
+.site__sidebar__portrait {
+  margin: 0 auto;
+  text-align: center;
+}
+.site__sidebar__picture {
+  border-radius: 50%;
+}
+.site__sidebar__title {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+.site__sidebar__list {
+  margin: 0;
+  padding: 0;
+}
+.site__sidebar__list__item {
+  line-height: 1.5;
+  list-style: none;
+}
+.site__sidebar__link {
+  outline: 0;
+  text-decoration: none;
+  transition: color 0.5s linear;
+}
+.site__sidebar__link:link {
+  color: #2962ff;
+}
+.site__sidebar__link:active {
+  color: #d50000;
+}
+.site__sidebar__link:visited {
+  color: #a0f;
+}
+.site__content {
+  margin: 0;
+  padding: 1rem;
+}
+.site__content__introduction {
+  line-height: 1.5;
+  margin: 0;
+}
+.site__content__title {
+  font-size: 1.125rem;
+  margin: 1rem 0;
+}
+.site__content__list {
+  margin: 0;
+  padding: 0;
+}
+.site__content__list__item {
+  line-height: 1.5;
+  list-style: none;
+}
+.site__content__link {
+  outline: 0;
+  text-decoration: none;
+  transition: color 0.5s linear;
+}
+.site__content__link:link {
+  color: #2962ff;
+}
+.site__content__link:active {
+  color: #d50000;
+}
+.site__content__link:visited {
+  color: #a0f;
+}
+.site__footer {
+  margin: 0 auto;
+  padding: 0 1rem 1rem 1rem;
+  text-align: center;
+}
+.site__footer__link {
+  outline: 0;
+  text-decoration: none;
+  transition: color 0.5s linear;
+}
+.site__footer__link:link {
+  color: #2962ff;
+}
+.site__footer__link:active {
+  color: #d50000;
+}
+.site__footer__link:visited {
+  color: #a0f;
+}
+
+.-acronym {
+  border-bottom: 0.0625rem dashed #212121 !important;
+  cursor: help;
+  text-decoration: none !important;
+}
+
+.-bold {
+  font-weight: 700;
+}
+
+.-hidden {
+  display: none;
+}
+
+.-small {
+  font-size: 0.75rem;
+}
+
+.-uppercase {
+  text-transform: uppercase;
+}

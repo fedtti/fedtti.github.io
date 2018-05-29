@@ -1,0 +1,185 @@
+// import fonts
+@import 'partials/fonts';
+
+// define globals
+$black: #000;
+$blue: #2962ff;
+$grey: #212121;
+$purple: #a0f;
+$red: #d50000;
+$white: #fff;
+
+// set styles
+.site {
+  background: $white;
+  color: $black;
+  font: 400 1rem/1 'Inconsolata', monospace;
+
+  &__link--skip {
+    background: $white;
+    color: $black;
+    border: .0625rem solid $black;
+    left: .5rem;
+    outline: 0;
+    padding: .5rem 1rem;
+    position: absolute;
+    text-decoration: none;
+    top: -1.875rem;
+    transition: top .5s linear;
+
+    &:active,
+    &:focus,
+    &:hover {
+      top: .5rem;
+    }
+  }
+
+  &__header {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+
+    &__name {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    &__description {
+      margin: .5rem 0 0 0;
+    }
+  }
+
+  &__sidebar {
+    padding: 0 1rem;
+
+    &__portrait {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__picture {
+      border-radius: 50%;
+    }
+
+    &__title {
+      font-size: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      &__item {
+        line-height: 1.5;
+        list-style: none;
+      }
+    }
+
+    &__link {
+      outline: 0;
+      text-decoration: none;
+      transition: color .5s linear;
+
+      &:link {
+        color: $blue;
+      }
+
+      &:active {
+        color: $red;
+      }
+
+      &:visited {
+        color: $purple;
+      }
+    }
+  }
+
+  &__content {
+    margin: 0;
+    padding: 1rem;
+
+    &__introduction {
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      margin: 1rem 0;
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+
+      &__item {
+        line-height: 1.5;
+        list-style: none;
+      }
+    }
+
+    &__link {
+      outline: 0;
+      text-decoration: none;
+      transition: color .5s linear;
+
+      &:link {
+        color: $blue;
+      }
+
+      &:active {
+        color: $red;
+      }
+
+      &:visited {
+        color: $purple;
+      }
+    }
+  }
+
+  &__footer {
+    margin: 0 auto;
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+
+    &__link {
+      outline: 0;
+      text-decoration: none;
+      transition: color .5s linear;
+
+      &:link {
+        color: $blue;
+      }
+
+      &:active {
+        color: $red;
+      }
+
+      &:visited {
+        color: $purple;
+      }
+    }
+  }
+}
+
+.-acronym {
+  border-bottom: 0.0625rem dashed $grey !important; // override Normalize.css
+  cursor: help;
+  text-decoration: none !important;                 // override Normalize.css
+}
+
+.-bold {
+  font-weight: 700;
+}
+
+.-hidden {
+  display: none;
+}
+
+.-small {
+  font-size: .75rem;
+}
+
+.-uppercase {
+  text-transform: uppercase;
+}
