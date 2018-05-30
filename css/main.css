@@ -161,6 +161,10 @@
   display: none;
 }
 
+.-normal {
+  font-style: normal;
+}
+
 .-uppercase {
   text-transform: uppercase;
 }
