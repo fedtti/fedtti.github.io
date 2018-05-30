@@ -2,7 +2,7 @@
  * Replace WebP with JPEG if unsupported by users’ browser
  */
 Modernizr.on('webp', support => {
-  if (!support) {
+  if (support === false) {
     const IMAGE = document.getElementsByClassName('site__sidebar__picture')[0];
     let source = IMAGE.getAttribute('src');
     source = source.replace(/webp/, 'jpg');
