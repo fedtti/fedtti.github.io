@@ -8,5 +8,5 @@ insert_final_newline = false
 max_line_length = off
 indent_style = space
 
-[*.{css,html,js,json,scss}]
+[*.{css,html,js,json,scss,webmanifest}]
 indent_size = 2
