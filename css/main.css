@@ -2,7 +2,10 @@
 .site {
   background: #fff;
   color: #000;
+  display: grid;
   font: 400 1rem/1 "Inconsolata", monospace;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
 }
 .site__link--skip {
   background: #fff;
@@ -20,19 +23,32 @@
   top: 0.5rem;
 }
 .site__header {
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-row-start: 1;
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
+  transition: padding 0.5s linear;
 }
 .site__header__name {
   font-size: 1.5rem;
   margin: 0;
 }
+.site__header__name, .site__header__description {
+  transition: font-size 0.5s linear;
+}
 .site__header__description {
   margin: 0.5rem 0 0 0;
 }
 .site__sidebar {
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-row-start: 2;
   padding: 0 1rem;
+  transition: padding 0.5s linear;
 }
 .site__sidebar__portrait {
   margin: 0 auto;
@@ -44,6 +60,7 @@
 .site__sidebar__title {
   font-size: 1.25rem;
   margin: 1rem 0;
+  transition: font-size 0.5s linear;
 }
 .site__sidebar__list {
   margin: 0;
@@ -68,8 +85,13 @@
   color: #a0f;
 }
 .site__content {
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-row-start: 3;
   margin: 0;
   padding: 1rem;
+  transition: padding 0.5s linear;
 }
 .site__content__introduction {
   line-height: 1.5;
@@ -78,6 +100,7 @@
 .site__content__title {
   font-size: 1.125rem;
   margin: 1rem 0;
+  transition: font-size 0.5s linear;
 }
 .site__content__list {
   margin: 0;
@@ -102,9 +125,14 @@
   color: #a0f;
 }
 .site__footer {
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-row-start: 4;
   margin: 0 auto;
   padding: 0 1rem 1rem 1rem;
   text-align: center;
+  transition: padding 0.5s linear;
 }
 .site__footer__link {
   outline: 0;
@@ -141,4 +169,31 @@
 
 .-uppercase {
   text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .site__header {
+    padding: 1rem 2rem;
+  }
+  .site__header__name {
+    font-size: 2rem;
+  }
+  .site__header__description {
+    font-size: 0.875rem;
+  }
+  .site__sidebar {
+    padding: 0 2rem;
+  }
+  .site__sidebar__title {
+    font-size: 1.5rem;
+  }
+  .site__content {
+    padding: 1rem 2rem;
+  }
+  .site__content__title {
+    font-size: 1.25rem;
+  }
+  .site__footer {
+    padding: 0 2rem 1rem 2rem;
+  }
 }

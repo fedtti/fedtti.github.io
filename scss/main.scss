@@ -9,11 +9,16 @@ $purple: #a0f;
 $red: #d50000;
 $white: #fff;
 
+$smartphone: 576px;
+
 // set styles
 .site {
   background: $white;
   color: $black;
+  display: grid;
   font: 400 1rem/1 'Inconsolata', monospace;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
 
   &__link--skip {
     background: $white;
@@ -35,13 +40,23 @@ $white: #fff;
   }
 
   &__header {
+    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-row-start: 1;
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
+    transition: padding .5s linear;
 
     &__name {
       font-size: 1.5rem;
       margin: 0;
+    }
+
+    &__name,
+    &__description {
+      transition: font-size .5s linear;
     }
 
     &__description {
@@ -50,7 +65,12 @@ $white: #fff;
   }
 
   &__sidebar {
+    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-row-start: 2;
     padding: 0 1rem;
+    transition: padding .5s linear;
 
     &__portrait {
       margin: 0 auto;
@@ -64,6 +84,7 @@ $white: #fff;
     &__title {
       font-size: 1.25rem;
       margin: 1rem 0;
+      transition: font-size .5s linear;
     }
 
     &__list {
@@ -95,8 +116,13 @@ $white: #fff;
   }
 
   &__content {
+    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-row-start: 3;
     margin: 0;
     padding: 1rem;
+    transition: padding .5s linear;
 
     &__introduction {
       line-height: 1.5;
@@ -106,6 +132,7 @@ $white: #fff;
     &__title {
       font-size: 1.125rem;
       margin: 1rem 0;
+      transition: font-size .5s linear;
     }
 
     &__list {
@@ -138,9 +165,14 @@ $white: #fff;
   }
 
   &__footer {
+    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-row-start: 4;
     margin: 0 auto;
     padding: 0 1rem 1rem 1rem;
     text-align: center;
+    transition: padding .5s linear;
 
     &__link {
       outline: 0;
@@ -182,4 +214,40 @@ $white: #fff;
 
 .-uppercase {
   text-transform: uppercase;
+}
+
+@media (min-width: $smartphone) {
+  .site {
+    &__header {
+      padding: 1rem 2rem;
+
+      &__name {
+        font-size: 2rem;
+      }
+
+      &__description {
+        font-size: .875rem;
+      }
+    }
+
+    &__sidebar {
+      padding: 0 2rem;
+
+      &__title {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__content {
+      padding: 1rem 2rem;
+
+      &__title {
+        font-size: 1.25rem;
+      }
+    }
+
+    &__footer {
+      padding: 0 2rem 1rem 2rem;
+    }
+  }
 }
