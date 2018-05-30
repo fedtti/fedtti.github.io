@@ -47,6 +47,7 @@ $desktop: 1200px;
     grid-column-start: 1;
     grid-row-end: 1;
     grid-row-start: 1;
+    transition: width .5s linear;
   }
 
   &__item--last {
@@ -54,6 +55,7 @@ $desktop: 1200px;
     grid-column-start: 1;
     grid-row-end: 2;
     grid-row-start: 2;
+    transition: width .5s linear;
   }
 
   &__header {
@@ -72,7 +74,9 @@ $desktop: 1200px;
   }
 
   &__sidebar {
+    margin: 0 auto;
     padding: 0 1rem;
+    text-align: center;
     transition: padding .5s linear;
 
     &__portrait {
