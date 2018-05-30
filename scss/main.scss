@@ -136,6 +136,11 @@ $desktop: 1200px;
       margin: 1rem 0;
     }
 
+    &__description {
+      margin: 0;
+      line-height: 1.5;
+    }
+
     &__list {
       margin: 0;
       padding: 0;

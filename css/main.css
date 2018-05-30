@@ -100,6 +100,10 @@
   font-size: 1rem;
   margin: 1rem 0;
 }
+.site__content__description {
+  margin: 0;
+  line-height: 1.5;
+}
 .site__content__list {
   margin: 0;
   padding: 0;
