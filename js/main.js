@@ -11,4 +11,4 @@ Modernizr.on('webp', support => {
     sourceSet = sourceSet.replace(/webp/g, 'jpg');
     IMAGE.setAttribute('srcset', sourceSet);
   }
-}
+});
