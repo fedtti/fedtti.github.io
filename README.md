@@ -1,3 +1,3 @@
 # Federico Moretti AKA “fedtti”
 
-Front-End Developer
+Sviluppatore Front-End
