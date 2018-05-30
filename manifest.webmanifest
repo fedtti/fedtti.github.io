@@ -1,0 +1,22 @@
+{
+  "name": "Federico Moretti AKA “fedtti”",
+  "short_name": "FM",
+  "description": "Sviluppatore Front-End",
+  "lang": "it-IT",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "icons": [{
+    "src": "/img/icon-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  },
+  {
+    "src": "/img/icon-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "/",
+  "start_url": "/"
+}
