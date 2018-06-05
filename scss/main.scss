@@ -1,4 +1,6 @@
-// import fonts
+/**
+ * Import Inconsolata from Google Fonts
+ */
 @import 'partials/fonts';
 
 // define globals
@@ -96,6 +98,7 @@ $desktop: 1200px;
     &__list {
       margin: 0;
       padding: 0;
+
       &__item {
         line-height: 1.5;
         list-style: none;
@@ -142,7 +145,7 @@ $desktop: 1200px;
     }
 
     &__list {
-      margin: 0;
+      margin: 0 0 1rem 0;
       padding: 0;
 
       &__item {
@@ -175,6 +178,10 @@ $desktop: 1200px;
     padding: 0 1rem 1rem 1rem;
     text-align: center;
     transition: padding .5s linear;
+
+    &__copyright {
+      margin: 0;
+    }
 
     &__link {
       outline: 0;
