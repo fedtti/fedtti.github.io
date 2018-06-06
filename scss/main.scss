@@ -1,7 +1,7 @@
 /**
- * Import Inconsolata from Google Fonts
+ * Import “Inconsolata” from Google Fonts
  */
-@import 'partials/fonts';
+@import "partials/fonts";
 
 // define globals
 $black: #000;
@@ -21,14 +21,14 @@ $desktop: 1200px;
   background: $white;
   color: $black;
   display: grid;
-  font: 400 1rem/1 'Inconsolata', monospace;
+  font: 400 1rem/1 "Inconsolata", monospace;
   grid-template-columns: 100%;
   grid-template-rows: auto auto;
 
   &__link--skip {
     background: $white;
-    color: $black;
     border: .0625rem solid $black;
+    color: $black;
     left: .5rem;
     outline: 0;
     padding: .5rem 1rem;
@@ -122,6 +122,10 @@ $desktop: 1200px;
         color: $purple;
       }
     }
+
+    &__language {
+      margin: 1rem 0 0 0;
+    }
   }
 
   &__content {
@@ -142,6 +146,18 @@ $desktop: 1200px;
     &__description {
       margin: 0;
       line-height: 1.5;
+    }
+
+    &__link--download {
+      background: $white;
+      border: .0625rem solid $black;
+      color: $black;
+      display: inline-block;
+      margin: 1rem auto 0 auto;
+      outline: none;
+      padding: .5rem 1rem;
+      text-align: center;
+      text-decoration: none;
     }
 
     &__list {
