@@ -1,9 +1,9 @@
 {
   "name": "Federico Moretti AKA “fedtti”",
   "short_name": "FM",
-  "description": "Sviluppatore Front-End",
+  "description": "Federico Moretti è uno sviluppatore front-end di Varese che realizza soluzioni web in HTML, CSS e JavaScript per le piccole e medie imprese lombarde e ticinesi.",
   "lang": "it-IT",
-  "theme_color": "#fff",
+  "theme_color": "#000",
   "background_color": "#fff",
   "icons": [{
     "src": "/img/icon-512x512.png",
@@ -18,5 +18,5 @@
   "display": "standalone",
   "orientation": "any",
   "scope": "/",
-  "start_url": "/"
+  "start_url": "/index.html"
 }
