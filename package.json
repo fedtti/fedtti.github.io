@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/fedtti/fedtti.github.io.git"
   },
-  "main": "js/main.js",
+  "main": "/js/main.js",
   "private": true,
   "devDependencies": {
     "gulp": "^4.0.1"
