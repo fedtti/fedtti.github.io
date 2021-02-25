@@ -2,26 +2,26 @@
   "name": "fedtti.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [],
+  "homepage": "https://federicomoretti.it/",
+  "bugs": {
+    "url": "https://github.com/fedtti/fedtti.github.io/issues"
   },
+  "license": "MIT",
+  "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it/)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fedtti/fedtti.github.io.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fedtti/fedtti.github.io/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/fedtti/fedtti.github.io#readme",
   "devDependencies": {
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "private": true
 }
