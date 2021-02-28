@@ -4,7 +4,8 @@ module.exports = {
   mode: 'production',
   entry: './src/index.js',
   devServer: {
-    contentBase: './dist',
+    compress: true,
+    contentBase: './dist'
   },
   output: {
     filename: 'bundle.min.js',
