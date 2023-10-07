@@ -1,6 +1,5 @@
 User-agent: *
 
-Disallow: /scss/
 Disallow: /.editorconfig
 Disallow: /.gitignore
 Disallow: /CNAME
