@@ -1,6 +1,6 @@
 User-agent: *
 
 Disallow: /.editorconfig
-Disallow: /.gitignore
+Disallow: /.nojekyll
 Disallow: /CNAME
 Disallow: /LICENSE
