@@ -4,5 +4,6 @@ Disallow: /.editorconfig
 Disallow: /.nojekyll
 Disallow: /CNAME
 Disallow: /LICENSE
+Disallow: /thank-you.html
 
 Sitemap: https://federicomoretti.it/sitemap.xml

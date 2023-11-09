@@ -6,67 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Federico Moretti AKA “fedtti” • Sviluppatore Front-End</title>
     <meta name="description" content="Uno sviluppatore front-end che realizza soluzioni in HTML, CSS e JavaScript.">
+    <meta property="og:title" content="Federico Moretti AKA “fedtti”">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://federicomoretti.it/">
+    <meta property="og:image" content="https://federicomoretti.it/img/federico-moretti.jpg">
     <meta name="robots" content="index, follow, noarchive, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="apple-touch-icon" href="img/icon.png">
     <link rel="canonical" href="https://federicomoretti.it/">
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="stylesheet" href="/css/main.css">
-    
+    <link rel="shortcut icon" href="favicon.ico" sizes="any">
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body class="site">
-    <div class="site__item--first">
-      <header class="site__header" role="banner">
-        <h1 class="site__header__name -bold">Federico Moretti</h1>
-        <p class="site__header__description -uppercase">Sviluppatore <span lang="en">Front-End</span></p>
-      </header>
-      <aside aria-label="Barra Laterale" class="site__sidebar" role="complementary">
-        <figure class="site__sidebar__portrait" itemscope="" itemtype="http://schema.org/ImageObject">
-          <img alt="Ritratto di Federico Moretti" class="site__sidebar__picture" height="120" itemprop="image" src="/img/federico-moretti.webp" srcset="/img/federico-moretti.webp 1x, /img/federico-moretti_x2.webp 2x, /img/federico-moretti_x3.webp 3x" width="120" />
-          <figcaption aria-hidden="true" class="site__sidebar__caption -hidden" itemprop="caption">Ritratto di Federico Moretti all’Università degli Studi dell’Insubria</figcaption>
-        </figure>
-        <h2 class="site__sidebar__title -uppercase" id="table-of-contents">Tabella dei Contenuti</h2>
-        <nav aria-labelledby="table-of-contents" role="navigation">
-          <ul class="site__sidebar__list">
-            <li class="site__sidebar__list__item"><a class="site__sidebar__link" href="#experience">Esperienza</a></li>
-            <li class="site__sidebar__list__item"><a class="site__sidebar__link" href="#education">Educazione</a></li>
-            <li class="site__sidebar__list__item"><a class="site__sidebar__link" href="#skills">Abilità</a></li>
-            <li class="site__sidebar__list__item"><a class="site__sidebar__link" href="#contacts">Contatti</a></li>
-          </ul>
-        </nav>
-      </aside>
-    </div>
-    <div class="site__item--last">
-      <main class="site__content" id="content" role="main">
-        <p class="site__content__introduction">Ciao! Sono Federico: uno sviluppatore <span lang="en">front-end</span> italiano. Ho lavorato come redattore <span lang="en">web</span> (e <span lang="en">copywriter</span>), ma io preferisco definirmi un esperto di comunicazione. Perché non entriamo subito in contatto?</p>
-        <h3 class="site__content__title -uppercase" id="experience">Esperienza</h3>
-        <section aria-labelledby="experience" class="site__content__section" role="region">
-          <p class="site__content__description">Nella mia vita ho fatto di tutto, tanto che un mio <abbr class="-acronym" lang="la" title="Curriculum Vitae">CV</abbr> completo supererebbe le dieci pagine: ho iniziato ad assemblare i <span lang="en">computer</span> alla fine degli anni ’90 (quando il <em class="-normal" lang="en">modding</em> o il <em class="-normal" lang="en">tuning</em> erano appannaggio di pochi). Pioniere del <em class="-normal" lang="en">blogging</em> all’inizio del <time datetime="2000">2000</time>, ho svolto l’attività giornalistica per oltre cinque anni, senza avere la possibilità d’iscrivermi all’Ordine a causa della reticenza dei miei datori di lavoro; insoddisfatto, ho acquisito una qualifica professionale e lavorato come aiuto-cuoco. Sono uno sviluppatore <span lang="en">front-end</span> con più di vent’anni d’esperienza alle spalle e molto da imparare.</p>
-        </section>
-        <h3 class="site__content__title -uppercase" id="education">Educazione</h3>
-        <section aria-labelledby="publications" class="site__content__section" role="region">
-          <p class="site__content__description">Ho studiato al liceo classico, pensando che in seguito avrei frequentato giurisprudenza: dopo il diploma ho scelto un altro percorso e mi sono laureato con lode in scienze della comunicazione. Ho conseguito un <span lang="en">master</span> in comunicazione scientifica e innovazione sostenibile che completa l’indirizzo intrapreso durante l’università; nel novembre del <time datetime="2017-11">2017</time> sono stato selezionato da <a class="site__content__link" href="https://www.google.com/" rel="noopener" target="_blank">Google</a> per una borsa di studio – riconfermata nel febbraio del <time datetime="2018-02">2018</time> – per completare il percorso di sviluppatore <span lang="en">front-end</span> presso <a class="site__content__link" href="https://udacity.com/" rel="noopener" target="_blank">Udacity</a>: professione che svolgo già dal <time datetime="1998">1998</time> quando non aveva ancora assunto questa definizione.</p>
-        </section>
-        <a class="site__content__link--download -uppercase" href="https://federicomoretti.it/static/federico-moretti-curriculum-vitae-it_IT.pdf">Scarica il mio <strong class="-bold" lang="la">Curriculum Vitae</strong></a>
-        <h3 class="site__content__title -uppercase" id="skills">Abilità</h3>
-        <section aria-labelledby="skills" class="site__content__section" role="region">
-          <p class="site__content__description">Oltre ai linguaggi di programmazione, alle suite per la produttività e all’assemblaggio di componenti elettronici, ho imparato a gestire la produzione di contenuti audiovisivi: prediligo il ricorso a tecnologie <span lang="en">open source</span>. Negli anni ho acquisito competenze in diversi àmbiti editoriali – dal giornalismo alla pubblicità, dalla narrativa alla saggistica – e nella creazione d’eventi. Appassionato di fotografia e <span lang="en">design</span> della comunicazione curo tutti gli aspetti d’un progetto digitale o cartaceo; ho studiato <span lang="en">marketing</span> e ne conosco gli strumenti, ma questo non rientra nelle mie principali abilità.</p>
-        </section>
-        <h3 class="site__content__title -uppercase" id="contacts">Contatti</h3>
-        <section aria-labelledby="contacts" class="site__content__section" role="region">
-          <ul class="site__content__list">
-            <li class="site__content__list__item">Indirizzo: <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">via San Martino della Battaglia 9</span>, <span itemprop="postalCode">21100</span>, <span itemprop="addressLocality">Varese</span>, <span itemprop="addressRegion"><abbr class="-acronym" title="Varese">VA</abbr></span> (<span itemprop="addressCountry">Italia</span>)</span></li>
-            <li class="site__content__list__item">Telefono: <a class="site__content__link" href="tel:+390332973799"><span itemprop="telephone">(+39) 033 297 3799</span></a></li>
-            <li class="site__content__list__item">Cellulare: <a class="site__content__link" href="tel:+393518192487"><span itemprop="telephone">(+39) 351 819 2487</span></a></li>
-            <li class="site__content__list__item"><span lang="en">E-Mail</span>: <a class="site__content__link" href="mailto:hello@federicomoretti.it"><span itemprop="email">hello@federicomoretti.it</span></a></li>
-          </ul>
-          <p class="site__content__description"><a class="site__content__link" href="https://www.facebook.com/fedtti" itemprop="sameAs" rel="noopener" target="_blank">Facebook</a> / <a class="site__content__link" href="https://www.linkedin.com/in/fedtti/" itemprop="sameAs" rel="noopener" target="_blank">LinkedIn</a> / <a class="site__content__link" href="https://twitter.com/fedtti" itemprop="sameAs" rel="noopener" target="_blank">Twitter</a></p>
-        </section>
-      </main>
-      <footer class="site__footer" role="contentinfo">
-        <p class="site__footer__copyright">© <time datetime="2019" itemprop="copyrightYear">2015</time> <strong class="-bold">Federico Moretti</strong>. Alcuni diritti riservati. Rilasciato sotto <a class="site__footer__link" href="/LICENSE" rel="license">una licenza <abbr class="-acronym" title="Massachusetts Institute of Technology">MIT</abbr></a>.</p>
-      </footer>
-    </div>
+  <body>
+    <header>
+      <h1>Federico Moretti</h1>
+      <button id="theme-toggler" aria-label="Attiva il tema scuro"><i class="fa-solid fa-moon" title="Luna"></i></button>
+    </header>
+    <main>
+      <div>
+        <picture>
+          <source srcset="img/federico-moretti_3x.webp 3x">
+          <source srcset="img/federico-moretti_2x.webp 2x">
+          <source srcset="img/federico-moretti.webp 1x">
+          <img src="img/federico-moretti.jpg" alt="Ritratto di Federico Moretti">
+        </picture>
+        <p>Uno sviluppatore front-end che realizza soluzioni in <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript.</p>
+      </div>
+      <form action="https://formspree.io/f/mknlkerp" method="post">
+        <fieldset>
+          <legend aria-hidden="false">Contattami</legend>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="on" placeholder="" required="">
+          <label for="message">Messaggio</label>
+          <textarea id="message" autocomplete="off" placeholder="" required=""></textarea>
+          <button type="submit">Invia</button>
+          <button type="reset">Annulla</button>
+        </fieldset>
+      </form>
+      <!--
 
-    <script src="/js/vendor/modernizr.min.js"></script>
-    <script src="/js/app.js"></script>
+      -->
+      <ul>
+        <li><a href="https://github.com/fedtti" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github" title="GitHub"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/fedtti/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin" title="LinkedIn"></i></a></li>
+        <li><a href="https://x.com/fedtti" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-x-twitter" title="X (già Twitter)"></i></a></li>
+      </ul>
+    </main>
+    <footer>
+      <p>© 2015-2023 Federico Moretti</p>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
 </html>
