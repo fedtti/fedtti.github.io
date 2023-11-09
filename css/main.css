@@ -160,6 +160,7 @@ textarea {
 fieldset button {
   background-color: var(--foreground-color);
   color: var(--background-color);
+  cursor: pointer;
   display: inline-block;
   font-weight: 700;
   padding: 0 .5rem;
