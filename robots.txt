@@ -5,6 +5,5 @@ Disallow: /.nojekyll
 Disallow: /CNAME
 Disallow: /LICENSE
 Disallow: /README.md
-Disallow: /thank-you.html
 
 Sitemap: https://federicomoretti.it/sitemap.xml
