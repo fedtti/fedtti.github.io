@@ -10,8 +10,8 @@ abbr[title] {
 
 /* HEADER */
 
-#theme-toggler,
-#menu-toggler {
+#menu-toggler,
+#theme-toggler {
   background-color: transparent;
   border: 0;
 }

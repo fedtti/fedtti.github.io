@@ -26,13 +26,23 @@
   <body>
     <!-- HEADER-->
     <header id="header" class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="" href="#hero"></a>
-        <button id="theme-toggler"><i class="fa-solid fa-moon"></i></button>
-        <button id="menu-toggler"><i class=""></i></button>
-        <nav>
-          <ul class="navbar-nav">
-            <li><a class="nav-link" href="#about">About</a></li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#hero"></a>
+        <button id="menu-toggler" class="d-lg-none ms-auto" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label=""><i class="fa-solid fa-bars"></i></button>
+        <nav id="navbar" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -50,7 +60,7 @@
           </div>
         </div>
       </section>
-
+      <!-- ABOUT -->
       <section id="about">
         <div class="container">
           <div class="row">

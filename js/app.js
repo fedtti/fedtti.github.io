@@ -1,3 +1,6 @@
+const menuToggler = document.querySelector('#menu-toggler');
+const menuTogglerIcon = document.querySelector('#menu-toggler > i');
+
 const theme = document.documentElement;
 const themeToggler = document.querySelector('#theme-toggler');
 const themeTogglerIcon = document.querySelector('#theme-toggler > i');
@@ -7,7 +10,7 @@ const themeTogglerIcon = document.querySelector('#theme-toggler > i');
  */
 const setLightTheme = () => {
   theme.setAttribute('data-theme', 'light')
-  themeToggler.setAttribute('aria-label', 'Attiva il tema scuro');
+  themeToggler.setAttribute('aria-label', 'Enable dark theme');
   themeTogglerIcon.classList.remove('fa-sun');
   themeTogglerIcon.classList.add('fa-moon');
   themeTogglerIcon.setAttribute('title', 'Moon');
@@ -19,7 +22,7 @@ const setLightTheme = () => {
  */
 const setDarkTheme = () => {
   theme.setAttribute('data-theme', 'dark');
-  themeToggler.setAttribute('aria-label', 'Attiva il tema chiaro');
+  themeToggler.setAttribute('aria-label', 'Enable light theme');
   themeTogglerIcon.classList.remove('fa-moon');
   themeTogglerIcon.classList.add('fa-sun');
   themeTogglerIcon.setAttribute('title', 'Sun');
