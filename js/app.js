@@ -10,7 +10,7 @@ const setLightTheme = () => {
   themeToggler.setAttribute('aria-label', 'Attiva il tema scuro');
   themeTogglerIcon.classList.remove('fa-sun');
   themeTogglerIcon.classList.add('fa-moon');
-  themeTogglerIcon.setAttribute('title', 'Luna');
+  themeTogglerIcon.setAttribute('title', 'Moon');
   localStorage.setItem('theme', 'light');
 }
 
@@ -22,7 +22,7 @@ const setDarkTheme = () => {
   themeToggler.setAttribute('aria-label', 'Attiva il tema chiaro');
   themeTogglerIcon.classList.remove('fa-moon');
   themeTogglerIcon.classList.add('fa-sun');
-  themeTogglerIcon.setAttribute('title', 'Sole');
+  themeTogglerIcon.setAttribute('title', 'Sun');
   localStorage.setItem('theme', 'dark');
 }
 
