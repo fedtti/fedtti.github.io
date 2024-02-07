@@ -1,5 +1,11 @@
-const menuToggler = document.querySelector('#menu-toggler');
-const menuTogglerIcon = document.querySelector('#menu-toggler > i');
+/**
+ * Change the header background color on user vertical scroll.
+ */
+window.onscroll = () => {
+  const top = window.scrollY;
+  const header = document.querySelector('#header');
+  top >= 42 ? header.classList.add('bg-dark'): header.classList.remove('bg-dark');
+};
 
 const theme = document.documentElement;
 const themeToggler = document.querySelector('#theme-toggler');

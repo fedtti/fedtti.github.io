@@ -19,16 +19,17 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" as="script">
     <link rel="shortcut icon" href="favicon.ico" sizes="any">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <!-- HEADER-->
-    <header id="header" class="navbar navbar-expand-lg fixed-top">
+    <header id="header" class="navbar navbar-expand-lg fixed-top" data-bs-theme="light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#hero"></a>
         <button id="navbar-toggler" class="d-lg-none ms-auto" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label=""><i class="fa-solid fa-bars"></i></button>
+        <!-- NAVIGATION -->
         <nav id="navbar" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-lg-auto">
             <li class="nav-item">
@@ -69,16 +70,24 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-4">
               <picture>
 
                 <img src="img/federico-moretti.jpg" class="img-fluid rounded" alt="Portrait of Federico Moretti">
               </picture>
             </div>
-            <div class="col-lg-9">
-              <p>lorem ipsum</p>
+            <div class="col-lg-8">
+              <div class="d-flex">
+                <div>
+                  <p>Lorem ipsum</p>
+                </div>
+                <div>
 
-              <p></p>
+                </div>
+                <div>
+                  <p>dolor sic amet</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -124,13 +133,13 @@
     </main>
     <!-- FOOTER -->
     <footer id="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          
+
         </div>
       </div>
     </footer>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
