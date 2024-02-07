@@ -28,7 +28,7 @@
     <header id="header" class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#hero"></a>
-        <button id="menu-toggler" class="d-lg-none ms-auto" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label=""><i class="fa-solid fa-bars"></i></button>
+        <button id="navbar-toggler" class="d-lg-none ms-auto" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label=""><i class="fa-solid fa-bars"></i></button>
         <nav id="navbar" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-lg-auto">
             <li class="nav-item">
@@ -48,7 +48,7 @@
       </div>
     </header>
     <!-- CONTENT -->
-    <main id="content">
+    <main id="content" data-bs-spy="scroll" data-bs-target="#navbar" datab-bs-offset="0" tabindex="0">
       <!-- HERO -->
       <section id="hero">
         <div class="container">
@@ -69,6 +69,49 @@
             </div>
           </div>
           <div class="row">
+            <div class="col-lg-3">
+              <picture>
+
+                <img src="img/federico-moretti.jpg" class="img-fluid rounded" alt="Portrait of Federico Moretti">
+              </picture>
+            </div>
+            <div class="col-lg-9">
+              <p>lorem ipsum</p>
+
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACTS-->
+      <section id="contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>Contacts</h2>
+            </div>
+          </div>
+          <div class="row">
             <div class="col">
 
             </div>
@@ -81,7 +124,11 @@
     </main>
     <!-- FOOTER -->
     <footer id="footer">
-
+      <div class="container">
+        <div class="row">
+          
+        </div>
+      </div>
     </footer>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
