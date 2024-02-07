@@ -1,10 +1,19 @@
 /**
+ *
+ */
+const navbarToggler = document.querySelector('#navbar-toggler');
+const navbarTogglerIcon = document.querySelector('#navbar-toggler > i');
+navbarToggler.addEventListener('click', () => {
+  navbarToggler.getAttribute('aria-expanded') === 'false' ? (navbarTogglerIcon.classList.add('fa-bars'), navbarTogglerIcon.classList.remove('fa-xmark')) : (navbarTogglerIcon.classList.add('fa-xmark'), navbarTogglerIcon.classList.remove('fa.bars'));
+}, false);
+
+/**
  * Change the header background color on user vertical scroll.
  */
 window.onscroll = () => {
   const top = window.scrollY;
   const header = document.querySelector('#header');
-  top >= 42 ? header.classList.add('bg-dark'): header.classList.remove('bg-dark');
+  top >= 42 ? header.classList.add('bg-dark'): header.classList.remove('bg-dark'); // TODO: @fedtti - Handle theme change.
 };
 
 const theme = document.documentElement;
@@ -41,7 +50,7 @@ const setDarkTheme = () => {
 const themeToggle = () => {
   theme.getAttribute('data-theme') === 'light' ? setDarkTheme() : setLightTheme();
 };
-themeToggler.addEventListener('click', themeToggle, false);
+// themeToggler.addEventListener('click', themeToggle, false);
 
 /**
  * Load the saved theme (if any), the system theme or fallback to the light theme.

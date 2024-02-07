@@ -9,9 +9,12 @@ abbr[title] {
 }
 
 /* HEADER */
+.bg-dark {
+  
+}
 
-#navbar-toggler,
-#theme-toggler {
+/* NAVIGATION */
+#navbar-toggler {
   background-color: transparent;
   border: 0;
 }
@@ -22,6 +25,7 @@ abbr[title] {
   display: flex;
   height: 100vh;
   margin: 0 auto;
+  position: relative;
   justify-content: center;
   width: 100%;
 }
