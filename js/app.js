@@ -4,7 +4,7 @@
 const navbarToggler = document.querySelector('#navbar-toggler');
 const navbarTogglerIcon = document.querySelector('#navbar-toggler > i');
 navbarToggler.addEventListener('click', () => {
-  navbarToggler.getAttribute('aria-expanded') === 'false' ? (navbarTogglerIcon.classList.add('fa-bars'), navbarTogglerIcon.classList.remove('fa-xmark')) : (navbarTogglerIcon.classList.add('fa-xmark'), navbarTogglerIcon.classList.remove('fa.bars'));
+  navbarToggler.getAttribute('aria-expanded') === 'false' ? (navbarToggler.setAttribute('aria-label', 'Expand the navigation menu'), navbarTogglerIcon.classList.add('fa-bars'), navbarTogglerIcon.classList.remove('fa-xmark')) : (navbarToggler.setAttribute('aria-label', 'Collapse the navigation menu'), navbarTogglerIcon.classList.add('fa-xmark'), navbarTogglerIcon.classList.remove('fa.bars'));
 }, false);
 
 /**
