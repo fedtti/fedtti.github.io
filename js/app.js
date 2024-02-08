@@ -13,7 +13,7 @@ navbarToggler.addEventListener('click', () => {
 window.onscroll = () => {
   const top = window.scrollY;
   const header = document.querySelector('#header');
-  top >= 42 ? header.classList.add('bg-dark'): header.classList.remove('bg-dark'); // TODO: @fedtti - Handle theme change.
+  top >= 64 ? header.classList.add('bg-dark'): header.classList.remove('bg-dark'); // TODO: @fedtti - Handle theme change.
 };
 
 const theme = document.documentElement;
