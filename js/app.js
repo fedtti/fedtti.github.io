@@ -1,5 +1,5 @@
 /**
- * Change the menu icon on user click.
+ * Change the menu button icon on user click.
  */
 const navbarToggler = document.querySelector('#navbar-toggler');
 const navbarTogglerIcon = document.querySelector('#navbar-toggler > i');

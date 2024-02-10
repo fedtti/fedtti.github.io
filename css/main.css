@@ -10,13 +10,25 @@ abbr[title] {
 
 /* HEADER */
 .bg-dark {
-
+  background-color: black !important;
 }
 
 /* NAVIGATION */
+.navbar-nav .nav-link.active,
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  color: #e3e5e8;
+}
+
+.nav-link {
+  color: #636b74;
+}
+
 #navbar-toggler {
   background-color: transparent;
   border: 0;
+  color: #e3e5e8;
 }
 
 /* HERO */
@@ -31,6 +43,11 @@ abbr[title] {
   width: 100%;
 }
 
+#hero .lead {
+  color: #636b74;
+}
+
 h1 {
+  color: #0c0d0e;
   font-weight: 700 !important;
 }
