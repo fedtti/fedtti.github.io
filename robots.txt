@@ -2,6 +2,7 @@ User-agent: *
 
 Disallow: /.editorconfig
 Disallow: /.nojekyll
+Disallow: /404.html
 Disallow: /CNAME
 Disallow: /LICENSE
 Disallow: /README.md

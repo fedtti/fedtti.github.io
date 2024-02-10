@@ -10,7 +10,7 @@ abbr[title] {
 
 /* HEADER */
 .bg-dark {
-  background-color: black !important;
+  background-color: rgba(0, 0, 0, 0.95) !important;
 }
 
 /* NAVIGATION */
@@ -50,4 +50,11 @@ abbr[title] {
 h1 {
   color: #0c0d0e;
   font-weight: 700 !important;
+}
+
+/* ABOUT */
+
+/* FOOTER */
+#footer {
+  background-color: #252627;
 }
