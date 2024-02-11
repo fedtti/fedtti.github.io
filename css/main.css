@@ -21,6 +21,10 @@ abbr[title] {
   color: #e3e5e8;
 }
 
+.navbar-brand {
+  outline: 0;
+}
+
 .nav-link {
   color: #636b74;
 }
@@ -29,6 +33,11 @@ abbr[title] {
   background-color: transparent;
   border: 0;
   color: #e3e5e8;
+}
+
+/* CONTENT */
+#content {
+  outline: 0;
 }
 
 /* HERO */
@@ -56,5 +65,17 @@ h1 {
 
 /* FOOTER */
 #footer {
+  color: #f9fafa;
   background-color: #252627;
+}
+
+#footer a {
+  color: #c8ccd0;
+  outline: 0;
+}
+
+#footer a:active,
+#footer a:focus,
+#footer a:hover {
+  color: #424548;
 }
