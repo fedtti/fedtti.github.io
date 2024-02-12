@@ -63,6 +63,12 @@ h1 {
 
 /* ABOUT */
 
+/* CONTACTS */
+#contacts a {
+  outline: 0;
+  text-decoration: none;
+}
+
 /* FOOTER */
 #footer {
   color: #f9fafa;
