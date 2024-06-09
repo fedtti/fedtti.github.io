@@ -1,0 +1,12 @@
+{
+  "name": "Federico Moretti AKA “fedtti”",
+  "icons": [
+    {
+      "src": "img/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "https://federicomoretti.it/",
+  "display": "standalone"
+}
