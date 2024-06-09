@@ -1,9 +1,3 @@
 User-agent: *
 
-Disallow: /.editorconfig
-Disallow: /.nojekyll
-Disallow: /CNAME
-Disallow: /LICENSE
-Disallow: /README.md
-
 Sitemap: https://federicomoretti.it/sitemap.xml
