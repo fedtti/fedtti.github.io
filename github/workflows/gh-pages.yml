@@ -8,6 +8,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+          with:
+            node-version: '20.x'
       - name: Cache
         uses: actions/cache@v4
         with:
@@ -17,3 +23,26 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+        with:
+          static_site_generator: next
+      - name: Next.js Build
+        run: npx next build
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+deploy:
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+
+  runs-on: ubuntu-latest
+  needs: build
+
+  steps:
+    - name: Deploy Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
