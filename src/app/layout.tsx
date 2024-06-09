@@ -1,12 +1,17 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { IBM_Plex_Sans } from 'next/font/google';
+import "@/app/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const ibm_plex_sans = IBM_Plex_Sans({
+                        weight: ['400', '700'],
+                        style: ['normal'],
+                        subsets: ['latin'],
+                        display: 'swap'
+                      });
 
 export const metadata: Metadata = {
-  title: "Federico Moretti AKA “fedtti” • Full-Stack Developer",
-  description: "A full-stack developer who realizes solutions in HTML, CSS, and JavaScript.",
+  title: 'Federico Moretti AKA “fedtti” • Full-Stack Developer',
+  description: 'A full-stack developer who realizes solutions in HTML, CSS, and JavaScript.',
 };
 
 export default function RootLayout({
@@ -19,7 +24,7 @@ export default function RootLayout({
       <head>
         <meta httpEquiv="content-security-policy" content="default-src 'self'" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={ibm_plex_sans.className}>{children}</body>
     </html>
   );
 }
