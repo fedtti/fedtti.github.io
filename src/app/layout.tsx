@@ -20,9 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="no-js" lang="en">
       <head>
-        <meta httpEquiv="content-security-policy" content="default-src 'self'" />
+        <meta httpEquiv="content-security-policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'" />
+        <link rel="manifest" href="/manifest.webmanifest" />
       </head>
       <body className={ibm_plex_sans.className}>{children}</body>
     </html>
