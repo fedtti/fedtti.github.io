@@ -1,13 +1,30 @@
 import type { Metadata } from 'next';
 import { IBM_Plex_Mono, IBM_Plex_Sans, IBM_Plex_Serif } from 'next/font/google';
-import "@/app/globals.css";
+import '@/app/globals.scss';
+
+const ibm_plex_mono = IBM_Plex_Mono({
+                        weight: ['400', '700'],
+                        style: ['normal'],
+                        subsets: ['latin'],
+                        display: 'swap',
+                        variable: '--font-ibm-plex-mono'
+                      });
 
 const ibm_plex_sans = IBM_Plex_Sans({
                         weight: ['400', '700'],
                         style: ['normal'],
                         subsets: ['latin'],
-                        display: 'swap'
+                        display: 'swap',
+                        variable: '--font-ibm-plex-sans'
                       });
+
+const ibm_plex_serif = IBM_Plex_Serif({
+                         weight: ['400', '700'],
+                         style: ['normal'],
+                         subsets: ['latin'],
+                         display: 'swap',
+                         variable: '--font-ibm-plex-serif'
+                       });
 
 export const metadata: Metadata = {
   title: 'Federico Moretti AKA “fedtti” • Full-Stack Developer',
@@ -20,12 +37,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="no-js" lang="en">
+    <html className={`no-js ${ibm_plex_mono.variable} ${ibm_plex_sans.variable} ${ibm_plex_serif.variable}`} lang="en">
       <head>
         <meta httpEquiv="content-security-policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
-      <body className={ibm_plex_sans.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
