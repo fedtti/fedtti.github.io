@@ -2,29 +2,29 @@ import type { Metadata } from 'next';
 import { IBM_Plex_Mono, IBM_Plex_Sans, IBM_Plex_Serif } from 'next/font/google';
 import '@/app/globals.scss';
 
-const ibm_plex_mono = IBM_Plex_Mono({
-                        weight: ['400', '700'],
-                        style: ['normal'],
-                        subsets: ['latin'],
-                        display: 'swap',
-                        variable: '--font-ibm-plex-mono'
-                      });
+const ibm_plex_mono: any = IBM_Plex_Mono({
+                             weight: ['400', '700'],
+                             style: ['normal'],
+                             subsets: ['latin'],
+                             display: 'swap',
+                             variable: '--font-ibm-plex-mono'
+                           });
 
-const ibm_plex_sans = IBM_Plex_Sans({
-                        weight: ['400', '700'],
-                        style: ['normal'],
-                        subsets: ['latin'],
-                        display: 'swap',
-                        variable: '--font-ibm-plex-sans'
-                      });
+const ibm_plex_sans: any = IBM_Plex_Sans({
+                             weight: ['400', '700'],
+                             style: ['normal'],
+                             subsets: ['latin'],
+                             display: 'swap',
+                             variable: '--font-ibm-plex-sans'
+                           });
 
-const ibm_plex_serif = IBM_Plex_Serif({
-                         weight: ['400', '700'],
-                         style: ['normal'],
-                         subsets: ['latin'],
-                         display: 'swap',
-                         variable: '--font-ibm-plex-serif'
-                       });
+const ibm_plex_serif: any = IBM_Plex_Serif({
+                              weight: ['400', '700'],
+                              style: ['normal'],
+                              subsets: ['latin'],
+                              display: 'swap',
+                              variable: '--font-ibm-plex-serif'
+                            });
 
 export const metadata: Metadata = {
   title: 'Federico Moretti AKA “fedtti” • Full-Stack Developer',
