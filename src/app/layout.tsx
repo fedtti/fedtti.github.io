@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 import { IBM_Plex_Mono, IBM_Plex_Sans, IBM_Plex_Serif } from 'next/font/google';
 import '@/app/globals.scss';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+config.autoAddCss = false;
 
 const ibm_plex_mono: any = IBM_Plex_Mono({
                              weight: ['400', '700'],
