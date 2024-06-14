@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
-  const currentYear = useState<any>(getCurrentYear); // Show the current year.
+  const [currentYear, setCurrentYear] = useState<any>(getCurrentYear); // Show the current year.
 
   /**
    * Get the current year.
