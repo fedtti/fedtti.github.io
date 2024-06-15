@@ -1,6 +1,6 @@
 @import 'normalize.css'; // Import Normalize.css v8.0.1.
 
-$green: #27363b;
+$dark-green: #27363b;
 $light-green: #75b2ad;
 $grey: #f5f5f5;
 
@@ -33,12 +33,13 @@ main {
 /* FOOTER */
 footer {
   align-items: center;
-  background-color: $green;
+  background-color: $dark-green;
+  box-sizing: border-box;
   color: $grey;
   display: flex;
   justify-items: center;
   flex-direction: column;
-  padding-bottom: 1rem;
+  padding: 1rem;
   text-align: center;
   width: 100%;
 
@@ -47,6 +48,27 @@ footer {
 
     .col {
       width: 100%;
+
+      address {
+        font-style: normal;
+      }
+
+      ul {
+        padding-left: 0;
+
+        li {
+          line-height: 1.5;
+          list-style: none;
+        }
+      }
+
+      p {
+        line-height: 1.5;
+
+        small {
+          font-size: 0.75rem;
+        }
+      }
 
       a {
         .fa-angle-up {
@@ -67,7 +89,7 @@ footer {
         &:hover {
           .fa-angle-up {
             background-color: $light-green;
-            color: $green;
+            color: $dark-green;
           }
         }
       }
