@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp, faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faBorderStyle } from '@fortawesome/free-solid-svg-icons/faBorderStyle';
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState<any>(getCurrentYear); // Show the current year.
@@ -33,10 +34,16 @@ export default function Footer() {
           <p><small>Federico Moretti © 2013-{currentYear}. All rights reserved.</small></p>
         </div>
         <div className="col">
-
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
         <div className="col">
-        <FontAwesomeIcon icon={faAngleUp} />
+          <a href="#contents">
+            <FontAwesomeIcon className="fa-border fa-border-radius" icon={faAngleUp} />
+          </a>
         </div>
       </div>
     </footer>

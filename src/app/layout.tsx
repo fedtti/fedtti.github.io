@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html className={`no-js ${ibm_plex_mono.variable} ${ibm_plex_sans.variable} ${ibm_plex_serif.variable}`} lang="en">
       <head>
-        <meta httpEquiv="content-security-policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline';" />
+        <meta httpEquiv="content-security-policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
       <body>{children}</body>
