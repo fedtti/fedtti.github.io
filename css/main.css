@@ -4,8 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-  --black: black;
-  --white: white;
+      --black: black;
+  --dark-blue: #2c3e50;
+  --deep-gray: #7F8c8d;
+      --white: white;
 }
 
 html,
@@ -30,14 +32,18 @@ main {
   text-align: center;
 }
 
-main p {
-  font-size: 2rem;
+main .role {
+  color: var(--deep-gray);
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 0;
   text-transform: uppercase;
 }
 
-main a {
-  color: #75b2ad;
-  font-size: 1rem;
-  text-decoration: 0;
-  text-transform: lowercase;
+h1 {
+  color: var(--dark-blue);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
 }
