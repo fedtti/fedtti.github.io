@@ -4,10 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-      --black: black;
-  --dark-blue: #2c3e50;
-  --deep-gray: #7F8c8d;
-      --white: white;
+             --black: black;
+  --bright-turquoise: #16a085;
+         --dark-blue: #2c3e50;
+         --deep-gray: #7F8c8d;
+          --sky-blue: #1e73be;
+         --soft-gray: #ecf0f1;
+     --vibrant-coral: #d64541;
+             --white: white;
 }
 
 html,
@@ -38,6 +42,24 @@ main .role {
   line-height: 1;
   margin: 0;
   text-transform: uppercase;
+}
+
+main a[download] {
+  background-color: var(--sky-blue);
+  border-radius: 0.25rem;
+  color: var(--white);
+  display: block;
+  font-size: 0.75rem;
+  margin: 1rem 0 0 0;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.5s linear;
+}
+
+main a[download]:active,
+main a[download]:focus,
+main a[download]:hover {
+  background-color: var(--bright-turquoise);
 }
 
 h1 {
