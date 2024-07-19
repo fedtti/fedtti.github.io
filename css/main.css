@@ -51,6 +51,7 @@ main a[download] {
   display: block;
   font-size: 0.75rem;
   margin: 1rem 0 0 0;
+  outline: 0;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: background-color 0.5s linear;
@@ -79,6 +80,17 @@ main li:last-child {
 
 main a {
   color: var(--vibrant-coral);
+  outline: 0;
+}
+
+main a:not([download]):active,
+main a:not([download]):focus,
+main a:not([download]):hover {
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: ease;
+  display: block;
 }
 
 h1 {
@@ -87,4 +99,10 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+   50% { transform: translateY(0.5rem); }
+  100% { transform: translateY(0); }
 }
