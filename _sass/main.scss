@@ -1,0 +1,102 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+$light-background: white;
+$light-color: black;
+
+$light-accent: #f1c40f;
+
+$dark-background: black;
+$dark-color: white;
+
+$dark-accent: #f1c40f;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: light-dark($light-background, $dark-background);
+  color: light-dark($light-color, $dark-color);
+  font: normal 400 1rem/1 'IBM Plex Mono', monospace;
+  z-index: 0;
+}
+
+#scrollbar {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: light-dark($light-background, $dark-background);
+  border: none;
+  color: light-dark($light-accent, $dark-accent);
+  height: 0.5rem;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  /* z-index: 100; TODO: @fedtti */
+}
+
+#scrollbar::-webkit-progress-bar {
+  background-color: light-dark($light-background, $dark-background);
+}
+
+#scrollbar::-webkit-progress-value {
+  background-color: light-dark($light-accent, $dark-accent);
+}
+
+#scrollbar::-moz-progress-bar {
+  background-color: light-dark($light-accent, $dark-accent);
+}
+
+#scrollbar::-ms-fill {
+  background-color: light-dark($light-accent, $dark-accent);
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  #wrapper {
+    width: 54rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #wrapper {
+    width: 72rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #wrapper {
+    width: 96rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #wrapper {
+    width: 114rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #wrapper {
+    width: 132rem;
+  }
+}
