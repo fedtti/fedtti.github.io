@@ -2,10 +2,11 @@
   <a id="skip" class="visually-hidden-focusable" href="#contents">Skip to contents <span aria-hidden="true">↓</span></a>
   <progress id="scrollbar" value="0" max="100" aria-hidden="true">0%</progress>
   <div id="wrapper">
-    <div class="blur"></div>
+    <div class="blur" aria-hidden="true"></div>
     {% include header.html %}
     {% include main.html %}
     {% include footer.html %}
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
   <script src="{{ 'assets/js/app.js' | relative_url }}"></script>
 </body>

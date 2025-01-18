@@ -75,11 +75,15 @@ body {
 
   .blur {
     background: linear-gradient(light-dark($light-background, $dark-background), transparent);
-    height: 1.75rem;
+    height: 5rem;
     margin: -1.6rem;
     position: fixed;
     width: 100%;
     z-index: 10;
+  }
+
+  #header {
+    margin: 3.4rem 0 0 0;
   }
 }
 
