@@ -66,36 +66,41 @@ body {
 }
 
 #wrapper {
+  font-size: 1.2rem;
   margin: 0 auto;
   padding: 1.6rem;
   width: 100%;
 }
 
-@media (min-width: 576px) {
+.inner {
+  display: flex;
+}
+
+@media screen and (min-width: 576px) {
   #wrapper {
     width: 54rem;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #wrapper {
     width: 72rem;
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   #wrapper {
     width: 96rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   #wrapper {
     width: 114rem;
   }
 }
 
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   #wrapper {
     width: 132rem;
   }

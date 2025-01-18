@@ -1,15 +1,20 @@
+baseurl: ""
+
 collections:
   posts:
     output: true
     permalink: /blog/:title/
-
-baseurl: ""
-
-paginate_path: /pages/:num/
-timezone: Europe/Rome
 
 exclude: [
   CNAME,
   LICENSE,
   README.md
 ]
+
+paginate_path: /pages/:num/
+
+sass:
+  sass_dir: _scss
+  style: compressed
+
+timezone: Europe/Rome
