@@ -46,30 +46,41 @@ body {
   left: 0;
   position: fixed;
   width: 100%;
-  /* z-index: 100; TODO: @fedtti */
-}
+  z-index: 100; /* TODO: @fedtti */
 
-#scrollbar::-webkit-progress-bar {
-  background-color: light-dark($light-background, $dark-background);
-}
+  &::-webkit-progress-bar {
+    background-color: light-dark($light-background, $dark-background);
+  }
 
-#scrollbar::-webkit-progress-value {
-  background-color: light-dark($light-accent, $dark-accent);
-}
+  &::-webkit-progress-value {
+    background-color: light-dark($light-accent, $dark-accent);
+  }
 
-#scrollbar::-moz-progress-bar {
-  background-color: light-dark($light-accent, $dark-accent);
-}
+  &::-moz-progress-bar {
+    background-color: light-dark($light-accent, $dark-accent);
+  }
 
-#scrollbar::-ms-fill {
-  background-color: light-dark($light-accent, $dark-accent);
+  &::-ms-fill {
+    background-color: light-dark($light-accent, $dark-accent);
+  }
 }
 
 #wrapper {
   font-size: 1.2rem;
   margin: 0 auto;
-  padding: 1.6rem;
+  padding: 2.1rem 1.6rem 1.6rem 1.6rem;
+  position: relative;
   width: 100%;
+  z-index: 1;
+
+  .blur {
+    background: linear-gradient(light-dark($light-background, $dark-background), transparent);
+    height: 1.75rem;
+    margin: -1.6rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
 }
 
 .inner {
