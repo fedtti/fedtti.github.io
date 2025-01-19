@@ -5,14 +5,24 @@
   <title>{{ page.title }}</title> <!-- TODO: @fedtti -->
   <meta name="description" content="{{ page.description }}"> <!-- TODO: @fedtti -->
 
-  <meta name="robots" content="index, follow"> <!-- TODO: @fedtti -->
+  <meta name="robots" content="index, follow, noarchive"> <!-- TODO: @fedtti -->
 
-  <link rel="canonical" href="{{ page.url | absolute_url }}"> <!-- TODO: @fedtti -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 
   <link rel="manifest" href="{{ 'manifest.webmanifest' | relative_url }}">
 
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.rel='stylesheet'">
   <link rel="shortcut icon" href="{{ 'favicon.ico' | relative_url }}">
-  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
 
+  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
+  <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org/",
+      "@type" : "WebSite",
+      "name" : "Federico Moretti",
+      "alternateName" : "fedtti",
+      "url" : "https://federicomoretti.it/"
+    }
+  </script>
 </head>

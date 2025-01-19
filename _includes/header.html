@@ -1,11 +1,23 @@
 <!-- HEADER -->
 <header id="header">
   <div class="inner">
-    <div class="">
-      <h1>Federico Moretti</h1>
+    <div class="left">
+      <h1>F<span class="">ederico </span>M<span class="">oretti</span></h1>
     </div>
-    <div class="">
-
+    <div class="right">
+      <ul>
+        <li>
+          <button id="theme-switcher">
+            <i class="fa-solid fa-moon" title="Switch to the dark theme"></i>
+          </button>
+        </li>
+        <li>
+          <button id="navigation-toggler">
+            <i class="fa-solid fa-bars" title="Expand the navigation"></i>
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
+  {% include navigation.html %}
 </header>

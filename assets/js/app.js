@@ -11,4 +11,9 @@ const scrollBarHandler = () => {
 };
 window.onscroll = scrollBarHandler;
 
+/**
+ *
+ */
+
+
 document.getElementById('current-year').innerText = new Date().getFullYear(); // Show the current year.
