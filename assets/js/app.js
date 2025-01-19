@@ -68,4 +68,6 @@ const themeSwitch = () => {
 };
 themeSwitcher.addEventListener('click', themeSwitch, false);
 
+
+
 document.getElementById('current-year').innerText = new Date().getFullYear(); // Show the current year.

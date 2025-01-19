@@ -109,7 +109,7 @@ body {
 #wrapper {
   font-size: 1.2rem;
   margin: 0 auto;
-  padding: 2.1rem 1.6rem 1.6rem 1.6rem;
+  padding: 2.1rem 1.6rem;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -127,7 +127,7 @@ body {
   /* HEADER */
   #header {
     background-color: var(--primary-background);
-    margin: 2.9rem 0 0 0;
+    padding: 2.9rem 0 0 0;
     position: relative;
     width: 100%;
     z-index: 100;
@@ -147,7 +147,6 @@ body {
     }
 
     .inner {
-      display: flex;
       height: 4.8rem;
       width: 100%;
 
@@ -193,6 +192,7 @@ body {
   /* NAVIGATION */
   #navigation {
     position: absolute;
+    top: 7rem; /* TODO: @fedtti */
     width: 100%;
     z-index: 10;
 
@@ -237,8 +237,16 @@ body {
 
   /* FOOTER */
   #footer {
-
+    padding: 0 0 2.9rem 0;
   }
+}
+
+.inner {
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 576px) {
@@ -286,6 +294,10 @@ body {
         }
       }
     }
+  }
+
+  .hidden {
+    display: inline;
   }
 }
 
