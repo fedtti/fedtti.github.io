@@ -191,6 +191,7 @@ body {
 
   /* NAVIGATION */
   #navigation {
+    left: 0;
     position: absolute;
     top: 7rem; /* TODO: @fedtti */
     width: 100%;
@@ -200,6 +201,7 @@ body {
       li {
         height: 2.4rem;
         list-style: none;
+        padding: 0 1.6rem;
 
         &.active {
           a {
@@ -212,6 +214,8 @@ body {
           display: block;
           font-size: 1.2rem;
           line-height: 2;
+          padding: 0 1rem;
+          text-align: right;
           text-decoration: none;
           text-transform: uppercase;
         }
@@ -284,12 +288,17 @@ body {
           list-style: none;
           border-right: 0.0625rem dashed var(--borders-and-dividers);
           margin-right: 1rem;
-          padding-right: 1rem;
+          padding: 0 1rem 0 0;
 
           &:last-of-type {
             border-right: none;
             margin-right: 0;
             padding-right: 0;
+          }
+
+          a {
+            padding: 0;
+            text-align: left;
           }
         }
       }
