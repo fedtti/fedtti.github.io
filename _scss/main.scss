@@ -54,6 +54,7 @@ $dark-error: #f87171;
 * {
   box-sizing: border-box;
   margin: 0;
+  outline: none;
   padding: 0;
 }
 
@@ -175,7 +176,6 @@ body {
               font-size: 1.6rem;
               height: 3.2rem;
               width: 3.2rem;
-              outline: none;
               transition: border-color 0.5s linear;
 
               &:active,
