@@ -68,6 +68,32 @@ const themeSwitch = () => {
 };
 themeSwitcher.addEventListener('click', themeSwitch, false);
 
+const navigation = document.getElementById('navigation');
+const navigationToggler = document.getElementById('navigation-toggler');
+const navigationTogglerIcon = document.getElementById('navigation-toggler-icon');
 
+/**
+ * Toggle the current navigation menu position down or up on user interaction.
+ */
+const navigationToggle = () => {
+  if (navigation.classList.contains('collapsed')) {
+    navigation.style.top = '9.8rem';
+    navigation.classList.remove('collapsed');
+    navigation.classList.add('expanded');
+    navigationToggler.setAttribute('aria-expanded', 'true');
+    navigationTogglerIcon.classList.remove('fa-bars');
+    navigationTogglerIcon.classList.add('fa-xmark');
+    navigationTogglerIcon.setAttribute('title', 'Collapse the navigation menu');
+  } else {
+    navigation.style.top = '0';
+    navigation.classList.remove('expanded');
+    navigation.classList.add('collapsed');
+    navigationToggler.setAttribute('aria-expanded', 'false');
+    navigationTogglerIcon.classList.remove('fa-xmark');
+    navigationTogglerIcon.classList.add('fa-bars');
+    navigationTogglerIcon.setAttribute('title', 'Expand the navigation menu');
+  }
+};
+navigationToggler.addEventListener('click', navigationToggle, false);
 
 document.getElementById('current-year').innerText = new Date().getFullYear(); // Show the current year.

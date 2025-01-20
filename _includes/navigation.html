@@ -1,8 +1,8 @@
 <!-- NAVIGATION -->
-<nav id="navigation">
+<nav id="navigation" class="collapsed">
   <ol>
     {% for item in site.data.navigation %}
-    <li {% if item.url == page.url %} class="active"{% endif %}>
+    <li {% if item.url == page.url %} class="active" aria-current="page"{% endif %}>
       <a href="{{ item.url }}">{{ item.label }}</a>
     </li>
     {% endfor %}
