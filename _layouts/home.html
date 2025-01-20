@@ -1,26 +1,39 @@
 ---
 layout: html
 ---
-<section>
+<section aria-label="Federico Moretti">
   <picture>
     <!--
       <source srcset="/assets/img/federico-moretti.webp" type="image/webp">
-      <img src="/assets/img/federico-moretti.jpg" alt="Federico Moretti">
+      <img src="/assets/img/federico-moretti.jpg" alt="Portrait of Federico Moretti">
     -->
   </picture>
   <p>I’m an Italian software developer who helps <abbr title="Business Process Outsourcing">BPO</abbr>s in digital transformation with <abbr title="Artificial Intelligence">AI</abbr> by creating solutions using <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript.</p>
   <ul>
     <li>Follow me on</li>
-    <li></li>
-    <li></li>
+    <li>
+      <a href="https://github.com/fedtti" rel="noopener noreferrer" target="_blank">
+        <i class="fa-brands fa-github" title="GitHub"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/fedtti/" rel="noopener noreferrer" target="_blank">
+        <i class="fa-brands fa-instagram" title="Instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/fedtti/" rel="noopener noreferrer" target="_blank">
+        <i class="fa-brands fa-linkedin" title="LinkedIn"></i>
+      </a>
+    </li>
   </ul>
 </section>
-<section>
-  <h2 id="work">Latest Work</h2>
-  {{ content }}
+<section aria-labelledby="latest-work">
+  <h2 id="latest-work">Latest Work</h2>
+
 </section>
-<section>
-  <h2>Articles</h2>
+<section aria-labelledby="articles">
+  <h2 id="articles">Articles</h2>
   <ul>
   {% for post in site.posts limit:5 %}
   <li>

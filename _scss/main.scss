@@ -78,6 +78,12 @@ body {
   z-index: 0;
 }
 
+abbr[title] {
+  cursor: help;
+  border-bottom: 0.0625rem dashed var(--primary-accent);
+  text-decoration: none;
+}
+
 #scrollbar {
   -webkit-appearance: none;
      -moz-appearance: none;

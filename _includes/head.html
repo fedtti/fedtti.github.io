@@ -2,18 +2,21 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title> <!-- TODO: @fedtti -->
-  <meta name="description" content="{{ page.description }}"> <!-- TODO: @fedtti -->
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
 
   <meta name="robots" content="index, follow, noarchive"> <!-- TODO: @fedtti -->
 
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/png" href="{{ 'assets/img/favicon-16x16.png' | relative_url }}" sizes="16x16">
+  <link rel="icon" type="image/png" href="{{ 'assets/img/favicon-32x32.png' | relative_url }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ 'assets/img/favicon-48x48.png' | relative_url }}" sizes="48x48">
 
   <link rel="manifest" href="{{ 'manifest.webmanifest' | relative_url }}">
 
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="shortcut icon" href="{{ 'favicon.ico' | relative_url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}" sizes="any">
 
   <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
   <script type="application/ld+json">
