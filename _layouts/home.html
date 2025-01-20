@@ -17,9 +17,22 @@ layout: html
 </section>
 <section>
   <h2 id="work">Latest Work</h2>
-  <p></p>
+  {{ content }}
 </section>
 <section>
   <h2>Articles</h2>
-
+  <ul>
+  {% for post in site.posts limit:5 %}
+  <li>
+    <div class="inner">
+      <div class="left">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string: 'ordinal' }}</time>
+      </div>
+      <div class="right">
+        <a href="{{ post.url | relative }}">{{ post.title }}</a>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+  </ul>
 </section>

@@ -11,7 +11,13 @@ exclude: [
   README.md
 ]
 
-paginate_path: /pages/:num/
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: "/page/:num/"
+
+plugins:
+  - jekyll-paginate-v2
 
 sass:
   sass_dir: _scss
