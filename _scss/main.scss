@@ -237,6 +237,8 @@ abbr[title] {
   /* CONTENTS */
   #contents {
     section {
+      margin: 5rem 0 0 0;
+
       h2 {
         font-family: 'IBM Plex Serif', serif;
         font-size: 2.4rem;
@@ -246,6 +248,16 @@ abbr[title] {
         &::after {
           color: var(--secondary-accent);
           content: '.';
+        }
+      }
+
+      ul {
+        li {
+          list-style: none;
+
+          .inner {
+            column-gap: 1.5rem;
+          }
         }
       }
     }

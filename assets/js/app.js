@@ -25,22 +25,22 @@ const loadTheme = () => {
     themeSwitcherIcon.setAttribute('title', `Switch to the ${savedTheme === 'light' ? 'dark' : 'light'} theme`);
 
     if (savedTheme === 'light') {
-      themeSwitcherIcon.classList.remove('fa-sun');
-      themeSwitcherIcon.classList.add('fa-moon');
-    } else {
       themeSwitcherIcon.classList.remove('fa-moon');
       themeSwitcherIcon.classList.add('fa-sun');
+    } else {
+      themeSwitcherIcon.classList.remove('fa-sun');
+      themeSwitcherIcon.classList.add('fa-moon');
     }
   } else if (!!systemTheme) {
     document.documentElement.setAttribute('data-theme', systemTheme);
     themeSwitcherIcon.setAttribute('title', `Switch to the ${systemTheme === 'light' ? 'dark' : 'light'} theme`);
 
     if (systemTheme === 'light') {
-      themeSwitcherIcon.classList.remove('fa-sun');
-      themeSwitcherIcon.classList.add('fa-moon');
-    } else {
       themeSwitcherIcon.classList.remove('fa-moon');
       themeSwitcherIcon.classList.add('fa-sun');
+    } else {
+      themeSwitcherIcon.classList.remove('fa-sun');
+      themeSwitcherIcon.classList.add('fa-moon');
     }
   }
 };
@@ -55,14 +55,14 @@ const themeSwitch = () => {
   if (currentTheme === 'light') {
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
-    themeSwitcherIcon.classList.remove('fa-moon');
-    themeSwitcherIcon.classList.add('fa-sun');
+    themeSwitcherIcon.classList.remove('fa-sun');
+    themeSwitcherIcon.classList.add('fa-moon');
     themeSwitcherIcon.setAttribute('title', 'Switch to the light theme');
   } else {
     document.documentElement.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
-    themeSwitcherIcon.classList.remove('fa-sun');
-    themeSwitcherIcon.classList.add('fa-moon');
+    themeSwitcherIcon.classList.remove('fa-moon');
+    themeSwitcherIcon.classList.add('fa-sun');
     themeSwitcherIcon.setAttribute('title', 'Switch to the dark theme');
   }
 };
