@@ -36,6 +36,7 @@ $dark-error: #f87171;
   --primary-text: #{$light-primary-text};
   --primary-accent: #{$light-primary-accent};
   --secondary-background: #{$light-secondary-background};
+  --secondary-text: #{$light-secondary-text};
   --secondary-accent: #{$light-secondary-accent};
 
   --links: #{$light-links};
@@ -47,6 +48,7 @@ $dark-error: #f87171;
   --primary-text: #{$dark-primary-text};
   --primary-accent: #{$dark-primary-accent};
   --secondary-background: #{$dark-secondary-background};
+  --secondary-text: #{$dark-secondary-text};
   --secondary-accent: #{$dark-secondary-accent};
 
   --links: #{$dark-links};
@@ -251,12 +253,26 @@ abbr[title] {
         }
       }
 
+      p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+
       ul {
+        margin: 1.5rem 0 0 0;
+
         li {
           list-style: none;
 
           .inner {
             column-gap: 1.5rem;
+            font-size: 1.6rem;
+            line-height: 2;
+            margin: 0 0 1.5rem 0;
+
+            .left {
+              color: var(--secondary-text);
+            }
           }
         }
       }
@@ -265,7 +281,7 @@ abbr[title] {
 
   /* FOOTER */
   #footer {
-    padding: 0 0 5rem 0;
+    padding: 5rem 0;
   }
 }
 
