@@ -2,7 +2,7 @@
 <nav id="navigation" class="collapsed">
   <ol>
     {% for item in site.data.navigation %}
-    <li {% if item.url == page.url %} class="active" aria-current="page"{% endif %}>
+    <li {% if item.url == page.url or item.url == '/blog/' and page.url == '/blog/index.html' %} class="active" aria-current="page"{% endif %}>
       <a href="{{ item.url }}">{{ item.label }}</a>
     </li>
     {% endfor %}
