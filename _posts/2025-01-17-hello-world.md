@@ -1,6 +1,6 @@
 ---
 layout: html
-title:  hello, world · Blog · Federico Moretti
+title:  hello, world
 description: >-
 
 date: 2025-01-17 00:00:00 +0100
