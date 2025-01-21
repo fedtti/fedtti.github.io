@@ -275,6 +275,7 @@ abbr[title] {
           }
 
           a {
+            display: block;
             color: var(--links);
           }
         }
@@ -293,6 +294,11 @@ abbr[title] {
             font-size: 1.6rem;
             line-height: 2;
             margin: 0 0 1.5rem 0;
+
+            a {
+              color: var(--links);
+              text-decoration: none;
+            }
           }
         }
       }
