@@ -86,6 +86,12 @@ abbr[title] {
   text-decoration: none;
 }
 
+#skip {
+  position: absolute;
+
+  z-index: 10000;
+}
+
 #scrollbar {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -258,21 +264,35 @@ abbr[title] {
         line-height: 1.5;
       }
 
+      #social-networks {
+        li {
+          display: inline-block;
+          line-height: 2;
+          margin-left: 0.5rem;
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+
+          a {
+            color: var(--links);
+          }
+        }
+      }
+
       ul {
         margin: 1.5rem 0 0 0;
 
         li {
+          color: var(--secondary-text);
           list-style: none;
+          min-height: 2.4rem;
 
           .inner {
             column-gap: 1.5rem;
             font-size: 1.6rem;
             line-height: 2;
             margin: 0 0 1.5rem 0;
-
-            .left {
-              color: var(--secondary-text);
-            }
           }
         }
       }
