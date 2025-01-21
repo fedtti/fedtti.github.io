@@ -87,9 +87,22 @@ abbr[title] {
 }
 
 #skip {
+  border-radius: 0.5rem;
+  color: var(--links);
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 0.5rem;
+  padding: 0 0.5rem;
   position: absolute;
-
+  text-decoration: none;
   z-index: 10000;
+
+  &:active,
+  &:focus {
+    border: 0.25rem solid var(--borders-and-dividers);
+    left: 0.5rem;
+    top: 0.5rem;
+  }
 }
 
 #scrollbar {
@@ -125,7 +138,7 @@ abbr[title] {
 #wrapper {
   font-size: 1.2rem;
   margin: 0 auto;
-  padding: 0 1.6rem;
+  padding: 0 1.5rem;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -208,10 +221,10 @@ abbr[title] {
   /* NAVIGATION */
   #navigation {
     background-color: var(--secondary-background);
-    left: 1.6rem;
+    left: 1.5rem;
     padding: 1.2rem 0;
     position: absolute;
-    right: 1.6rem;
+    right: 1.5rem;
     top: 0;
     transition: top 0.5s linear;
     z-index: 10;
@@ -220,7 +233,7 @@ abbr[title] {
       li {
         height: 2.4rem;
         list-style: none;
-        padding: 0 1.6rem;
+        padding: 0 1.5rem;
 
         &.active {
           a {
