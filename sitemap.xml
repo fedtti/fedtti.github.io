@@ -1,6 +1,21 @@
+---
+---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://federicomoretti.it/</loc>
+    <loc>{{ site.url | absolute_url | append: '/' }}</loc>
   </url>
+  {% for page in site.pages %}
+    {% if page.url == '/' or page.url contains '404.html' or page.url contains 'style.css' or page.url contains 'sitemap.xml' %}
+      {% continue %}
+    {% endif %}
+    <url>
+      <loc>{{ page.url | absolute_url | remove: 'index.html' }}</loc>
+    </url>
+  {% endfor %}
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+  </url>
+  {% endfor %}
 </urlset>
