@@ -4,18 +4,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>{{ site.url | absolute_url | append: '/' }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
   {% for page in site.pages %}
-    {% if page.url == '/' or page.url contains '404.html' or page.url contains 'style.css' or page.url contains 'sitemap.xml' %}
+    {% if page.url == '/' or page.url contains '404.html' or page.url contains 'feed.xml' or page.url contains 'style.css' or page.url contains 'sitemap.xml' %}
       {% continue %}
     {% endif %}
     <url>
       <loc>{{ page.url | absolute_url | remove: 'index.html' }}</loc>
+      {% if page.date %}
+      <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
     </url>
   {% endfor %}
   {% for post in site.posts %}
   <url>
     <loc>{{ post.url | absolute_url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
   </url>
   {% endfor %}
 </urlset>
