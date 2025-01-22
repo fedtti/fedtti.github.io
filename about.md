@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About · Federico Moretti
+title: About
 description: >-
   
 permalink: /about/
