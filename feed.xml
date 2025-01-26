@@ -1,13 +1,17 @@
 ---
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Federico Moretti AKA “fedtti”</title>
-    <description></description>
-    <link>{{ site.url | absolute_url | append: '/' }}</link>
-    <atom:link href="{{ site.url | absolute_url | append: '/feed.xml' }}" rel="self" type="application/rss+xml" />
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    
+    <description>Software Developer</description>
+    <link href="{{ site.url | absolute_url | append: '/' }}" />
+    <link href="{{ site.url | absolute_url | append: '/feed.xml' }}" rel="self" />
+    <updated>{{ site.time | date_to_rfc822 }}</updated>
+    <author>
+      <name>Federico Moretti</name>
+      <email>hello@federicomoretti.it</email>
+    </author>
+    <id></id>
   </channel>
-</rss>
+</feed>

@@ -14,7 +14,7 @@ exclude: [
 pagination:
   enabled: true
   per_page: 10
-  permalink: "/page/:num/"
+  permalink: /page/:num/
 
 plugins:
   - jekyll-paginate-v2
