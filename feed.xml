@@ -2,16 +2,19 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Federico Moretti AKA “fedtti”</title>
-    <description>Software Developer</description>
-    <link href="{{ site.url | absolute_url | append: '/' }}" />
-    <link href="{{ site.url | absolute_url | append: '/feed.xml' }}" rel="self" />
-    <updated>{{ site.time | date_to_rfc822 }}</updated>
-    <author>
-      <name>Federico Moretti</name>
-      <email>hello@federicomoretti.it</email>
-    </author>
-    <id></id>
-  </channel>
+  <title>Federico Moretti AKA “fedtti”</title>
+  <description>Software Developer</description>
+  <link href="{{ site.url | absolute_url | append: '/feed.xml' }}" rel="self" />
+  <link href="{{ site.url | absolute_url | append: '/' }}" />
+  <updated>{{ site.time | date_to_rfc822 }}</updated>
+  <author>
+    <name>{{ site.author.full_name }}</name>
+    <email>{{ site.author.email }}</email>
+  </author>
+  <id>{{ site.id }}</id>
+  {% for post in site.posts %}
+  <entry>
+
+  </entry>
+  {% endfor %}
 </feed>

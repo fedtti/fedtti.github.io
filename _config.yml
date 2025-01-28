@@ -1,15 +1,23 @@
 baseurl: ""
 
+author:
+  full_name: Federico Moretti
+  email: hello@federicomoretti.it
+
 collections:
   posts:
     output: true
     permalink: /blog/:title/
+
+description:
 
 exclude: [
   CNAME,
   LICENSE,
   README.md
 ]
+
+id: urn:uuid:e32f7e38-2b5c-3b84-a32e-132e12179e93 # TODO: @fedtti - Generate a new UUID automatically via plugin.
 
 pagination:
   enabled: true
@@ -24,3 +32,5 @@ sass:
   style: compressed
 
 timezone: Europe/Rome
+
+title:
