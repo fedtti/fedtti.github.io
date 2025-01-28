@@ -1,4 +1,4 @@
-baseurl: ""
+baseurl: ''
 
 author:
   full_name: Federico Moretti
@@ -34,3 +34,5 @@ sass:
 timezone: Europe/Rome
 
 title:
+
+url: https://federicomoretti.it
