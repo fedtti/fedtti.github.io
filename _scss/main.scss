@@ -41,6 +41,8 @@ $dark-error: #f87171;
 
   --links: #{$light-links};
   --borders-and-dividers: #{$light-borders-and-dividers};
+
+  --error: #{$light-error};
 }
 
 [data-theme="dark"] {
@@ -53,6 +55,8 @@ $dark-error: #f87171;
 
   --links: #{$dark-links};
   --borders-and-dividers: #{$dark-borders-and-dividers};
+
+  --error: #{$dark-error};
 }
 
 * {
@@ -288,9 +292,9 @@ abbr[title] {
     section {
       margin: 5rem 0 0 0;
 
-      h2 {
+      h2,
+      h3 {
         font-family: 'IBM Plex Serif', serif;
-        font-size: 2.4rem;
         font-weight: 700;
         text-transform: lowercase;
 
@@ -298,6 +302,14 @@ abbr[title] {
           color: var(--secondary-accent);
           content: '.';
         }
+      }
+
+      h2 {
+        font-size: 2.4rem;
+      }
+
+      h3 {
+        font-size: 1.6rem;
       }
 
       p {
@@ -349,6 +361,29 @@ abbr[title] {
   /* FOOTER */
   #footer {
     padding: 5rem 0;
+
+    .inner {
+      color: var(--secondary-text);
+      flex-direction: column;
+      row-gap: 1.5rem;
+      text-align: center;
+
+      p {
+        line-height: 1.5;
+      }
+
+      .right {
+        i {
+          color: var(--error);
+          font-size: inherit;
+        }
+
+        a {
+          color: var(--links);
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
@@ -412,6 +447,17 @@ abbr[title] {
             padding: 0;
             text-align: left;
           }
+        }
+      }
+    }
+
+    #footer {
+      .inner {
+        flex-direction: row;
+        text-align: left;
+
+        .right {
+          margin-left: auto;
         }
       }
     }

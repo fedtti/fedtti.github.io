@@ -1,0 +1,19 @@
+---
+layout: html
+---
+<section id="{{ page.id | default: page.title | slugify }}">
+  <h2>{{ page.title }}</h2>
+  <p>
+    I’m Federico, a software developer from Italy: nice to meet you! 🤝
+    <br>
+
+  </p>
+  <figure>
+    <picture>
+      <source srcset="" type="image/webp" media="">
+      <img src="" alt="Portrait of {{ site.author.full_name }}" loading="lazy" decoding="async" srcset="">
+    </picture>
+    <figcaption>{{ site.author.full_name }}</figcaption>
+  </figure>
+  {{ content }}
+</section>
