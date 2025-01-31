@@ -14,7 +14,11 @@
   <id>{{ site.id }}</id>
   {% for post in site.posts %}
   <entry>
-
+    <title>{{ post.title }}</title>
+    <summary>{{ post.excerpt }}</summary>
+    <link href="{{ post.url | absolute_url }}" />
+    <updated>{{ post.date | date_to_rfc822 }}</updated>
+    <id></id>
   </entry>
   {% endfor %}
 </feed>
