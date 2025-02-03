@@ -1,0 +1,20 @@
+---
+layout: html
+---
+<article id="" itemscope itemtype="https://schema.org/BlogPosting" itemid="{{ page.url | absolute_url }}"> <!-- TODO: @fedtti - Add URN. -->
+  <header>
+    <h3 itemprop="headline">{{ page.title }}</h3>
+  </header>
+  {{ content }}
+  <footer>
+    <ul>
+      <li>
+        <i class="fa-brands fa-creative-commons" title="Creative Commons"></i>
+      </li>
+      <li><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer">
+        <i class="fa-brands fa-creative-commons-by" title="BY 4.0"></i>
+      </a>
+      </li>
+    </ul>
+  </footer>
+</article>
