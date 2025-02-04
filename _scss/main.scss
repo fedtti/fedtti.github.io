@@ -292,8 +292,7 @@ abbr[title] {
     section {
       margin: 5rem 0 0 0;
 
-      h2,
-      h3 {
+      h2 {
         font-family: 'IBM Plex Serif', serif;
         font-weight: 700;
         text-transform: lowercase;
@@ -347,6 +346,45 @@ abbr[title] {
             font-size: 1.6rem;
             line-height: 2;
             margin: 0 0 1.5rem 0;
+
+            a {
+              color: var(--links);
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    article {
+      header {
+        h3 {
+          font-family: 'IBM Plex Serif', serif;
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+          text-transform: lowercase;
+
+          &::after {
+            color: var(--secondary-accent);
+            content: '.';
+          }
+        }
+      }
+
+      footer {
+        ul {
+          margin-top: 0.5rem;
+
+          li {
+            display: inline-block;
+            line-height: 1.6;
+            list-style: none;
+            margin-right: 0.5rem;
+
+            &:last-of-type {
+              margin-right: 0;
+            }
 
             a {
               color: var(--links);
