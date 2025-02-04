@@ -4,7 +4,9 @@ layout: html
 <article id="" itemscope itemtype="https://schema.org/BlogPosting" itemid="{{ page.url | absolute_url }}"> <!-- TODO: @fedtti - Add URN as ID. -->
   <header>
     <h3 itemprop="headline">{{ page.title }}</h3>
+    <p><time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: '' }}</time> by <span itemprop="author"><span itemprop="name"><a href="/about/" itemscope itemtype="https://schema.org/Person" itemprop="url">{{ site.author.full_name }}</a></span></span></p>
   </header>
+
   <section itemprop="articleBody">
     {{ content }}
   </section>

@@ -161,7 +161,7 @@ abbr[title] {
   /* HEADER */
   #header {
     background-color: var(--primary-background);
-    padding: 5rem 0 0 0;
+    padding-top: 5rem;
     position: relative;
     width: 100%;
     z-index: 100;
@@ -186,7 +186,7 @@ abbr[title] {
 
       .right {
         margin-left: auto;
-        padding: 0.8rem 0 0 0;
+        padding-top: 0.8rem;
 
         ul {
           li {
@@ -276,7 +276,7 @@ abbr[title] {
         min-height: 1.6rem;
 
         &:last-of-type {
-          margin: 0 0 0 0.5rem;
+          margin-left: 0.5rem;
         }
 
         a {
@@ -290,7 +290,7 @@ abbr[title] {
   /* CONTENTS */
   #contents {
     section {
-      margin: 5rem 0 0 0;
+      margin-top: 5rem;
 
       h2 {
         font-family: 'IBM Plex Serif', serif;
@@ -345,7 +345,7 @@ abbr[title] {
             column-gap: 1.5rem;
             font-size: 1.6rem;
             line-height: 2;
-            margin: 0 0 1.5rem 0;
+            margin-bottom: 1.5rem;
 
             a {
               color: var(--links);
@@ -357,6 +357,8 @@ abbr[title] {
     }
 
     article {
+      margin-top: 5rem;
+
       header {
         h3 {
           font-family: 'IBM Plex Serif', serif;
@@ -370,6 +372,10 @@ abbr[title] {
             content: '.';
           }
         }
+      }
+
+      section {
+        margin-top: 0;
       }
 
       footer {
