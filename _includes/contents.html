@@ -1,4 +1,4 @@
 <!-- CONTENTS -->
-<main id="contents">
+<main id="contents" itemprop="mainContentOfPage" {%- if page.url contains '/about/' %}itemscope itemtype="https://schema.org/Person"{% endif -%}>
   {{ content }}
 </main>

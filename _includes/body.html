@@ -1,4 +1,4 @@
-<body itemscope itemtype="https://schema.org/{% if page.url contains '/about/' %}Person{% else %}WebPage{% endif %}"> <!-- TODO @fedtti -->
+<body itemscope itemtype="https://schema.org/{% if page.url contains '/about/' %}AboutPage{% elsif page.url contains '/blog/' %}Blog{% else %}WebPage{% endif %}">
   <a id="skip" class="visually-hidden-focusable" href="#contents">Skip to contents <span aria-hidden="true">↓</span></a>
   <progress id="scrollbar" value="0" max="100" aria-hidden="true">0%</progress>
   <div id="wrapper">
