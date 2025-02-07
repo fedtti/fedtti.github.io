@@ -10,7 +10,8 @@ collections:
     output: true
     permalink: /blog/:title/
 
-description:
+description: >-
+  Software developer proficient in creating solutions using HTML, CSS, and JavaScript.
 
 exclude: [
   CNAME,
@@ -18,7 +19,11 @@ exclude: [
   README.md
 ]
 
-id: urn:uuid:e32f7e38-2b5c-3b84-a32e-132e12179e93 # TODO: @fedtti - Generate a new UUID automatically via plugin.
+id: urn:uuid:e32f7e38-2b5c-3b84-a32e-132e12179e93 # TODO: @fedtti - Generate a new UUID automatically via Jekyll UUIDv3 Plugin (yet to be implemented).
+
+og_description: >-
+  Italian software developer who helps BPOs in digital transformation with AI by creating solutions using HTML, CSS, and JavaScript.
+og_title: Federico Moretti AKA “fedtti”
 
 pagination:
   enabled: true
@@ -34,6 +39,6 @@ sass:
 
 timezone: Europe/Rome
 
-title:
+title: Federico Moretti AKA “fedtti” • Software Developer
 
 url: https://federicomoretti.it

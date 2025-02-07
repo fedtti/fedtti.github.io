@@ -4,7 +4,7 @@ layout: html
 <article id="" itemscope itemtype="https://schema.org/BlogPosting" itemid="{{ page.url | absolute_url }}"> <!-- TODO: @fedtti - Add URN as ID. -->
   <header>
     <h3 itemprop="headline">{{ page.title }}</h3>
-    <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%b %d, %Y' }}</time> by <span itemprop="author"><span itemprop="name"><a href="/about/#contents" itemscope itemtype="https://schema.org/Person" itemprop="url">{{ site.author.full_name }}</a></span></span> · </p>
+    <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%b %d, %Y' }}</time> by <span itemprop="author"><span itemprop="name"><a href="/about/#contents" itemscope itemtype="https://schema.org/Person" itemprop="url">{{ site.author.full_name }}</a></span></span> · {{ page.content | number_of_words | divided_by: 180 }} min. read</p>
   </header>
 
   <section itemprop="articleBody">
