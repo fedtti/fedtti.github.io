@@ -6,14 +6,14 @@
       <a href="{{ site.url | absolute_url | append: '/' }}" property="item" typeof="WebPage">Home</a>
       <meta property="position" content="1">
     </li>
-    {% if page.url != '/' and page.id == nil %}
+    {%- if page.url != '/' and page.id == nil -%}
     ›
     <li property="itemListElement" typeof="ListItem">
       <a href="{{ page.url | absolute_url | remove: 'index.html' }}" property="item" typeof="WebPage">{{ page.title }}</a>
       <meta property="position" content="2">
     </li>
-    {% endif %}
-    {% if page.id %}
+    {%- endif -%}
+    {%- if page.id -%}
     ›
     <li property="itemListElement" typeof="ListItem">
       <a href="{{ site.url | absolute_url | append: '/blog/' }}" property="item" typeof="WebPage">Blog</a>
@@ -24,6 +24,6 @@
       <a href="{{ page.url | absolute_url }}" property="item" typeof="WebPage">{{ page.title }}</a>
       <meta property="position" content="3">
     </li>
-    {% endif %}
+    {%- endif -%}
   </ol>
 </nav>

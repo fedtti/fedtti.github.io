@@ -12,7 +12,7 @@
     <email>{{ site.author.email }}</email>
   </author>
   <id>{{ site.id }}</id>
-  {% for post in site.posts %}
+  {%- for post in site.posts limit: 10 -%}
   <entry>
     <title>{{ post.title }}</title>
     <summary>{{ post.excerpt }}</summary>
@@ -20,5 +20,5 @@
     <updated>{{ post.date | date_to_rfc822 }}</updated>
     <id></id>
   </entry>
-  {% endfor %}
+  {%- endfor -%}
 </feed>

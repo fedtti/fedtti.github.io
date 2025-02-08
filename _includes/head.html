@@ -2,26 +2,21 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
-    {{ page.title | default: site.title }}
-    {% if page.url != '/' %}
-    | {{ site.og_title }}
-    {% endif %}
-  </title>
+  <title>{{ page.title | default: site.title }}{%- if page.url != '/' -%} | {{ site.og_title }}{%- endif -%}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="robots" content="{%- if page.url == '/404.html' -%}noindex{%- else -%}index{%- endif -%}, follow, noarchive"> <!-- TODO: @fedtti -->
-  {% if page.url != '/404.html' %}
+  {%- if page.url != '/404.html' -%}
   <meta property="og:title" content="{{ page.og_title | default: site.og_title }}">
   <meta property="og:description" content="{{ page.og_description | default: site.og_description }}">
   <link property="og:url" href="{{ page.url | absolute_url | remove: 'index.html' }}">
-  {% endif %}
+  {%- endif -%}
   <link rel="apple-touch-icon" sizes="76x76" href="{{ 'assets/img/apple-touch-icon-76x76.png' | relative_url }}">
   <link rel="apple-touch-icon" sizes="120x120" href="{{ 'assets/img/apple-touch-icon-120x120.png' | relative_url }}">
   <link rel="apple-touch-icon" sizes="152x152" href="{{ 'assets/img/apple-touch-icon-152x152.png' | relative_url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/img/apple-touch-icon-180x180.png' | relative_url }}">
-  {% if page.url != '/404.html' %}
+  {%- if page.url != '/404.html' -%}
   <link rel="canonical" href="{{ page.url | absolute_url | remove: 'index.html' }}">
-  {% endif %}
+  {%- endif -%}
   <link rel="icon" type="image/png" href="{{ 'assets/img/favicon-16x16.png' | relative_url }}" sizes="16x16">
   <link rel="icon" type="image/png" href="{{ 'assets/img/favicon-32x32.png' | relative_url }}" sizes="32x32">
   <link rel="icon" type="image/png" href="{{ 'assets/img/favicon-48x48.png' | relative_url }}" sizes="48x48">
