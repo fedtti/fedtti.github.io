@@ -11,14 +11,14 @@
     <name>{{ site.author.full_name }}</name>
     <email>{{ site.author.email }}</email>
   </author>
-  <id>{{ site.id }}</id>
+  <id>{{ site.id }}</id> <!-- TODO: @fedtti - Replace with . -->
   {%- for post in site.posts limit: 10 -%}
   <entry>
     <title>{{ post.title }}</title>
     <summary>{{ post.excerpt }}</summary>
     <link href="{{ post.url | absolute_url }}" />
     <updated>{{ post.date | date_to_rfc822 }}</updated>
-    <id></id>
+    <id></id> <!-- TODO: @fedtti - Add . -->
   </entry>
   {%- endfor -%}
 </feed>
