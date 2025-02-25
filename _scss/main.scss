@@ -341,6 +341,11 @@ abbr[title] {
       &[aria-labelledby="latest-work"] {
         p {
           margin-top: 1.5rem;
+
+          a {
+            color: var(--links);
+            text-decoration: none;
+          }
         }
       }
 
