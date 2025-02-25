@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: site.title }}{%- if page.url != '/' -%} | {{ site.og_title }}{%- endif -%}</title>
+  <title>{{ page.title | default: site.title }}{%- if page.url != '/' %} | {{ site.og_title }}{%- endif -%}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="robots" content="{%- if page.url == '/404.html' -%}noindex{%- else -%}index{%- endif -%}, follow, noarchive"> <!-- TODO: @fedtti -->
   {%- if page.url != '/404.html' -%}

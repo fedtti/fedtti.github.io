@@ -316,23 +316,6 @@ abbr[title] {
         line-height: 1.5;
       }
 
-      #social-networks {
-        li {
-          display: inline-block;
-          line-height: 2;
-          margin-left: 0.5rem;
-
-          &:first-of-type {
-            margin-left: 0;
-          }
-
-          a {
-            display: block;
-            color: var(--links);
-          }
-        }
-      }
-
       ul {
         margin: 1.5rem 0 0 0;
 
@@ -351,6 +334,29 @@ abbr[title] {
               color: var(--links);
               text-decoration: none;
             }
+          }
+        }
+      }
+
+      &[aria-labelledby="latest-work"] {
+        p {
+          margin-top: 1.5rem;
+        }
+      }
+
+      #social-networks {
+        li {
+          display: inline-block;
+          line-height: 2;
+          margin-left: 0.5rem;
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+
+          a {
+            display: block;
+            color: var(--links);
           }
         }
       }
