@@ -3,22 +3,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns:atom="http://www.w3.org/2005/Atom">
   <title>Federico Moretti AKA “fedtti”</title>
-  <description>Software Developer</description>
-  <link href="{{ site.url | absolute_url | append: '/feed.xml' }}" rel="self" />
+  <subtitle>Software Developer</subtitle>
   <link href="{{ site.url | absolute_url | append: '/' }}" />
   <updated>{{ site.time | date_to_rfc822 }}</updated>
   <author>
     <name>{{ site.author.full_name }}</name>
     <email>{{ site.author.email }}</email>
   </author>
-  <id>{{ site.id }}</id> <!-- TODO: @fedtti - Replace with . -->
+  <id>{{ site.id }}</id> <!-- Replace with Tag URI. -->
   {%- for post in site.posts limit: 10 -%}
   <entry>
     <title>{{ post.title }}</title>
-    <summary>{{ post.excerpt }}</summary>
     <link href="{{ post.url | absolute_url }}" />
+    <id></id> <!-- TODO: @fedtti - Add Tag URI. -->
     <updated>{{ post.date | date_to_rfc822 }}</updated>
-    <id></id> <!-- TODO: @fedtti - Add . -->
+    <summary>{{ post.excerpt }}</summary>
   </entry>
   {%- endfor -%}
 </feed>
