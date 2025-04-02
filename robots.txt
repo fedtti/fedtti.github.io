@@ -2,9 +2,9 @@ User-agent: *
 
 Disallow: /assets/css/
 Disallow: /assets/js/
-Disallow: /assets/curriculum-vitae.docx
+Disallow: /static/curriculum-vitae.docx
 Disallow: /.editorconfig
-Disallow: /.nojekyll
+Disallow: /404.html
 Disallow: /CNAME
 Disallow: /LICENSE
 Disallow: /README.md

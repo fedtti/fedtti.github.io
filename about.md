@@ -6,6 +6,3 @@ description: >-
 permalink: /about/
 ---
 ### Bio
-
-
-
