@@ -1,14 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap');
 
 :root {
-             --black: black;
-  --bright-turquoise: #16a085;
-         --dark-blue: #2c3e50;
-         --deep-gray: #7F8c8d;
-          --sky-blue: #1e73be;
-         --soft-gray: #ecf0f1;
-     --vibrant-coral: #d64541;
-             --white: white;
+  color-scheme: light dark;
+}
+
+[data-theme="light"] {
+    --primary-background: white;
+          --primary-text: #111827;
+        --primary-accent: #2563eb;
+        --secondary-text: #6b7280;
+      --secondary-accent: #10b981;
+                 --links: #1d4ed8;
+  --borders-and-dividers: #e5e7eb;
+                 --error: #ef4444;
+}
+
+[data-theme="dark"] {
+    --primary-background: #1f2937;
+          --primary-text: #f9fafb;
+        --primary-accent: #3b82f6;
+        --secondary-text: #d1d5db;
+      --secondary-accent: #34d399;
+                 --links: #60a5fa;
+  --borders-and-dividers: #4b5563;
+                 --error: #f87171;
 }
 
 * {
@@ -29,93 +44,280 @@ html {
 }
 
 body {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--primary-background);
+  color: var(--primary-text);
   font: normal 400 1rem/1 'IBM Plex Sans', sans-serif;
+  z-index: 0;
 }
 
+#skip {
+  background-color: var(--primary-background);
+  border-radius: 0.5rem;
+  color: var(--links);
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 0.5rem;
+  padding: 0 0.5rem;
+  position: fixed;
+  text-decoration: none;
+  z-index: 10000;
+}
 
+#skip:active,
+#skip:focus {
+  border: 0.25rem solid var(--borders-and-dividers);
+  left: 0.5rem;
+  top: 0.5rem;
+}
 
-
-
-
-/* MAIN */
-main {
+/* CONTENTS */
+#contents {
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-size: 1.2rem;
   justify-content: center;
   height: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+/* HEADER */
+#header {
+  margin-bottom: auto;
+  width: 100%;
+}
+
+#header .inner {
+  height: 4.8rem;
+}
+
+#header .inner .right {
+  margin-left: auto;
+  padding-top: 0.8rem;
+}
+
+#header .inner .right li {
+  display: inline-block;
+  list-style: none;
+}
+
+#header .inner .right button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 0.25rem solid transparent;
+  border-radius: 0.5rem;
+  color: var(--primary-accent);
+  cursor: pointer;
+  font-size: 1.6rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  transition: border-color 0.5s linear;
+}
+
+#header .inner .right button:active,
+#header .inner .right button:focus,
+#header .inner .right button:hover {
+  border: 0.25rem solid var(--borders-and-dividers);
+}
+
+/* HERO */
+#hero h1 {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+#hero h1::after {
+  color: var(--secondary-accent);
+  content: '.';
+}
+
+#hero p {
+  color: var(--secondary-text);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+#hero a[role="button"] {
+  background-color: var(--secondary-accent);
+  border-radius: 0.5rem;
+  color: var(--primary-background);
+  display: inline-block;
+  height: 3.2rem;
+  line-height: 2;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1.2rem;
+  text-decoration: none;
+}
+
+#hero #social-networks {
+  margin-top: 5rem;
+}
+
+#hero #social-networks li {
+  color: var(--secondary-text);
+  display: inline-block;
+  list-style: none;
+  margin-left: 0.5rem;
+}
+
+#hero #social-networks li:first-of-type {
+  margin-left: 0;
+}
+
+#hero #social-networks li a {
+  color: var(--links);
+ }
+
+/* FOOTER */
+#footer {
+  margin-top: auto;
+  width: 100%;
+}
+
+#footer .inner {
+  color: var(--secondary-text);
+  flex-direction: column;
+  row-gap: 1.5rem;
   text-align: center;
 }
 
-main .role {
-  color: var(--deep-gray);
-  font-size: 1.5rem;
-  line-height: 1;
-  margin: 0;
-  text-transform: uppercase;
+#footer .inner p {
+  line-height: 1.5;
 }
 
-main a[download] {
-  background-color: var(--sky-blue);
-  border-radius: 0.25rem;
-  color: var(--white);
-  display: block;
-  font-size: 0.75rem;
-  margin: 1rem 0 0 0;
-  outline: 0;
-  padding: 0.5rem 1rem;
+#footer .inner .right i {
+  color: var(--error);
+  font-size: inherit;
+}
+
+#footer .inner .right a {
+  color: var(--links);
   text-decoration: none;
-  transition: background-color 0.5s linear;
 }
 
-main a[download]:active,
-main a[download]:focus,
-main a[download]:hover {
-  background-color: var(--bright-turquoise);
+.inner {
+  display: flex;
 }
 
-main ul {
-  margin: 1rem 0 0 0;
-  padding: 0;
+@media screen and (min-width: 576px) {
+  /* CONTENTS */
+  #contents {
+    width: 54rem;
+  }
+
+  /* HERO */
+  #hero h1 {
+    font-size: 4rem;
+  }
+
+  #hero p {
+    font-size: 2rem;
+  }
+
+  /* FOOTER */
+  #footer .inner {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  #footer .inner .right {
+    margin-left: auto;
+  }
 }
 
-main li {
-  display: inline-block;
-  list-style: none;
-  padding-right: 0.5rem;
+@media screen and (min-width: 768px) {
+  /* CONTENTS */
+  #contents {
+    width: 72rem;
+  }
+
+  /* HERO */
+  #hero h1 {
+    font-size: 4.8rem;
+  }
+
+  #hero p {
+    font-size: 2.4rem;
+  }
 }
 
-main li:last-child {
-  padding-right: 0;
+@media screen and (min-width: 992px) {
+  /* CONTENTS */
+  #contents {
+    width: 96rem;
+  }
+
+  /* HERO */
+  #hero h1 {
+    font-size: 4.8rem;
+  }
+
+  #hero p {
+    font-size: 2.4rem;
+  }
 }
 
-main a {
-  color: var(--vibrant-coral);
-  outline: 0;
+@media screen and (min-width: 1200px) {
+  /* CONTENTS */
+  #contents {
+    width: 114rem;
+  }
+
+  /* HERO */
+  #hero h1 {
+    font-size: 6.4rem;
+  }
+
+  #hero p {
+    font-size: 3.2rem;
+  }
 }
 
-main a:not([download]):active,
-main a:not([download]):focus,
-main a:not([download]):hover {
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-name: bounce;
-  animation-timing-function: ease;
-  display: block;
+@media screen and (min-width: 1400px) {
+  /* CONTENTS */
+  #contents {
+    width: 132rem;
+  }
+
+  /* HERO */
+  #hero h1 {
+    font-size: 7.2rem;
+  }
+
+  #hero p {
+    font-size: 3.6rem;
+  }
 }
 
-h1 {
-  color: var(--dark-blue);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 0;
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  border: 0 !important;
+  clip: rect(0, 0, 0, 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  width: 1px !important;
 }
 
-@keyframes bounce {
-    0% { transform: translateY(0); }
-   50% { transform: translateY(0.5rem); }
-  100% { transform: translateY(0); }
+.visually-hidden-focusable:not(:focus):not(:focus-within):not(caption),
+.visually-hidden:not(caption) {
+  position: absolute !important;
 }

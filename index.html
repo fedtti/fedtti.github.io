@@ -35,31 +35,62 @@
       }
     </script>
   </head>
-  <body>
-    <main id="contents">
-      <h1>Federico <wbr>Moretti</h1>
-      <p class="role">Software <wbr>Developer</p>
-      <a href="/static/curriculum-vitae.pdf" role="button" download="curriculum-vitae">Curriculum Vitae</a>
-      <ul>
-        <li>
-          <a href="https://github.com/fedtti" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github fa-xl" title="GitHub" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/fedtti/" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-linkedin fa-xl" title="LinkedIn" aria-hidden="true"></i>
-            <span class="sr-only">LinkedIn</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://medium.com/@fedtti" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-medium fa-xl" title="Medium" aria-hidden="true"></i>
-            <span class="sr-only">Medium</span>
-          </a>
-        </li>
-      </ul>
+  <body itemscope itemtype="https://schema.org/WebPage">
+    <a id="skip" class="visually-hidden-focusable" href="#contents">Skip to contents <span aria-hidden="true">↓</span></a>
+    <main id="contents" itemprop="mainContentOfPage">
+      <header id="header">
+        <div class="inner">
+          <div class="left"></div>
+          <div class="right">
+            <ul>
+              <li>
+                <button id="theme-switcher">
+                  <i id="theme-switcher-icon" class="fa-solid fa-sun" title="Switch to the dark theme"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section id="hero">
+        <h1>Federico <wbr>Moretti</h1>
+        <p>Software <wbr>Developer</p>
+        <a href="/static/curriculum-vitae.pdf" role="button" download="curriculum-vitae">Curriculum Vitae</a>
+        <ul id="social-networks">
+          <li>Follow me on</li>
+          <li>
+            <a href="https://github.com/fedtti" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github" title="GitHub"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://g.dev/fedtti" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-google" title="Google for Developers"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/fedtti/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram" title="Instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/fedtti/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin" title="LinkedIn"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <footer id="footer">
+        <div class="inner">
+          <div class="left">
+            <p><span class="visually-hidden">Copyright </span>© <span id="current-year"></span> <strong>Federico Moretti</strong>. All rights reserved.</p>
+          </div>
+          <div class="right">
+            <p>Made with <i class="fa-solid fa-heart" title="Love"></i> and <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a>.</p>
+          </div>
+        </div>
+      </footer>
     </main>
+    <script src="./assets/js/app.js"></script> <!-- TODO: @fedtti -->
   </body>
 </html>
