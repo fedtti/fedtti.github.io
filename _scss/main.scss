@@ -116,7 +116,7 @@ abbr[title] {
           appearance: none;
   background-color: var(--primary-background);
   border: none;
-  color: var(--borders-and-dividers);
+  color: var(--secondary-accent);
   height: 0.5rem;
   left: 0;
   position: fixed;
@@ -128,15 +128,15 @@ abbr[title] {
   }
 
   &::-webkit-progress-value {
-    background-color: var(--borders-and-dividers);
+    background-color: var(--secondary-accent);
   }
 
   &::-moz-progress-bar {
-    background-color: var(--borders-and-dividers);
+    background-color: var(--secondary-accent);
   }
 
   &::-ms-fill {
-    background-color: var(--borders-and-dividers);
+    background-color: var(--secondary-accent);
   }
 }
 
@@ -182,7 +182,6 @@ abbr[title] {
 
     .inner {
       height: 4.8rem;
-      width: 100%;
 
       .right {
         margin-left: auto;

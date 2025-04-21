@@ -2,6 +2,7 @@ User-agent: *
 
 Disallow: /assets/css/
 Disallow: /assets/js/
+Disallow: /static/cover-letter.docx
 Disallow: /static/curriculum-vitae.docx
 Disallow: /.editorconfig
 Disallow: /404.html
