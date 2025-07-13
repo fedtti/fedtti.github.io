@@ -1,20 +1,18 @@
 {
   "name": "fedtti.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Federico Moretti AKA “fedtti”",
+  "keywords": [],
   "homepage": "https://github.com/fedtti/fedtti.github.io#readme",
   "bugs": {
     "url": "https://github.com/fedtti/fedtti.github.io/issues"
   },
+  "license": "MIT",
+  "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fedtti/fedtti.github.io.git"
   },
-  "license": "MIT",
-  "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it)",
-  "type": "module",
-  "private": true,
-  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build --mode production && cp ./dist/index.html ./dist/404.html",
@@ -25,5 +23,7 @@
     "sass": "^1.89.2",
     "typescript": "^5.8.3",
     "vite": "^7.0.4"
-  }
+  },
+  "private": true,
+  "type": "module"
 }
