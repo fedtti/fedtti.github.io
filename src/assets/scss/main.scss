@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap';
 
 :root {
   color-scheme: light dark;
@@ -154,7 +154,7 @@ body {
   color: var(--primary-background);
   display: inline-block;
   height: 3.2rem;
-  
+
   line-height: 2;
   margin-top: 2.5rem;
   padding: 0.4rem 1.2rem;
