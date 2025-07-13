@@ -1,8 +1,9 @@
 User-agent: *
 
-Disallow: /assets/css/
 Disallow: /assets/cover-letter.docx
 Disallow: /assets/curriculum-vitae.docx
+Disallow: /assets/index-*.css
+Disallow: /assets/index-*.js
 Disallow: /.editorconfig
 Disallow: /.nojekyll
 Disallow: /404.html
