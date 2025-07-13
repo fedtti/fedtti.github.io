@@ -1,5 +1,9 @@
 # Federico Moretti AKA “fedtti”
 
-> Seasoned software developer with a career spanning back to the early ’90s and over 5 years of recent hands-on experience building web solutions using HTML, CSS, and JavaScript, primarily in the BPO sector.
-Proficient in agile development frameworks, cross-functional collaboration, and stakeholder engagement.
-Known for streamlining workflows, managing project risks effectively, and aligning technical efforts with broader business strategies to drive measurable results.
+> Seasoned software developer with a career spanning back to the early ’90s
+and over 5 years of recent hands-on experience building web solutions using
+HTML, CSS, and JavaScript, primarily in the BPO sector. Proficient in agile
+development frameworks, cross-functional collaboration, and stakeholder
+engagement. Known for streamlining workflows, managing project risks
+effectively, and aligning technical efforts with broader business strategies
+to drive measurable results.
