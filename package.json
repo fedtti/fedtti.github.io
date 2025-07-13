@@ -1,0 +1,25 @@
+{
+  "name": "fedtti.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/fedtti/fedtti.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/fedtti/fedtti.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedtti/fedtti.github.io.git"
+  },
+  "license": "MIT",
+  "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it)",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.0.4"
+  }
+}
