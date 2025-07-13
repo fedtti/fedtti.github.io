@@ -1,4 +1,4 @@
-import './../scss/main.scss';
+import './assets/scss/main.scss';
 
 const savedTheme = localStorage.getItem('theme');
 const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';

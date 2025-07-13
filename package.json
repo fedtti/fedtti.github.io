@@ -13,6 +13,7 @@
   "license": "MIT",
   "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it)",
   "type": "module",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "dev": "vite",
