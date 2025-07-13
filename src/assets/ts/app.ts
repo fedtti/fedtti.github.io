@@ -1,3 +1,4 @@
+import './../scss/main.scss';
 
 const savedTheme = localStorage.getItem('theme');
 const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
@@ -10,25 +11,25 @@ const themeSwitcherIcon = document.getElementById('theme-switcher-icon');
 const loadTheme = () => {
   if (!!savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
-    themeSwitcherIcon.setAttribute('title', `Switch to the ${savedTheme === 'light' ? 'dark' : 'light'} theme`);
+    themeSwitcherIcon!.setAttribute('title', `Switch to the ${savedTheme === 'light' ? 'dark' : 'light'} theme`);
 
     if (savedTheme === 'light') {
-      themeSwitcherIcon.classList.remove('fa-moon');
-      themeSwitcherIcon.classList.add('fa-sun');
+      themeSwitcherIcon!.classList.remove('fa-moon');
+      themeSwitcherIcon!.classList.add('fa-sun');
     } else {
-      themeSwitcherIcon.classList.remove('fa-sun');
-      themeSwitcherIcon.classList.add('fa-moon');
+      themeSwitcherIcon!.classList.remove('fa-sun');
+      themeSwitcherIcon!.classList.add('fa-moon');
     }
   } else if (!!systemTheme) {
     document.documentElement.setAttribute('data-theme', systemTheme);
-    themeSwitcherIcon.setAttribute('title', `Switch to the ${systemTheme === 'light' ? 'dark' : 'light'} theme`);
+    themeSwitcherIcon!.setAttribute('title', `Switch to the ${systemTheme === 'light' ? 'dark' : 'light'} theme`);
 
     if (systemTheme === 'light') {
-      themeSwitcherIcon.classList.remove('fa-moon');
-      themeSwitcherIcon.classList.add('fa-sun');
+      themeSwitcherIcon!.classList.remove('fa-moon');
+      themeSwitcherIcon!.classList.add('fa-sun');
     } else {
-      themeSwitcherIcon.classList.remove('fa-sun');
-      themeSwitcherIcon.classList.add('fa-moon');
+      themeSwitcherIcon!.classList.remove('fa-sun');
+      themeSwitcherIcon!.classList.add('fa-moon');
     }
   }
 };
@@ -43,17 +44,17 @@ const themeSwitch = () => {
   if (currentTheme === 'light') {
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
-    themeSwitcherIcon.classList.remove('fa-sun');
-    themeSwitcherIcon.classList.add('fa-moon');
-    themeSwitcherIcon.setAttribute('title', 'Switch to the light theme');
+    themeSwitcherIcon!.classList.remove('fa-sun');
+    themeSwitcherIcon!.classList.add('fa-moon');
+    themeSwitcherIcon!.setAttribute('title', 'Switch to the light theme');
   } else {
     document.documentElement.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
-    themeSwitcherIcon.classList.remove('fa-moon');
-    themeSwitcherIcon.classList.add('fa-sun');
-    themeSwitcherIcon.setAttribute('title', 'Switch to the dark theme');
+    themeSwitcherIcon!.classList.remove('fa-moon');
+    themeSwitcherIcon!.classList.add('fa-sun');
+    themeSwitcherIcon!.setAttribute('title', 'Switch to the dark theme');
   }
 };
-themeSwitcher.addEventListener('click', themeSwitch, false);
+themeSwitcher!.addEventListener('click', themeSwitch, false);
 
-document.getElementById('current-year').innerText = new Date().getFullYear(); // Show the current year.
+document.getElementById('current-year')!.innerText = new Date().getFullYear().toString(); // Show the current year.
