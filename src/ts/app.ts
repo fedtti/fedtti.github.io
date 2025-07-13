@@ -1,14 +1,15 @@
 import './../scss/main.scss';
 
-const savedTheme = localStorage.getItem('theme');
-const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-const themeSwitcher = document.getElementById('theme-switcher');
-const themeSwitcherIcon = document.getElementById('theme-switcher-icon');
+const savedTheme: string | null = localStorage.getItem('theme');
+const systemTheme: string = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+const themeSwitcher: HTMLButtonElement | null = document.querySelector<HTMLButtonElement>('#theme-switcher');
+const themeSwitcherIcon: HTMLElement | null = document.querySelector<HTMLElement>('#theme-switcher-icon');
 
 /**
  * Load a saved theme from the local storage on page loading (fallback to system settings).
  */
-const loadTheme = () => {
+const loadTheme = (): void => {
+
   if (!!savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
     themeSwitcherIcon!.setAttribute('title', `Switch to the ${savedTheme === 'light' ? 'dark' : 'light'} theme`);
@@ -32,14 +33,16 @@ const loadTheme = () => {
       themeSwitcherIcon!.classList.add('fa-moon');
     }
   }
+
 };
+
 window.onload = loadTheme;
 
 /**
  * Switch the current theme between 'light' and 'dark' on user interaction.
  */
-const themeSwitch = () => {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
+const themeSwitch = (): void => {
+  const currentTheme: string | null = document.documentElement.getAttribute('data-theme');
 
   if (currentTheme === 'light') {
     document.documentElement.setAttribute('data-theme', 'dark');
