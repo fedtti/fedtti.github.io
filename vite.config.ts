@@ -1,5 +1,5 @@
 import type { UserConfig } from 'vite';
 
 export default {
-  base: '/'
+  base: './'
 } satisfies UserConfig;
