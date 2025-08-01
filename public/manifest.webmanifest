@@ -3,7 +3,7 @@
   "short_name": "Federico Moretti",
   "description": "Software developer with a strong foundation in programming, developed through self-directed learning from the early ’90s.",
   "start_url": "/",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#111827",
   "icons": [
