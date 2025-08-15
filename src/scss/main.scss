@@ -154,11 +154,15 @@ body {
   color: var(--primary-background);
   display: inline-block;
   height: 3.2rem;
-
   line-height: 2;
   margin-top: 2.5rem;
   padding: 0.4rem 1.2rem;
   text-decoration: none;
+
+  &:focus {
+    outline: 0.1rem dashed var(--primary-accent);
+    outline-offset: 0.2rem;
+  }
 }
 
 #hero #social-networks {
