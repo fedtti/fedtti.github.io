@@ -88,7 +88,7 @@ body {
 
 /* HEADER */
 #header {
-  margin-bottom: auto;
+  margin-block-end: auto;
   width: 100%;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 #header .inner .right {
-  margin-left: auto;
+  margin-inline-start: auto;
   padding-top: 0.8rem;
 }
 
@@ -155,29 +155,30 @@ body {
   display: inline-block;
   height: 3.2rem;
   line-height: 2;
-  margin-top: 2.5rem;
+  margin-block-start: 2.5rem;
   padding: 0.4rem 1.2rem;
   text-decoration: none;
 
-  &:focus {
+  &:focus,
+  &:focus-visible {
     outline: 0.1rem dashed var(--primary-accent);
     outline-offset: 0.2rem;
   }
 }
 
 #hero #social-networks {
-  margin-top: 5rem;
+  margin-block-start: 5rem;
 }
 
 #hero #social-networks li {
   color: var(--secondary-text);
   display: inline-block;
   list-style: none;
-  margin-left: 0.5rem;
+  margin-inline-start: 0.5rem;
 }
 
 #hero #social-networks li:first-of-type {
-  margin-left: 0;
+  margin-inline-start: 0;
 }
 
 #hero #social-networks li a {
@@ -186,7 +187,7 @@ body {
 
 /* FOOTER */
 #footer {
-  margin-top: auto;
+  margin-block-start: auto;
   width: 100%;
 }
 
@@ -233,11 +234,11 @@ body {
   /* FOOTER */
   #footer .inner {
     flex-direction: row;
-    text-align: left;
+    text-align: start;
   }
 
   #footer .inner .right {
-    margin-left: auto;
+    margin-inline-start: auto;
   }
 }
 
