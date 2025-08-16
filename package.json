@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --mode production && cp ./dist/index.html ./dist/404.html",
+    "build": "tsc && vite build --assetsDir=./ --mode production && cp ./dist/index.html ./dist/404.html",
     "preview": "vite preview"
   },
   "devDependencies": {

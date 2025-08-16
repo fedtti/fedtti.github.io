@@ -32,7 +32,9 @@ const loadTheme = (): void => {
   }
 };
 
-window.onload = loadTheme;
+window.addEventListener('load', () => {
+  loadTheme();
+}, false);
 
 /**
  * Switch the current theme between 'light' and 'dark' on user interaction.

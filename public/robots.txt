@@ -1,14 +1,11 @@
 User-agent: *
 
-Disallow: /assets/cover-letter.docx
-Disallow: /assets/curriculum-vitae.docx
-Disallow: /assets/index-*.css
-Disallow: /assets/index-*.js
+Disallow: /static/cover-letter.docx
+Disallow: /static/curriculum-vitae.docx
 Disallow: /.editorconfig
 Disallow: /.nojekyll
 Disallow: /404.html
-Disallow: /CNAME
-Disallow: /LICENSE
-Disallow: /README.md
+Disallow: /index-*.css
+Disallow: /index-*.js
 
 Sitemap: https://federicomoretti.it/sitemap.xml
