@@ -41,13 +41,14 @@ body {
 
 html {
   font-size: 62.5%;
-}
+  scroll-behavior: smooth;
 
-body {
-  background-color: var(--primary-background);
-  color: var(--primary-text);
-  font: normal 400 1rem/1 'IBM Plex Sans', sans-serif;
-  z-index: 0;
+  body {
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+    font: normal 400 1rem/1 'IBM Plex Sans', sans-serif;
+    z-index: 0;
+  }
 }
 
 #skip {
@@ -61,17 +62,21 @@ body {
   position: fixed;
   text-decoration: none;
   z-index: 10000;
+
+  &:active,
+  &:focus {
+    border: 0.25rem solid var(--borders-and-dividers);
+    left: 0.5rem;
+    top: 0.5rem;
+  }
+
+  &:focus,
+  &:focus-visible {
+
+  }
 }
 
-#skip:active,
-#skip:focus {
-  border: 0.25rem solid var(--borders-and-dividers);
-  left: 0.5rem;
-  top: 0.5rem;
-}
-
-/* CONTENTS */
-#contents {
+#wrapper {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -96,17 +101,17 @@ body {
   height: 4.8rem;
 }
 
-#header .inner .right {
+#header .inner .end {
   margin-inline-start: auto;
   padding-top: 0.8rem;
 }
 
-#header .inner .right li {
+#header .inner .end li {
   display: inline-block;
   list-style: none;
 }
 
-#header .inner .right button {
+#header .inner .end button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -121,9 +126,9 @@ body {
   transition: border-color 0.5s linear;
 }
 
-#header .inner .right button:active,
-#header .inner .right button:focus,
-#header .inner .right button:hover {
+#header .inner .end button:active,
+#header .inner .end button:focus,
+#header .inner .end button:hover {
   border: 0.25rem solid var(--borders-and-dividers);
 }
 
@@ -217,8 +222,7 @@ body {
 }
 
 @media screen and (min-width: 576px) {
-  /* CONTENTS */
-  #contents {
+  #wrapper {
     width: 54rem;
   }
 
@@ -243,8 +247,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  /* CONTENTS */
-  #contents {
+  #wrapper {
     width: 72rem;
   }
 
@@ -259,8 +262,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  /* CONTENTS */
-  #contents {
+  #wrapper {
     width: 96rem;
   }
 
@@ -275,8 +277,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  /* CONTENTS */
-  #contents {
+  #wrapper {
     width: 114rem;
   }
 
@@ -291,8 +292,7 @@ body {
 }
 
 @media screen and (min-width: 1400px) {
-  /* CONTENTS */
-  #contents {
+  #wrapper {
     width: 132rem;
   }
 

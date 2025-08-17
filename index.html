@@ -35,12 +35,12 @@
     </script>
   </head>
   <body itemscope itemtype="https://schema.org/WebPage">
-    <a id="skip" class="visually-hidden-focusable" href="#contents">Skip to contents <span aria-hidden="true">↓</span></a>
-    <main id="contents" itemprop="mainContentOfPage">
+    <a id="skip" class="visually-hidden-focusable" href="#contents">Skip to contents<span aria-hidden="true"> ↓</span></a>
+    <div id="wrapper">
       <header id="header">
         <div class="inner">
-          <div class="left"></div>
-          <div class="right">
+          <div class="start"></div>
+          <div class="end">
             <ul>
               <li>
                 <button id="theme-switcher">
@@ -51,50 +51,52 @@
           </div>
         </div>
       </header>
-      <section id="hero">
-        <h1>Federico <wbr>Moretti</h1>
-        <p>Software <wbr>Developer</p>
-        <a href="/static/curriculum-vitae.pdf" role="button" download="curriculum-vitae">Curriculum Vitae</a>
-        <ul id="social-networks">
-          <li>Follow me on</li>
-          <li>
-            <a href="https://bsky.app/profile/fedtti.bsky.social" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-bluesky" title="Bluesky"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://g.dev/fedtti" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-google" title="Google Developer Profile"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/fedtti" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-dev" title="DEV"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/fedtti" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github" title="GitHub"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/fedtti/" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-linkedin" title="LinkedIn"></i>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <main id="contents" itemprop="mainContentOfPage">
+        <section id="hero">
+          <h1>Federico <wbr>Moretti</h1>
+          <p>Software <wbr>Developer</p>
+          <a href="/static/curriculum-vitae.pdf" role="button" download="curriculum-vitae">Curriculum Vitae</a>
+          <ul id="social-networks">
+            <li>Follow me on</li>
+            <li>
+              <a href="https://bsky.app/profile/fedtti.bsky.social" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-bluesky" title="Bluesky"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://g.dev/fedtti" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-google" title="Google Developer Profile"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://dev.to/fedtti" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-dev" title="DEV"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/fedtti" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github" title="GitHub"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/fedtti/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin" title="LinkedIn"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
       <footer id="footer">
         <div class="inner">
           <div class="left">
             <p><span class="visually-hidden">Copyright </span>© <span id="current-year"></span> <strong>Federico Moretti</strong>. All rights reserved.</p>
           </div>
           <div class="right">
-            <p>Made with <i class="fa-solid fa-heart" title="Love"></i>, <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">Vite</a>, and <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a>.</p>
+            <p>Made with <i class="fa-solid fa-heart" title="Love"></i> and <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> on <a href="https://github.com/fedtti/fedtti.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
           </div>
         </div>
       </footer>
-    </main>
+    </div>
     <script type="module" src="/src/ts/app.ts"></script>
   </body>
 </html>
