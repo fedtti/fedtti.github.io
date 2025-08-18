@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.0.13",
+    "@types/serviceworker": "^0.0.150",
     "sass": "^1.89.2",
     "typescript": "^5.8.3",
     "vite": "^7.1.2"

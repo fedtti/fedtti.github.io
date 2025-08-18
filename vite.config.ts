@@ -8,11 +8,16 @@ export default {
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        index: 'index.html',
         'assets/css/style': 'src/scss/style.scss',
         'assets/js/app': 'src/ts/app.ts',
-        'assets/js/sw': 'src/ts/sw.ts',
+        index: 'index.html',
+        sw: 'src/ts/sw.ts',
       },
+      output: [
+        {
+          entryFileNames: '[name].js',
+        }
+      ]
     },
   },
 } satisfies UserConfig;
