@@ -100,10 +100,10 @@
     <script type="module" src="/src/ts/app.ts"></script>
     <script>
       window.addEventListener('load', () => {
-        if (!!'serviceWorker' in navigator) {
+        if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('/sw.js')
-            .then(() => console.info())
-            .catch(error => console.error());
+            .then(() => console.info('It works'))
+            .catch(error => console.error('It doesnt work'));
         } else {
           console.warn('Service Workers are not supported in this browser.');
         }
