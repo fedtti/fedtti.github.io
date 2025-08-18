@@ -1,4 +1,4 @@
-import './../scss/main.scss';
+import './../scss/style.scss';
 
 const savedTheme: string | null = localStorage.getItem('theme');
 const systemTheme: string = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
@@ -31,7 +31,6 @@ const loadTheme = (): void => {
     }
   }
 };
-
 window.addEventListener('load', () => {
   loadTheme();
 }, false);
@@ -55,6 +54,6 @@ const themeSwitch = (): void => {
     themeSwitcherIcon!.setAttribute('title', 'Switch to the dark theme');
   }
 };
-
 themeSwitcher!.addEventListener('click', themeSwitch, false);
+
 document.querySelector<HTMLSpanElement>('#current-year')!.innerText = new Date().getFullYear().toString(); // Show the current year.
