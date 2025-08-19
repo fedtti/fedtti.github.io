@@ -205,27 +205,29 @@ html {
 #footer {
   margin-block-start: auto;
   width: 100%;
-}
 
-#footer .inner {
-  color: var(--secondary-text);
-  flex-direction: column;
-  row-gap: 1.5rem;
-  text-align: center;
-}
+  .inner {
+    color: var(--secondary-text);
+    flex-direction: column;
+    row-gap: 1.5rem;
+    text-align: center;
 
-#footer .inner p {
-  line-height: 1.5;
-}
+    p {
+      line-height: 1.5;
+    }
 
-#footer .inner .right i {
-  color: var(--error);
-  font-size: inherit;
-}
+    .end {
+      i {
+        color: var(--error);
+        font-size: inherit;
+      }
 
-#footer .inner .right a {
-  color: var(--links);
-  text-decoration: none;
+      a {
+        color: var(--links);
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .inner {
@@ -252,7 +254,7 @@ html {
     text-align: start;
   }
 
-  #footer .inner .right {
+  #footer .inner .end {
     margin-inline-start: auto;
   }
 }

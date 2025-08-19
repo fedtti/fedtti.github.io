@@ -70,7 +70,7 @@
             </li>
             <li>
               <a href="https://dev.to/fedtti" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-dev" title="DEV"></i>
+                <i class="fa-brands fa-dev" title="DEV Community"></i>
               </a>
             </li>
             <li>
@@ -88,10 +88,10 @@
       </main>
       <footer id="footer">
         <div class="inner">
-          <div class="left">
+          <div class="start">
             <p><span class="visually-hidden">Copyright </span>© <span id="current-year"></span> <strong>Federico Moretti</strong>. All rights reserved.</p>
           </div>
-          <div class="right">
+          <div class="end">
             <p>Made with <i class="fa-solid fa-heart" title="Love"></i> and <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> on <a href="https://github.com/fedtti/fedtti.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
           </div>
         </div>
@@ -102,10 +102,10 @@
       window.addEventListener('load', () => {
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('/sw.js')
-            .then(() => console.info('It works'))
-            .catch(error => console.error('It doesnt work'));
+            .then(() => console.info('Service worker registered.'))
+            .catch(error => console.error(`Service worker failed to register:\n${error}`));
         } else {
-          console.warn('Service Workers are not supported in this browser.');
+          console.warn('Service workers are not supported in this browser.');
         }
       });
     </script>
