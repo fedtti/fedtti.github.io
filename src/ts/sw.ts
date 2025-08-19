@@ -59,17 +59,16 @@ self.addEventListener('fetch', (event: FetchEvent) => {
           if (!!cachedResponse) {
             return cachedResponse;
           }
-
           return caches
-                   .open('current')
-                   .then(cache => {
-                     return fetch(event.request)
-                              .then(response => {
-                                return cache
-                                         .put(event.request, response.clone())
-                                         .then(() =>  response);
-                              });
-                   });
+            .open('current')
+            .then(cache => {
+              return fetch(event.request)
+                .then(response => {
+                  return cache
+                    .put(event.request, response.clone())
+                    .then(() =>  response);
+                });
+            });
         })
     );
   }
