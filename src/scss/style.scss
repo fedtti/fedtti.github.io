@@ -135,96 +135,98 @@ html {
       }
     }
   }
-}
 
-/* HERO */
-#hero h1 {
-  font-family: 'IBM Plex Serif', serif;
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0;
-  text-transform: lowercase;
-}
-
-#hero h1::after {
-  color: var(--secondary-accent);
-  content: '.';
-}
-
-#hero p {
-  color: var(--secondary-text);
-  margin-block-start: 5rem;
-
-  &:first-of-type {
-    display: block;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    margin-block-start: 0;
-  }
-}
-
-#hero a[role="button"] {
-  background-color: var(--secondary-accent);
-  border-radius: 0.5rem;
-  color: var(--primary-background);
-  display: inline-block;
-  height: 3.2rem;
-  line-height: 2;
-  margin-block-start: 2.5rem;
-  padding: 0.4rem 1.2rem;
-  text-decoration: none;
-
-  &:focus,
-  &:focus-visible {
-    outline: 0.1rem dashed var(--primary-accent);
-    outline-offset: 0.2rem;
-  }
-}
-
-#hero #social-networks {
-  margin-block-start: 1rem;
-}
-
-#hero #social-networks li {
-  color: var(--secondary-text);
-  display: inline-block;
-  list-style: none;
-  margin-inline-start: 0.5rem;
-}
-
-#hero #social-networks li:first-of-type {
-  margin-inline-start: 0;
-}
-
-#hero #social-networks li a {
-  color: var(--links);
- }
-
-/* FOOTER */
-#footer {
-  margin-block-start: auto;
-  width: 100%;
-
-  .inner {
-    color: var(--secondary-text);
-    flex-direction: column;
-    row-gap: 1.5rem;
-    text-align: center;
-
-    p {
+  /* HERO */
+  #hero {
+    h1 {
+      font-family: 'IBM Plex Serif', serif;
+      font-size: 3.2rem;
+      font-weight: 400;
       line-height: 1.5;
+      margin: 0;
+      text-transform: lowercase;
+
+      &::after {
+        color: var(--secondary-accent);
+        content: '.';
+      }
     }
 
-    .end {
-      i {
-        color: var(--error);
-        font-size: inherit;
+    p {
+      color: var(--secondary-text);
+      margin-block-start: 5rem;
+
+      &:first-of-type {
+        display: block;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin-block-start: 0;
+      }
+    }
+
+    a[role="button"] {
+      background-color: var(--secondary-accent);
+      border-radius: 0.5rem;
+      color: var(--primary-background);
+      display: inline-block;
+      height: 3.2rem;
+      line-height: 2;
+      margin-block-start: 2.5rem;
+      padding: 0.4rem 1.2rem;
+      text-decoration: none;
+
+      &:focus,
+      &:focus-visible {
+        outline: 0.1rem dashed var(--primary-accent);
+        outline-offset: 0.2rem;
+      }
+    }
+
+    #social-networks {
+      margin-block-start: 1rem;
+
+      li {
+        color: var(--secondary-text);
+        display: inline-block;
+        list-style: none;
+        margin-inline-start: 0.5rem;
+
+        &:first-of-type {
+          margin-inline-start: 0;
+        }
+
+        a {
+          color: var(--links);
+        }
+      }
+    }
+  }
+
+  /* FOOTER */
+  #footer {
+    margin-block-start: auto;
+    width: 100%;
+
+    .inner {
+      color: var(--secondary-text);
+      flex-direction: column;
+      row-gap: 1.5rem;
+      text-align: center;
+
+      p {
+        line-height: 1.5;
       }
 
-      a {
-        color: var(--links);
-        text-decoration: none;
+      .end {
+        i {
+          color: var(--error);
+          font-size: inherit;
+        }
+
+        a {
+          color: var(--links);
+          text-decoration: none;
+        }
       }
     }
   }
@@ -237,25 +239,29 @@ html {
 @media screen and (min-width: 576px) {
   #wrapper {
     width: 54rem;
-  }
 
-  /* HERO */
-  #hero h1 {
-    font-size: 4rem;
-  }
+    /* HERO */
+    #hero {
+      h1 {
+        font-size: 4rem;
+      }
 
-  #hero p:first-of-type {
-    font-size: 2rem;
-  }
+      p:first-of-type {
+        font-size: 2rem;
+      }
+    }
 
-  /* FOOTER */
-  #footer .inner {
-    flex-direction: row;
-    text-align: start;
-  }
+    /* FOOTER */
+    #footer {
+      .inner {
+        flex-direction: row;
+        text-align: start;
 
-  #footer .inner .end {
-    margin-inline-start: auto;
+        .end {
+          margin-inline-start: auto;
+        }
+      }
+    }
   }
 }
 
