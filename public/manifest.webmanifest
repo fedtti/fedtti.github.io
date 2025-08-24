@@ -4,8 +4,6 @@
   "description": "Software developer with a strong foundation in programming, developed through self-directed learning from the early ’90s.",
   "start_url": "/",
   "display": "fullscreen",
-  "background_color": "#ffffff",
-  "theme_color": "#111827",
   "icons": [
     {
       "src": "/assets/img/icon-192x192.png",
