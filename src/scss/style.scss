@@ -61,6 +61,7 @@ html {
   padding: 0 0.5rem;
   position: fixed;
   text-decoration: none;
+  transition: top 0.5s linear;
   z-index: 10000;
 
   &:active,
