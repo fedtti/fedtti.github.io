@@ -1,9 +1,1 @@
 # Federico Moretti AKA “fedtti”
-
-> Software developer with a strong foundation in programming, developed through
-self-directed learning from the early ’90s. Brings over 5 years of recent
-experience delivering web-based solutions using HTML, CSS, and JavaScript,
-primarily in the BPO sector. Demonstrates proficiency in agile development
-methodologies, cross-functional collaboration, and stakeholder engagement.
-Focused on streamlining workflows, mitigating project risks, and aligning
-technical execution with broader business goals to drive measurable outcomes.

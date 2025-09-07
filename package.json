@@ -16,11 +16,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build --mode production && cp ./dist/index.html ./dist/404.html",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@types/node": "^24.0.13",
     "@types/serviceworker": "^0.0.150",
+    "husky": "^9.1.7",
     "sass": "^1.89.2",
     "typescript": "^5.8.3",
     "vite": "^7.1.2"
