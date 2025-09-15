@@ -14,10 +14,10 @@
     "url": "git+https://github.com/fedtti/fedtti.github.io.git"
   },
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build --mode production && cp ./dist/index.html ./dist/404.html",
-    "preview": "vite preview",
-    "prepare": "husky"
+    "dev": "vite",
+    "prepare": "husky",
+    "preview": "tsc && vite build && cp ./dist/index.html ./dist/404.html && vite preview"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",

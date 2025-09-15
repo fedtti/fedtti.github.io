@@ -20,5 +20,9 @@ export default {
         }
       ]
     },
+    watch: {},
+  },
+  preview: {
+    open: true,
   },
 } satisfies UserConfig;
