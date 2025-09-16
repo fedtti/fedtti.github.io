@@ -20,7 +20,6 @@ export default {
         }
       ]
     },
-    watch: {},
   },
   preview: {
     open: true,
