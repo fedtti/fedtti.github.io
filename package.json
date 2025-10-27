@@ -16,6 +16,7 @@
   "scripts": {
     "build": "tsc && vite build --mode production && cp ./dist/index.html ./dist/404.html",
     "dev": "vite",
+    "postinstall": "npx husky init && rm .husky/pre-commit",
     "prepare": "husky",
     "preview": "tsc && vite build && cp ./dist/index.html ./dist/404.html && vite preview"
   },
