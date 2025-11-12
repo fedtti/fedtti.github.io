@@ -14,11 +14,11 @@
     "url": "git+https://github.com/fedtti/fedtti.github.io.git"
   },
   "scripts": {
-    "build": "tsc && vite build --mode production && cp ./dist/index.html ./dist/404.html",
+    "build": "tsc -b && vite build --mode production && shx cp ./dist/index.html ./dist/404.html",
     "dev": "vite",
-    "postinstall": "npx husky init && rm .husky/pre-commit",
+    "postinstall": "husky init && shx rm .husky/pre-commit && shx echo 'npx --no -- commitlint --edit $1' > .husky/commit-msg",
     "prepare": "husky",
-    "preview": "tsc && vite build && cp ./dist/index.html ./dist/404.html && vite preview"
+    "preview": "tsc -b && vite build && shx cp ./dist/index.html ./dist/404.html && vite preview"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
@@ -27,6 +27,7 @@
     "@types/serviceworker": "^0.0.150",
     "husky": "^9.1.7",
     "sass": "^1.89.2",
+    "shx": "^0.4.0",
     "typescript": "^5.8.3",
     "vite": "^7.1.5"
   },
