@@ -1,36 +1,43 @@
 {
-  "name": "@fedtti/fedtti.github.io",
-  "version": "1.0.0",
-  "description": "Federico Moretti AKA “fedtti”",
-  "keywords": [],
-  "homepage": "https://github.com/fedtti/fedtti.github.io#readme",
-  "bugs": {
-    "url": "https://github.com/fedtti/fedtti.github.io/issues"
-  },
-  "license": "MIT",
-  "author": "Federico Moretti <hello@federicomoretti.it> (https://federicomoretti.it)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fedtti/fedtti.github.io.git"
-  },
+  "name": "fedtti.github.io",
+  "version": "0.0.0",
   "scripts": {
-    "build": "tsc -b && vite build --mode production && shx cp ./dist/index.html ./dist/404.html",
-    "dev": "vite",
-    "postinstall": "husky init && shx rm .husky/pre-commit && shx echo 'npx --no -- commitlint --edit $1' > .husky/commit-msg",
-    "prepare": "husky",
-    "preview": "tsc -b && vite build && shx cp ./dist/index.html ./dist/404.html && vite preview"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
-  "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
-    "@types/node": "^24.0.13",
-    "@types/serviceworker": "^0.0.150",
-    "husky": "^9.1.7",
-    "sass": "^1.89.2",
-    "shx": "^0.4.0",
-    "typescript": "^5.8.3",
-    "vite": "^7.1.5"
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
   },
   "private": true,
-  "type": "module"
+  "packageManager": "npm@11.6.2",
+  "dependencies": {
+    "@angular/common": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/forms": "^21.0.0",
+    "@angular/platform-browser": "^21.0.0",
+    "@angular/router": "^21.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.0.4",
+    "@angular/cli": "^21.0.4",
+    "@angular/compiler-cli": "^21.0.0",
+    "jsdom": "^27.1.0",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
+  }
 }
