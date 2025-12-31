@@ -1,0 +1,25 @@
+#hero {
+  .inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+      font-family: 'IBM Plex Serif', serif;
+      font-weight: 700;
+      line-height: 1.5;
+      text-transform: lowercase;
+
+      &::after {
+        content: '.';
+      }
+    }
+
+    p {
+
+    }
+  }
+}

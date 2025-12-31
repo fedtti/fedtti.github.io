@@ -2,7 +2,6 @@
 
 :root {
   color-scheme: light dark;
-
 }
 
 * {
@@ -14,9 +13,11 @@
 html,
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 body {
   font: 400 1rem/1 'IBM Plex Sans', sans-serif;
+  scroll-behavior: smooth;
+  z-index: 0;
 }
