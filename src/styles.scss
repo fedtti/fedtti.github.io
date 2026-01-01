@@ -12,12 +12,16 @@
 
 html,
 body {
-  width: 100%;
   min-height: 100%;
+  width: 100%;
 }
 
-body {
-  font: 400 1rem/1 'IBM Plex Sans', sans-serif;
+html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
-  z-index: 0;
+
+  body {
+    font: 400 1rem/1 'IBM Plex Sans', sans-serif;
+    z-index: 0;
+  }
 }
