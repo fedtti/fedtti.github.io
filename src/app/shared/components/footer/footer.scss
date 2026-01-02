@@ -1,5 +1,9 @@
 /* FOOTER */
 #footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+
   .inner {
     align-items: center;
     display: flex;
