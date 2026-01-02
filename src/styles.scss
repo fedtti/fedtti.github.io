@@ -1,13 +1,20 @@
 @import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap';
 
 :root {
-  color-scheme: light dark;
+              color-scheme: light dark;
+      --primary-background: white;
 
+            --primary-text: #111827;
+          --secondary-text: #4b5563;
+
+          --primary-accent: #2563eb;
+        --secondary-accent: #059669;
+  --secondary-accent-hover: #047857;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    
+
   }
 }
 
@@ -28,6 +35,8 @@ html {
   scroll-behavior: smooth;
 
   body {
+    background-color: var(--primary-background);
+    color: var(--primary-text);
     font: 400 1rem/1 'IBM Plex Sans', sans-serif;
     z-index: 0;
   }

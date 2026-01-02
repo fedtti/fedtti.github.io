@@ -8,19 +8,44 @@
     justify-content: center;
     width: 100%;
 
-    h1 {
+    #name {
       font-family: 'IBM Plex Serif', serif;
+      font-size: 3.2rem;
       font-weight: 700;
       line-height: 1.5;
       text-transform: lowercase;
 
       &::after {
+        color: var(--primary-accent);
         content: '.';
       }
     }
 
-    p {
+    #role {
+      color: var(--secondary-text);
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
 
+    a[role="button"] {
+      background-color: var(--secondary-accent);
+      border-bottom: 0.2rem solid var(--secondary-accent-hover);
+      border-radius: 0.5rem;
+      color: var(--primary-background);
+      display: inline-block;
+      font-size: 1.2rem;
+      height: 3.2rem;
+      line-height: 2;
+      margin-block-start: 2.5rem;
+      padding: 0.4rem 1.2rem;
+      text-decoration: none;
+      transition: background-color 0.5s linear;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: var(--secondary-accent-hover);
+      }
     }
   }
 }
