@@ -9,12 +9,19 @@
 
           --primary-accent: #2563eb;
         --secondary-accent: #059669;
-  --secondary-accent-hover: #047857;
+        --secondary-accent-hover: #047857;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+        --primary-background: #0f172a;
 
+              --primary-text: #f9fafb;
+            --secondary-text: #cbd5e1;
+
+            --primary-accent: #3b82f6;
+          --secondary-accent: #22c55e;
+    --secondary-accent-hover: #4ade80;
   }
 }
 
