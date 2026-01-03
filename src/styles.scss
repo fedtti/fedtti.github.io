@@ -9,7 +9,11 @@
 
           --primary-accent: #2563eb;
         --secondary-accent: #059669;
-        --secondary-accent-hover: #047857;
+  --secondary-accent-hover: #047857;
+
+                   --error: #dc2626;
+
+              --focus-ring: #2563eb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +26,10 @@
             --primary-accent: #3b82f6;
           --secondary-accent: #22c55e;
     --secondary-accent-hover: #4ade80;
+
+                     --error: #f87171;
+
+                --focus-ring: #60a5fa;
   }
 }
 

@@ -1,7 +1,15 @@
 <section id="hero">
   <div class="inner">
     <h1 id="name">{{ name }}</h1>
-    <p id="role">{{ role }}</p>
+    <span id="role">{{ role }}</span>
     <a href="static/curriculum-vitae.pdf" role="button" download="curriculum-vitae">Curriculum Vitae</a>
+    <p>Follow me on:</p>
+    <ul id="social-networks">
+      <li>
+        <a href="https://github.com/fedtti" target="_blank" rel="noopener noreferrer">
+          <fa-icon [icon]="['fab', 'github']"></fa-icon>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
