@@ -5,6 +5,6 @@ import { DOCUMENT } from '@angular/common';
   providedIn: 'root',
 })
 export class Theme {
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(@Inject(DOCUMENT) private readonly document: Document) {}
 
 }
