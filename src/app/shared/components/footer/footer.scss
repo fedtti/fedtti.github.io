@@ -3,6 +3,7 @@
   bottom: 0;
   left: 0;
   margin-block: 1.5rem;
+  margin-inline: auto;
   padding-inline: 1.5rem;
   position: fixed;
   right: 0;
@@ -33,5 +34,49 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  /* FOOTER */
+  #footer {
+    width: 54rem;
+
+    .inner {
+      flex-direction: row;
+      text-align: start;
+
+      .end {
+        margin-inline-start: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* FOOTER */
+  #footer {
+    width: 72rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* FOOTER */
+  #footer {
+    width: 96rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* FOOTER */
+  #footer {
+    width: 114rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* FOOTER */
+  #footer {
+    width: 132rem;
   }
 }
