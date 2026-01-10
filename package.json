@@ -2,6 +2,8 @@
   "name": "@fedtti/fedtti.github.io",
   "version": "2.0.0",
   "scripts": {
+    "postinstall": "husky init && shx rm .husky/pre-commit && shx echo 'npx --no -- commitlint --edit $1' > .husky/commit-msg",
+    "prepare": "husky",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -39,8 +41,13 @@
     "@angular/build": "^21.0.4",
     "@angular/cli": "^21.0.4",
     "@angular/compiler-cli": "^21.0.6",
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "husky": "^9.1.7",
     "jsdom": "^27.4.0",
+    "shx": "^0.4.0",
     "typescript": "~5.9.3",
     "vitest": "^4.0.16"
-  }
+  },
+  "type": "module"
 }
