@@ -28,8 +28,36 @@
     }
 
     #social-networks {
+      margin-block-start: 1rem;
+
       li {
+        display: inline-block;
+        font-size: 1.6rem;
         list-style: none;
+        margin-inline-start: 0.5rem;
+
+        &:first-child {
+          margin-inline-start: 0;
+        }
+
+        a {
+          align-items: center;
+          color: var(--links);
+          display: flex;
+          height: 2.4rem;
+          justify-content: center;
+          transition: color 0.5s linear;
+          width: 2.4rem;
+
+          &:hover {
+            color: var(--links-hover);
+          }
+
+          svg {
+            height: 100%;
+            width: 100%;
+          }
+        }
       }
     }
 
