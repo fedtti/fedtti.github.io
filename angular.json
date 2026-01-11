@@ -71,6 +71,14 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "name": "Federico Moretti",
+            "email": "hello@federicomoretti.it",
+            "cname": "federicomoretti.it"
+          }
         }
       }
     }
