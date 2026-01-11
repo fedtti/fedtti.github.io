@@ -1,0 +1,82 @@
+/* FOOTER */
+#footer {
+  bottom: 0;
+  left: 0;
+  margin-block: 1.5rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  position: fixed;
+  right: 0;
+  width: 100%;
+
+  .inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      color: var(--secondary-text);
+      font-size: 1.2rem;
+      line-height: 1.5;
+
+      .ng-fa-icon {
+        color: var(--error);
+      }
+
+      a {
+        color: var(--links);
+        text-decoration: none;
+        transition: color 0.5s linear;
+
+        &:hover {
+          color: var(--links-hover);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  /* FOOTER */
+  #footer {
+    width: 54rem;
+
+    .inner {
+      flex-direction: row;
+      text-align: start;
+
+      .end {
+        margin-inline-start: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* FOOTER */
+  #footer {
+    width: 72rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* FOOTER */
+  #footer {
+    width: 96rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* FOOTER */
+  #footer {
+    width: 114rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* FOOTER */
+  #footer {
+    width: 132rem;
+  }
+}

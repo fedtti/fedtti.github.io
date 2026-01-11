@@ -1,0 +1,39 @@
+/* HEADER */
+#header {
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 576px) {
+  /* HEADER */
+  #header {
+    width: 54rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* HEADER */
+  #header {
+    width: 72rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* HEADER */
+  #header {
+    width: 96rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* HEADER */
+  #header {
+    width: 114rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* HEADER */
+  #header {
+    width: 132rem;
+  }
+}
