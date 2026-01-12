@@ -12,7 +12,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
-export class Footer {
+export class FooterComponent {
   @Input() name!: string;
   protected readonly year: number = new Date().getFullYear();
 

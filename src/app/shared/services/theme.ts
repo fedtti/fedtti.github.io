@@ -4,7 +4,7 @@ import { DOCUMENT } from '@angular/common';
 @Injectable({
   providedIn: 'root',
 })
-export class Theme {
+export class ThemeService {
   constructor(@Inject(DOCUMENT) private readonly document: Document) {}
 
   private theme: 'system' | 'light' | 'dark' = 'system';

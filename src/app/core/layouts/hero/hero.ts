@@ -18,7 +18,7 @@ import {
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
-export class Hero {
+export class HeroComponent {
   @Input() name!: string;
   @Input() role!: string;
 
