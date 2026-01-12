@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { Hero } from '../../layout/hero/hero';
+import { HeroComponent } from '../../layouts/hero/hero';
 
 @Component({
   selector: 'app-home',
   imports: [
-    Hero
+    HeroComponent
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
-export class Home {
+export class HomeComponent {
   protected readonly name: string = 'Federico Moretti';
   protected readonly role: string = 'Software Developer';
 }
