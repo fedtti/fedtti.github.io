@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ThemeComponent } from './theme/theme';
 import { ThemeService } from '../../services/theme';
 
@@ -9,5 +9,7 @@ import { ThemeService } from '../../services/theme';
   styleUrl: './header.scss'
 })
 export class HeaderComponent {
+  protected readonly themeService = inject(ThemeService);
+
 
 }
