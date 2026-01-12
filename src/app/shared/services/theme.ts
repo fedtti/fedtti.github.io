@@ -33,7 +33,22 @@ export class ThemeService {
         localStorage.setItem('theme', 'dark');
         break;
     }
-    this.theme.set(theme);
+    this.theme.update(() => theme);
+  }
+
+  toggleTheme(): void {
+    const currentTheme: 'system' | 'light' | 'dark' = this.theme();
+    switch (currentTheme) {
+      case 'system':
+        typeof window.matchMedia !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches ? this.setTheme('light') : this.setTheme('dark');
+        break;
+      case 'light':
+        this.setTheme('dark');
+        break;
+      case 'dark':
+        this.setTheme('light');
+        break;
+    }
   }
 
   savedTheme(): void {
