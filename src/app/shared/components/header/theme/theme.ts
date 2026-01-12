@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ThemeService } from '../../../services/theme';
 
 @Component({
   selector: 'app-theme',
-  imports: [],
   templateUrl: './theme.html',
   styleUrl: './theme.scss',
 })
 export class ThemeComponent {
+  protected readonly themeService = inject(ThemeService);
 
 }
