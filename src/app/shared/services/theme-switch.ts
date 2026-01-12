@@ -4,7 +4,14 @@ import { DOCUMENT } from '@angular/common';
 @Injectable({
   providedIn: 'root',
 })
-export class Theme {
+export class ThemeSwitch {
   constructor(@Inject(DOCUMENT) private readonly document: Document) {}
+
+  private theme: 'system' | 'light' | 'dark' = 'system';
+
+  getTheme(): 'system' | 'light' | 'dark' {
+    return this.theme;
+  }
+
 
 }
