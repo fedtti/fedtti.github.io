@@ -1,9 +1,9 @@
 <button (click)="themeService.toggleTheme()">
-@if (theme() === 'system') {
-  <fa-icon [icon]="['fas', 'circle-half-stroke']" title="System"></fa-icon>
-} @else if (theme() === 'light') {
-  <fa-icon [icon]="['fas', 'sun']" title="Light"></fa-icon>
-} @else {
-  <fa-icon [icon]="['fas', 'moon']" title="Dark"></fa-icon>
-}
+  @if (theme() === 'system') {
+    <fa-icon [icon]="['fas', 'circle-half-stroke']" title="System"></fa-icon>
+  } @else if (theme() === 'light') {
+    <fa-icon [icon]="['fas', 'sun']" title="Light"></fa-icon>
+  } @else {
+    <fa-icon [icon]="['fas', 'moon']" title="Dark"></fa-icon>
+  }
 </button>

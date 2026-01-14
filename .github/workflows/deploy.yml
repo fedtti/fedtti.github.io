@@ -1,10 +1,8 @@
-name:
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [
-      'main'
-    ]
+    branches: [ 'main' ]
 
 jobs:
   build:
@@ -20,7 +18,7 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Deploy to gh pages
+      - name: Deploy
         run: npm run deploy
         env:
           CI: true
