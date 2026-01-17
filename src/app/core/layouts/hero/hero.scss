@@ -52,6 +52,8 @@
           transition: color 0.5s linear;
           width: 2.4rem;
 
+          &:active,
+          &:focus,
           &:hover {
             color: var(--links-hover);
           }

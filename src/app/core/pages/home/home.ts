@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { HeroComponent } from '../../layouts/hero/hero';
+import { AboutComponent } from '../../layouts/about/about';
 
 @Component({
   selector: 'app-home',
   imports: [
-    HeroComponent
+    HeroComponent,
+    AboutComponent
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',
