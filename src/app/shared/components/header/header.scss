@@ -1,11 +1,12 @@
 /* HEADER */
 #header {
-  left: 0;
   padding-block: 1.5rem;
   padding-inline: 1.5rem;
   position: fixed;
-  right: 0;
-  top: 0;
+  inset-block-end: auto;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inset-inline-start: 0;
   width: 100%;
   z-index: 100;
 
@@ -13,9 +14,7 @@
     display: flex;
     margin-inline: auto;
 
-    .start {
-
-    }
+    .start { }
 
     .end {
       margin-inline-start: auto;

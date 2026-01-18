@@ -4,9 +4,10 @@ main {
   /* MENU */
   #menu {
     position: fixed;
-    right: auto;
-    top: 50%;
-    left: 0;
+    inset-block-end: auto;
+    inset-block-start: 50%;
+    inset-inline-end: auto;
+    inset-inline-start: 0;
     z-index: 100;
 
     .active {
