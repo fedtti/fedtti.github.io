@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { GravatarService } from './gravatar';
+import { ProfileService } from './profile';
 
-describe('GravatarService', () => {
-  let service: GravatarService;
+describe('ProfileService', () => {
+  let service: ProfileService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(GravatarService);
+    service = TestBed.inject(ProfileService);
   });
 
   it('should be created', () => {
