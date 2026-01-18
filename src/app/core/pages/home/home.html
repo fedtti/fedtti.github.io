@@ -1,4 +1,5 @@
 <main itemprop="mainContentOfPage">
+  <!-- MENU -->
   <aside id="menu">
     <ol>
       <li>
@@ -8,14 +9,15 @@
       </li>
       <li>
         <a href="#about">
-          <fa-icon [icon]="['fas', 'circle']"></fa-icon>
+          <fa-icon [icon]="['fas', 'circle']" title="About"></fa-icon>
         </a>
       </li>
     </ol>
   </aside>
   <app-hero
-    [name]="name"
-    [role]="role"
+    [name]="profile().name"
+    [role]="profile().role"
   />
+  <!-- ABOUT -->
   <app-about />
 </main>
