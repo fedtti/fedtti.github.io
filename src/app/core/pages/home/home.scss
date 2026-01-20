@@ -5,13 +5,28 @@ main {
   #menu {
     position: fixed;
     inset-block-end: auto;
-    inset-block-start: 50%;
+    inset-block-start: calc(50% - 2.4rem); // TODO: @fedtti - Calculate 50% of the height, minus the half of the menu’s height.
     inset-inline-end: auto;
-    inset-inline-start: 0;
+    inset-inline-start: 1.5rem;
     z-index: 100;
 
-    .active {
-      font-size: 1.4rem;
+    ol {
+      li {
+        list-style: none;
+
+        a {
+          align-items: center;
+          display: flex;
+          height: 2.4rem;
+          justify-content: center;
+          transition: font-size 0.5s linear;
+          width: 2.4rem;
+
+          &.active {
+            font-size: 1.4rem;
+          }
+        }
+      }
     }
   }
 }
