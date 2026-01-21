@@ -27,4 +27,14 @@ export class HomeComponent {
     const library = inject(FaIconLibrary);
     library.addIcons(faCircle);
   }
+
+  isActive: number = 1; //
+
+  /**
+   * Set the active menu item link.
+   * @param {number} index - The index of the menu item link to set as active.
+   */
+  protected setActive(index: number) {
+    this.isActive = index;
+  }
 }

@@ -1,6 +1,4 @@
 main {
-  z-index: 10;
-
   /* MENU */
   #menu {
     position: fixed;
@@ -16,13 +14,22 @@ main {
 
         a {
           align-items: center;
+          color: var(--links);
           display: flex;
           height: 2.4rem;
           justify-content: center;
-          transition: font-size 0.5s linear;
+          transition: color 0.5s linear,
+                      font-size 0.5s linear;
           width: 2.4rem;
 
+          &:active,
+          &:focus,
+          &:hover {
+            color: var(--links-hover);
+          }
+
           &.active {
+            color: var(--links-hover);
             font-size: 1.4rem;
           }
         }

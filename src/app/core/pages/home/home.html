@@ -3,12 +3,12 @@
   <aside id="menu">
     <ol>
       <li>
-        <a href="#hero" class="active">
+        <a href="#hero" [class]="isActive === 1 ? 'active' : ''" (click)="setActive(1)">
           <fa-icon [icon]="['fas', 'circle']"></fa-icon>
         </a>
       </li>
       <li>
-        <a href="#about">
+        <a href="#about" [class]="isActive === 2 ? 'active' : ''" (click)="setActive(2)">
           <fa-icon [icon]="['fas', 'circle']" title="About"></fa-icon>
         </a>
       </li>
