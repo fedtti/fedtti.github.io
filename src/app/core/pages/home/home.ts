@@ -1,5 +1,6 @@
 import {
   Component,
+  HostListener,
   inject,
   type Signal
 } from '@angular/core';
@@ -8,6 +9,7 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { HeroComponent } from '../../layouts/hero/hero';
 import { AboutComponent } from '../../layouts/about/about';
 import { ProfileService } from '../../../shared/services/profile';
+import { findIndex } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -28,13 +30,33 @@ export class HomeComponent {
     library.addIcons(faCircle);
   }
 
-  isActive: number = 1; //
+  protected isActive: number = 1; // Index of the active menu item’s link.
 
   /**
-   * Set the active menu item link.
-   * @param {number} index - The index of the menu item link to set as active.
+   * Toggle the active menu item’s link.
+   * @param {number} index - Index of the menu item’s link to toggle as active.
    */
-  protected setActive(index: number) {
+  protected toggleActive(index: number) {
     this.isActive = index;
+  }
+
+  @HostListener('window:scroll')
+  /**
+   * Handle the scroll event.
+   */
+  protected handleScroll() {
+    const scrollPosition = window.scrollY;
+    const sections = document.querySelectorAll('section');
+
+    for (let index = 0; index < sections.length; index++) {
+      const section = sections[index];
+      const sectionOffsetTop = section.offsetTop;
+      const sectionOffsetHeight = section.offsetHeight;
+
+      if (scrollPosition >= sectionOffsetTop && scrollPosition < sectionOffsetTop + sectionOffsetHeight) {
+        this.toggleActive(index + 1);
+        break;
+      }
+    }
   }
 }
