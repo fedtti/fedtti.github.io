@@ -12,10 +12,43 @@
     justify-content: center;
     margin-inline: auto;
 
-    .start {}
+    .start {
+      figure {
+        img {
+          
+        }
+
+        figcaption {
+          
+        }
+      }
+    }
 
     .end {
-      
+      h2 {
+        font-family: 'IBM Plex Serif', serif;
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-block-end: 2.5rem;
+        text-transform: lowercase;
+
+        &::after {
+          color: var(--primary-accent);
+          content: '.';
+        }
+      }
+
+      p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+
+        abbr[title] {
+          border-block-end: 0.0625rem dashed var(--secondary-accent);
+          cursor: help;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
