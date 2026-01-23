@@ -2,8 +2,11 @@
   <div class="inner">
     <div class="start">
       <figure>
-        <img src="" alt="">
-        <figcaption>Picture of Federico Moretti</figcaption>
+        <picture>
+          <source media="(min-width: 1024px)" srcset="{{ gravatarUrl }}?s=2048">
+          <img [src]="gravatarUrl" alt="Picture of {{ name }}" loading="lazy" decoding="async">
+        </picture>
+        <figcaption>{{ name }}</figcaption>
       </figure>
     </div>
     <div class="end">

@@ -11,11 +11,18 @@
     height: 100%;
     justify-content: center;
     margin-inline: auto;
+    width: 100%;
 
     .start {
+      width: 100%;
+
       figure {
+        text-align: center;
+
         img {
-          
+          border-radius: 50%;
+          max-height: 100%;
+          max-width: 100%;
         }
 
         figcaption {
@@ -25,6 +32,8 @@
     }
 
     .end {
+      width: 100%;
+
       h2 {
         font-family: 'IBM Plex Serif', serif;
         font-size: 3.2rem;
@@ -52,3 +61,59 @@
     }
   }
 }
+
+@media screen and (min-width: 576px) {
+  /* ABOUT */
+  #about {
+    .inner {
+      flex-direction: row;
+      width: 54rem;
+
+      .start {
+        width: 50%;
+      }
+
+      .end {
+
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* ABOUT */
+  #about {
+    .inner {
+      width: 72rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* ABOUT */
+  #about {
+    .inner {
+      width: 96rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* ABOUT */
+  #about {
+    .inner {
+      width: 114rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* ABOUT */
+  #about {
+    .inner {
+      width: 132rem;
+    }
+  }
+}
+

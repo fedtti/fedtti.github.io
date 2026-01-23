@@ -20,5 +20,8 @@
     [role]="profile().role"
   />
   <!-- ABOUT -->
-  <app-about />
+  <app-about
+    [name]="profile().name"
+    [email]="profile().email"
+  />
 </main>

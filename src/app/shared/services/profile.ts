@@ -11,6 +11,7 @@ import {
 export class ProfileService {
   private profile: WritableSignal<any> = signal({
     name: 'Federico Moretti',
+    email: 'hello@federicomoretti.it',
     role: 'Software Developer',
   });
 
