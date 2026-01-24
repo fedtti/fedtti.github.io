@@ -13,7 +13,8 @@
 
                    --links: light-dark(#1d4ed8, #60a5fa);
              --links-hover: light-dark(#1e40af, #93c5fd);
-
+    --borders-and-dividers: light-dark(#e5e7eb, #334155);
+           --border-strong: light-dark(#d1d5db, #475569);
                    --error: light-dark(#dc2626, #f87171);
 
               --focus-ring: light-dark(#2563eb, #60a5fa);
@@ -31,7 +32,8 @@
 
                    --links: #1d4ed8;
              --links-hover: #1e40af;
-
+    --borders-and-dividers: #e5e7eb;
+           --border-strong: #d1d5db;
                    --error: #dc2626;
 
               --focus-ring: #2563eb;
@@ -49,7 +51,8 @@
 
                    --links: #60a5fa;
              --links-hover: #93c5fd;
-
+    --borders-and-dividers: #334155;
+           --border-strong: #475569;
                    --error: #f87171;
 
               --focus-ring: #60a5fa;

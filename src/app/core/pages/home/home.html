@@ -1,6 +1,27 @@
+<!-- CONTENTS -->
 <main itemprop="mainContentOfPage">
+  <!-- MENU -->
+  <aside id="menu">
+    <ol>
+      <li>
+        <a [class]="isActive === 0 ? 'active' : ''" href="#hero" (click)="toggleActive(0)">
+          <fa-icon [icon]="['fas', 'circle']"></fa-icon>
+        </a>
+      </li>
+      <li>
+        <a [class]="isActive === 1 ? 'active' : ''" href="#about" (click)="toggleActive(1)">
+          <fa-icon [icon]="['fas', 'circle']" title="About"></fa-icon>
+        </a>
+      </li>
+    </ol>
+  </aside>
   <app-hero
-    [name]="name"
-    [role]="role"
+    [name]="profile().name"
+    [role]="profile().role"
+  />
+  <!-- ABOUT -->
+  <app-about
+    [name]="profile().name"
+    [email]="profile().email"
   />
 </main>

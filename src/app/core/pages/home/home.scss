@@ -1,0 +1,42 @@
+/* CONTENTS */
+main {
+  padding-inline: 5.6rem;
+
+  /* MENU */
+  #menu {
+    position: fixed;
+    inset-block-end: auto;
+    inset-block-start: calc(50% - 2.4rem); // TODO: @fedtti - Calculate 50% of the height, minus the half of the menu’s height.
+    inset-inline-end: auto;
+    inset-inline-start: 1.5rem;
+    z-index: 100;
+
+    ol {
+      li {
+        list-style: none;
+
+        a {
+          align-items: center;
+          color: var(--links);
+          display: flex;
+          height: 2.4rem;
+          justify-content: center;
+          transition: color 0.5s linear,
+                      font-size 0.5s linear;
+          width: 2.4rem;
+
+          &:active,
+          &:focus,
+          &:hover {
+            color: var(--links-hover);
+          }
+
+          &.active {
+            color: var(--links-hover);
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

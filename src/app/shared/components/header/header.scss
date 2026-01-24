@@ -1,20 +1,22 @@
 /* HEADER */
 #header {
-  left: 0;
+  background-color: var(--primary-background);
+  box-shadow: 0 1rem 2.5rem var(--primary-background);
+  inset-block-end: auto;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inset-inline-start: 0;
   padding-block: 1.5rem;
   padding-inline: 1.5rem;
   position: fixed;
-  right: 0;
-  top: 0;
   width: 100%;
+  z-index: 100;
 
   .inner {
     display: flex;
     margin-inline: auto;
 
-    .start {
-
-    }
+    .start { }
 
     .end {
       margin-inline-start: auto;

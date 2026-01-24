@@ -1,13 +1,16 @@
 /* FOOTER */
 #footer {
   background-color: var(--primary-background);
-  bottom: 0;
-  left: 0;
+  box-shadow: 0 -1rem 2.5rem var(--primary-background);
   padding-block: 1.5rem;
   padding-inline: 1.5rem;
   position: fixed;
-  right: 0;
+  inset-block-end: 0;
+  inset-block-start: auto;
+  inset-inline-end: 0;
+  inset-inline-start: 0;
   width: 100%;
+  z-index: 100;
 
   .inner {
     align-items: center;

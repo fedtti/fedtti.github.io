@@ -2,6 +2,7 @@
 #hero {
   height: 100vh;
   width: 100%;
+  z-index: 10;
 
   .inner {
     align-items: center;
@@ -52,6 +53,8 @@
           transition: color 0.5s linear;
           width: 2.4rem;
 
+          &:active,
+          &:focus,
           &:hover {
             color: var(--links-hover);
           }
