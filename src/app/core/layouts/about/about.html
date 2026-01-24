@@ -3,8 +3,14 @@
     <div class="start">
       <figure>
         <picture>
-          <source media="(min-width: 1024px)" srcset="{{ gravatarUrl }}?s=2048">
-          <img [src]="gravatarUrl" alt="Picture of {{ name }}" loading="lazy" decoding="async">
+          <!-- TODO: @fedtti -->
+          <img
+            srcset="{{ gravatarUrl }}?s=240 x1, {{ gravatarUrl }}?s=360 x1.5, {{ gravatarUrl }}?s=480 2x, {{ gravatarUrl }}?s=720 3x"
+            src="{{ gravatarUrl }}?s=720"
+            alt="Picture of {{ name }}"
+            loading="lazy"
+            decoding="async"
+          >
         </picture>
         <figcaption>{{ name }}</figcaption>
       </figure>
