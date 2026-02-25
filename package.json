@@ -1,6 +1,6 @@
 {
   "name": "@fedtti/fedtti.github.io",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "scripts": {
     "postinstall": "husky init && shx rm .husky/pre-commit && shx echo 'npx --no -- commitlint --edit $1' > .husky/commit-msg",
     "prepare": "husky",
