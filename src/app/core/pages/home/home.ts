@@ -8,6 +8,7 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { HeroComponent } from '../../layouts/hero/hero';
 import { AboutComponent } from '../../layouts/about/about';
+import { TimelineComponent } from '../../layouts/timeline/timeline';
 import { ProfileService } from '../../../shared/services/profile';
 
 @Component({
@@ -15,7 +16,8 @@ import { ProfileService } from '../../../shared/services/profile';
   imports: [
     FontAwesomeModule,
     HeroComponent,
-    AboutComponent
+    AboutComponent,
+    TimelineComponent
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',
