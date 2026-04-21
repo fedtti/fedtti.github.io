@@ -22,7 +22,7 @@ import { ProfileService } from '../../../shared/services/profile';
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
-export class HomeComponent {
+export class HomePageComponent {
   protected readonly profileService: ProfileService = inject(ProfileService);
   protected readonly profile: Signal<any> = this.profileService.getProfile();
 
@@ -38,6 +38,7 @@ export class HomeComponent {
    * @param {number} index - Index of the menu item’s link to toggle as active.
    */
   protected toggleActive(index: number): void {
+    if (this.isActive === index) return;
     this.isActive = index;
   }
 
