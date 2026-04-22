@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { DatePipe } from '@angular/common';
 import { type TimelineItems } from './types/items';
 
 @Component({
   selector: 'app-timeline',
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './timeline.html',
   styleUrl: './timeline.scss',
 })
