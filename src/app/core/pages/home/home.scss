@@ -6,7 +6,7 @@ main {
   #menu {
     position: fixed;
     inset-block-end: auto;
-    inset-block-start: calc(50% - 2.4rem); // TODO: @fedtti - Calculate 50% of the height, minus the half of the menu’s height.
+    inset-block-start: calc(50% - 3.6rem); // TODO: @fedtti - Calculate 50% of the height, minus the half of the menu’s height.
     inset-inline-end: auto;
     inset-inline-start: 1.5rem;
     z-index: 100;

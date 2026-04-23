@@ -14,7 +14,7 @@ import {
 
 @Component({
   selector: 'app-hero',
-  imports: [ FontAwesomeModule],
+  imports: [FontAwesomeModule],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
