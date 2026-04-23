@@ -1,0 +1,23 @@
+<section id="timeline" aria-label="Timeline">
+  <div class="inner">
+    <div id="items">
+      @for (item of items; track $index; let odd = $odd) {
+        <div class="item" [class]="odd ? 'end' : 'start'">
+          <div class="content">
+            <h3>{{ item.company }}</h3>
+            <h4>{{ item.role }}</h4>
+            <p>
+              <time [attr.datetime]="item.start | date: 'yyyy-MM'">{{ item.start }}</time>
+              -
+              @if (item.end) {
+                <time [attr.datetime]="item.end | date: 'yyyy-MM'">{{ item.end }}</time>
+              } @else {
+                Ongoing
+              }
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
