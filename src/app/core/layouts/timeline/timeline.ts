@@ -20,6 +20,18 @@ export class TimelineComponent {
       role: 'Full-Stack Developer at Professional Services',
       start: 'March 2022',
       end: 'June 2025'
+    },
+    {
+      company: 'Vivocha (Covisian Group)',
+      role: 'Full-Stack Developer at Customer Success Management',
+      start: 'January 2021',
+      end: 'June 2025'
+    },
+    {
+      company: 'Digitiamo',
+      role: 'Front-End Developer at AIKnowYou',
+      start: 'June 2020',
+      end: 'December 2020'
     }
   ];
 }

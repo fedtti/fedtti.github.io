@@ -32,26 +32,59 @@
       .item {
         clear: both;
         display: flex;
-        flex-direction: row-reverse;
         justify-content: space-between;
+        padding-block: 2.4rem;
         padding-inline-start: 2.4rem;
         width: 50%;
 
         &.start {
           float: inline-end;
+          
+          h3 {
+            &::after {
+              color: var(--primary-accent);
+              content: '.';
+            }
+          }
         }
 
         &.end {
           direction: rtl;
           float: inline-start;
+          padding-inline-start: 2.65rem;
+          
+          h3 {
+            &::before {
+              color: var(--primary-accent);
+              content: '.';
+            }
+          }
         }
 
         .marker {
-
+          clear: both;
         }
 
         .content {
-      
+          h3, h4, p {
+            line-height: 1.5;
+          }
+          
+          h3 {
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 2.4rem;
+            text-transform: lowercase;
+          }
+
+          h4 {
+            font-size: 1.6rem;
+            font-weight: 400;
+          }
+
+          p {
+            color: var(--secondary-text);
+            font-size: 1.2rem;
+          }
         }
       }
     }
@@ -63,8 +96,10 @@
   #timeline {
     .inner {
       #items {
+        padding-inline-start: 2.4rem;
+
         &::before {
-          left: 0; // TODO: @fedtti
+          left: auto;
         }
 
         .item {
@@ -77,6 +112,18 @@
           &.end {
             float: none;
             direction: ltr;
+            padding-inline-start: 2.4rem;
+
+            h3 {
+              &::before {
+                content: '';
+              }
+
+              &::after {
+                color: var(--primary-accent);
+                content: '.';
+              }
+            }
           }
         }
       }
