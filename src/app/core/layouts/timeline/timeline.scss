@@ -14,7 +14,18 @@
 
     #items {
       overflow: hidden;
+      position: relative;
       width: 100%;
+
+      &::before {
+        content: '';
+        top: 0;
+        left: 50%;
+        margin-inline-start: -0.25rem;
+        width: 0.25rem;
+        height: 100%;
+        background-color: var(--border-strong);
+      }
       
       .item {
         clear: both;
@@ -84,6 +95,10 @@
     .inner {
       #items {
         padding-inline-start: 2.4rem;
+
+        &::before {
+          left: auto;
+        }
 
         .item {
           width: 100%;
