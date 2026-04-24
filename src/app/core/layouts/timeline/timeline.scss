@@ -14,20 +14,7 @@
 
     #items {
       overflow: hidden;
-      position: relative;
       width: 100%;
-
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        margin-inline-start: -0.25rem;
-        width: 0.25rem;
-        height: 100%;
-        background: var(--border-strong);
-        z-index: 100;
-      }
       
       .item {
         clear: both;
@@ -97,10 +84,6 @@
     .inner {
       #items {
         padding-inline-start: 2.4rem;
-
-        &::before {
-          left: auto;
-        }
 
         .item {
           width: 100%;
