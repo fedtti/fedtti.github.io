@@ -1,9 +1,11 @@
-<header id="header">
-  <div class="inner">
-    <div class="start">
+<header id="header" [attr.data-bs-theme]="theme()">
+  <nav class="">
+    <div class="inner">
+      <div class="start">
+      </div>
+      <div class="end">
+        <app-theme />
+      </div>
     </div>
-    <div class="end">
-      <app-theme />
-    </div>
-  </div>
+  </nav>
 </header>
