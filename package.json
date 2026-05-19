@@ -24,7 +24,7 @@
     ]
   },
   "private": true,
-  "packageManager": "npm@11.13.0",
+  "packageManager": "npm@11.14.1",
   "dependencies": {
     "@angular/common": "^21.2.10",
     "@angular/compiler": "^21.2.10",
@@ -45,16 +45,16 @@
     "@angular/build": "^21.2.8",
     "@angular/cli": "^21.2.8",
     "@angular/compiler-cli": "^21.2.10",
-    "@commitlint/cli": "^20.5.0",
-    "@commitlint/config-conventional": "^20.5.0",
+    "@commitlint/cli": "^21.0.1",
+    "@commitlint/config-conventional": "^21.0.1",
     "@types/crypto-js": "^4.2.2",
     "angular-cli-ghpages": "^3.0.3",
     "cypress": "^15.15.0",
     "husky": "^9.1.7",
-    "jsdom": "^29.0.2",
+    "jsdom": "^29.1.1",
     "shx": "^0.4.0",
     "typescript": "~5.9.3",
-    "vitest": "^4.1.5"
+    "vitest": "^4.1.6"
   },
   "type": "module"
 }
