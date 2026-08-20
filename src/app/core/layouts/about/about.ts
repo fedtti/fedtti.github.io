@@ -13,12 +13,15 @@ import { GravatarService } from '../../../shared/services/gravatar';
 export class AboutComponent {
   @Input() name!: string;
   @Input() email!: string;
+
   protected gravatarUrl!: string;
 
   constructor() {
     const gravatarService: GravatarService = inject(GravatarService);
+
     gravatarService
-      .getGravatarUrl('hello@federicomoretti.it')
-      .then(url => this.gravatarUrl = url);
+      .getGravatarUrl('hello@federicomoretti.it') // TODO (@fedtti): Make it dynamic.
+      .then(url => this.gravatarUrl = url)
+      .catch(error => console.error(`❌ ${(error as Error).message}.`));
   }
 }
