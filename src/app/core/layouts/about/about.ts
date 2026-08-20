@@ -1,7 +1,6 @@
 import {
   Component,
   Input,
-  OnInit,
   inject
 } from '@angular/core';
 import { GravatarService } from '../../../shared/services/gravatar';
@@ -11,13 +10,15 @@ import { GravatarService } from '../../../shared/services/gravatar';
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
   @Input() name!: string;
   @Input() email!: string;
-  protected readonly gravatarService: GravatarService = inject(GravatarService);
   protected gravatarUrl!: string;
 
-  ngOnInit(): void {
-    this.gravatarUrl = this.gravatarService.getGravatarUrl(this.email);
+  constructor() {
+    const gravatarService: GravatarService = inject(GravatarService);
+    gravatarService
+      .getGravatarUrl('hello@federicomoretti.it')
+      .then(url => this.gravatarUrl = url);
   }
 }

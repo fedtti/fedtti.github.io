@@ -53,8 +53,6 @@ export class ThemeService {
 
   savedTheme(): void {
     const savedTheme: 'auto' | 'light' | 'dark' | null = localStorage.getItem('theme') as 'auto' | 'light' | 'dark' || null;
-    if (!!savedTheme) {
-      this.setTheme(savedTheme);
-    }
+    if (!!savedTheme) this.setTheme(savedTheme);
   }
 }
