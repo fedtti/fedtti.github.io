@@ -14,10 +14,11 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 })
 export class FooterComponent {
   @Input() name!: string;
+
   protected readonly year: number = new Date().getFullYear();
 
   constructor() {
     const library = inject(FaIconLibrary);
-    library.addIcons(faHeart);
+          library.addIcons(faHeart);
   }
 }

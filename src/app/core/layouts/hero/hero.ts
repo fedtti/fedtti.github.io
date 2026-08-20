@@ -14,7 +14,7 @@ import {
 
 @Component({
   selector: 'app-hero',
-  imports: [FontAwesomeModule],
+  imports: [ FontAwesomeModule ],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
@@ -24,6 +24,6 @@ export class HeroComponent {
 
   constructor() {
     const library = inject(FaIconLibrary);
-    library.addIcons(faBluesky, faGoogle, faDev, faGithub, faLinkedin);
+          library.addIcons(faBluesky, faGoogle, faDev, faGithub, faLinkedin);
   }
 }

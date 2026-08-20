@@ -18,10 +18,9 @@ export class AboutComponent {
 
   constructor() {
     const gravatarService: GravatarService = inject(GravatarService);
-
-    gravatarService
-      .getGravatarUrl('hello@federicomoretti.it') // TODO (@fedtti): Make it dynamic.
-      .then(url => this.gravatarUrl = url)
-      .catch(error => console.error(`❌ ${(error as Error).message}.`));
+          gravatarService
+            .getGravatarUrl('hello@federicomoretti.it') // TODO (@fedtti): Make it dynamic.
+            .then((url: string) => this.gravatarUrl = url)
+            .catch(error => console.error(`❌ ${error.message}.`));
   }
 }

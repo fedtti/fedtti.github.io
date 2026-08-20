@@ -14,5 +14,5 @@ import { ThemeService } from '../../services/theme';
 })
 export class HeaderComponent {
   protected readonly themeService: ThemeService = inject(ThemeService);
-  protected readonly theme: Signal<'auto' | 'light' | 'dark'> = this.themeService.getTheme();
+  protected readonly theme: Signal<'light' | 'dark' | 'auto'> = this.themeService.getTheme();
 }

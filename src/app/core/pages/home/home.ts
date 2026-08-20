@@ -28,10 +28,10 @@ export class HomePageComponent {
 
   constructor() {
     const library = inject(FaIconLibrary);
-    library.addIcons(faCircle);
+          library.addIcons(faCircle);
   }
 
-  protected isActive: number = 0; // Index of the active menu item’s link (default to 0).
+  protected isActive: number = 0; // Index of the active menu item’s link. Default: 0.
 
   /**
    * Toggle the active menu item’s link.
@@ -46,7 +46,7 @@ export class HomePageComponent {
    * Handle the scroll event.
    */
   @HostListener('window:scroll', ['$event'])
-  protected handleScroll(event: Event): void {
+  protected handleScroll($event: Event): void {
     const scrollPosition = window.scrollY;
     const sections = document.querySelectorAll('section');
 
