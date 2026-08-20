@@ -11,9 +11,15 @@ import { type TimelineItems } from './types/items';
 export class TimelineComponent {
   protected readonly items: TimelineItems = [
     {
+      company: 'Lefebvre Giuffrè',
+      role: 'Front-End Developer at Software Factory',
+      start: 'June 2026'
+    },
+    {
       company: 'Smile.CX Tech (formerly EsoSphera, Covisian Group)',
       role: 'Full-Stack Developer at Technical Delivery',
-      start: 'October 2024'
+      start: 'October 2024',
+      end: 'May 2026'
     },
     {
       company: 'Covisian',

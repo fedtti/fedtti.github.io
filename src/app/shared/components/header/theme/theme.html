@@ -1,5 +1,5 @@
 <button (click)="themeService.toggleTheme()">
-  @if (theme() === 'system') {
+  @if (theme() === 'auto') {
     <fa-icon [icon]="['fas', 'circle-half-stroke']" title="System"></fa-icon>
   } @else if (theme() === 'light') {
     <fa-icon [icon]="['fas', 'sun']" title="Light"></fa-icon>

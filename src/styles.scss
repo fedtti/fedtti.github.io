@@ -20,7 +20,7 @@
               --focus-ring: light-dark(#2563eb, #60a5fa);
 }
 
-[data-theme="light"] {
+[data-bs-theme="light"] {
       --primary-background: white;
 
             --primary-text: #111827;
@@ -39,7 +39,7 @@
               --focus-ring: #2563eb;
 }
 
-[data-theme="dark"] {
+[data-bs-theme="dark"] {
       --primary-background: #0f172a;
 
             --primary-text: #f9fafb;

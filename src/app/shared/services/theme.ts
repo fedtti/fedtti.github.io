@@ -12,24 +12,24 @@ import { DOCUMENT } from '@angular/common';
 })
 export class ThemeService {
   constructor(@Inject(DOCUMENT) private readonly document: Document) {}
-  private theme: WritableSignal<'system' | 'light' | 'dark'> = signal<'system' | 'light' | 'dark'>('system');
+  private theme: WritableSignal<'auto' | 'light' | 'dark'> = signal<'auto' | 'light' | 'dark'>('auto');
 
-  getTheme(): Signal<'system' | 'light' | 'dark'> {
+  getTheme(): Signal<'auto' | 'light' | 'dark'> {
     return this.theme.asReadonly();
   }
 
-  setTheme(theme: 'system' | 'light' | 'dark'): void {
+  setTheme(theme: 'auto' | 'light' | 'dark'): void {
     switch (theme) {
-      case 'system':
-        delete this.document.documentElement.dataset['theme'];
+      case 'auto':
+        this.document.documentElement.setAttribute('data-bs-theme', 'auto');
         localStorage.removeItem('theme');
         break;
       case 'light':
-        this.document.documentElement.dataset['theme'] = 'light';
+        this.document.documentElement.setAttribute('data-bs-theme', 'light');
         localStorage.setItem('theme', 'light');
         break;
       case 'dark':
-        this.document.documentElement.dataset['theme'] = 'dark';
+        this.document.documentElement.setAttribute('data-bs-theme', 'dark');
         localStorage.setItem('theme', 'dark');
         break;
     }
@@ -37,9 +37,9 @@ export class ThemeService {
   }
 
   toggleTheme(): void {
-    const currentTheme: 'system' | 'light' | 'dark' = this.theme();
+    const currentTheme: 'auto' | 'light' | 'dark' = this.theme();
     switch (currentTheme) {
-      case 'system':
+      case 'auto':
         typeof window.matchMedia !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches ? this.setTheme('light') : this.setTheme('dark');
         break;
       case 'light':
@@ -52,7 +52,7 @@ export class ThemeService {
   }
 
   savedTheme(): void {
-    const savedTheme: 'system' | 'light' | 'dark' | null = localStorage.getItem('theme') as 'system' | 'light' | 'dark' || null;
+    const savedTheme: 'auto' | 'light' | 'dark' | null = localStorage.getItem('theme') as 'auto' | 'light' | 'dark' || null;
     if (!!savedTheme) {
       this.setTheme(savedTheme);
     }

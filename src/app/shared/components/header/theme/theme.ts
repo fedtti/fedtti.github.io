@@ -20,7 +20,7 @@ import { ThemeService } from '../../../services/theme';
 })
 export class ThemeComponent implements OnInit {
   protected readonly themeService: ThemeService = inject(ThemeService);
-  protected readonly theme: Signal<'system' | 'light' | 'dark'> = this.themeService.getTheme();
+  protected readonly theme: Signal<'auto' | 'light' | 'dark'> = this.themeService.getTheme();
 
   constructor() {
     const library = inject(FaIconLibrary);
