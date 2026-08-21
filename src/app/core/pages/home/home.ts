@@ -12,7 +12,7 @@ import { TimelineComponent } from '../../layouts/timeline/timeline';
 import { ProfileService } from '../../../shared/services/profile';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-home-page',
   imports: [
     FontAwesomeModule,
     HeroComponent,

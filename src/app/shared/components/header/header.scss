@@ -1,70 +1,7 @@
 /* HEADER */
 #header {
-  background-color: var(--primary-background);
-  box-shadow: 0 1rem 2.5rem var(--primary-background);
-  inset-block-end: auto;
-  inset-block-start: 0;
-  inset-inline-end: 0;
-  inset-inline-start: 0;
-  padding-block: 1.5rem;
-  padding-inline: 1.5rem;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-
-  .inner {
-    display: flex;
-    margin-inline: auto;
-
-    // .start { }
-
-    .end {
-      margin-inline-start: auto;
-    }
-  }
-}
-
-@media screen and (min-width: 576px) {
-  /* HEADER */
-  #header {
-    .inner {
-      width: 54rem;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  /* HEADER */
-  #header {
-    .inner {
-      width: 72rem;
-    }
-  }
-}
-
-@media screen and (min-width: 992px) {
-  /* HEADER */
-  #header {
-    .inner {
-      width: 96rem;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  /* HEADER */
-  #header {
-    .inner {
-      width: 114rem;
-    }
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  /* HEADER */
-  #header {
-    .inner {
-      width: 132rem;
-    }
+  .navbar {
+    background-color: var(--primary-background);
+    box-shadow: 0 1rem 2.5rem var(--primary-background);
   }
 }
