@@ -24,7 +24,7 @@ export class ThemeComponent implements OnInit {
 
   constructor() {
     const library = inject(FaIconLibrary);
-    library.addIcons(faCircleHalfStroke, faSun, faMoon);
+          library.addIcons(faCircleHalfStroke, faSun, faMoon);
   }
 
   ngOnInit(): void {

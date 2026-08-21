@@ -33,6 +33,7 @@
 
     #social-networks {
       margin-block-start: 1rem;
+      padding-left: 0; // Temporary fix for Bootstrap.
 
       li {
         display: inline-block;

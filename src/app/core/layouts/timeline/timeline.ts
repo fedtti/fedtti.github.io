@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
 import { DatePipe } from '@angular/common';
+import { Component } from '@angular/core';
 import { type TimelineItems } from './types/items';
 
 @Component({
   selector: 'app-timeline',
-  imports: [DatePipe],
+  imports: [ DatePipe ],
   templateUrl: './timeline.html',
   styleUrl: './timeline.scss',
 })
@@ -35,7 +35,7 @@ export class TimelineComponent {
     },
     {
       company: 'Digitiamo',
-      role: 'Front-End Developer at AIKnowYou',
+      role: 'Front-End Developer at AiKnowYou',
       start: 'June 2020',
       end: 'December 2020'
     }
