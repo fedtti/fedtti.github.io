@@ -2,26 +2,18 @@
   "name": "@fedtti/fedtti.github.io",
   "version": "2.3.0",
   "scripts": {
-    "postinstall": "husky init && shx rm .husky/pre-commit && shx echo 'npx --no -- commitlint --edit $1' > .husky/commit-msg",
+    "postinstall": "husky init && shx echo 'npx lint-staged' > .husky/pre-commit && shx echo 'npx --no -- commitlint --edit $1' > .husky/commit-msg",
     "prepare": "husky",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
     "test": "ng test",
     "deploy": "ng deploy"
   },
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true,
-    "overrides": [
-      {
-        "files": "*.html",
-        "options": {
-          "parser": "angular"
-        }
-      }
-    ]
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "private": true,
   "dependencies": {
@@ -49,6 +41,7 @@
     "cypress": "^15.21.0",
     "husky": "^9.1.7",
     "jsdom": "^30.0.1",
+    "lint-staged": "^17.3.0",
     "shx": "^0.4.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.11"
