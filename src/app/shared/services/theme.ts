@@ -3,8 +3,8 @@ import {
   Injectable,
   Inject,
   signal,
-  type WritableSignal,
-  type Signal
+  type Signal,
+  type WritableSignal
 } from '@angular/core';
 
 @Injectable({
