@@ -1,6 +1,5 @@
 /* TIMELINE */
 #timeline {
-  height: 100vh;
   width: 100%;
   z-index: 10;
 
@@ -8,7 +7,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     justify-content: center;
     margin-inline: auto;
 
@@ -27,7 +25,7 @@
         height: 100%;
         background-color: var(--border-strong);
       }
-      
+
       .item {
         clear: both;
         display: flex;
@@ -38,7 +36,7 @@
 
         &.start {
           float: inline-end;
-          
+
           h3 {
             &::after {
               color: var(--primary-accent);
@@ -51,7 +49,7 @@
           direction: rtl;
           float: inline-start;
           padding-inline-start: 2.65rem;
-          
+
           h3 {
             &::before {
               color: var(--primary-accent);
@@ -68,7 +66,7 @@
           h3, h4, p {
             line-height: 1.5;
           }
-          
+
           h3 {
             font-family: 'IBM Plex Serif', serif;
             font-size: 2.4rem;

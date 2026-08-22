@@ -1,34 +1,39 @@
 <section id="about" aria-label="About">
-  <div class="inner">
-    <div class="start">
-      <figure>
-        <picture>
-          <img
-            srcset="{{ gravatarUrl }}?s=240 1x, {{ gravatarUrl }}?s=360 1.5x, {{ gravatarUrl }}?s=480 2x, {{ gravatarUrl }}?s=720 3x"
-            src="{{ gravatarUrl }}?s=720"
-            alt="Portrait of {{ name }}"
-            loading="lazy"
-            decoding="async"
-          >
-        </picture>
-        <figcaption>{{ name }}</figcaption>
-      </figure>
-    </div>
-    <div class="end">
-      <h2>About</h2>
-      <p>
-        I’m Federico, a software developer based in Italy.
-        <br><br>
-        I started coding in the late 1980s, when I was around five years old only: now that I’ve been officially diagnosed as twice exceptional, i.e., both high-potential intellectual and <abbr title="Attention-Deficit/Hyperactivity Disorder">ADHD</abbr>, it does make sense.
-        <br><br>
-        I haven’t always been a programmer. I’ve been a researcher, a web editor, and I studied classical literature in high school. I graduated with a degree in communication sciences and completed a first level professional master in sociology.
-        <br><br>
-        Nice to meet you.
-        <!--
+  <div class="container">
+    <div class="d-flex flex-column flex-sm-row align-items-center">
+      <div class="order-2">
+        <h2>About</h2>
+        <p class="lead">
+          I’m Federico, a software developer based in Italy.
           <br><br>
-          <a href="/about">more →</a>
-        -->
-      </p>
+          I started coding in the late 1980s, when I was around five years old only: now that I’ve been officially diagnosed as twice exceptional, i.e., both high-potential intellectual and <abbr title="Attention-Deficit/Hyperactivity Disorder">ADHD</abbr>, it does make sense.
+          <br><br>
+          I haven’t always been a programmer. I’ve been a researcher, a web editor, and I studied classical literature in high school. I graduated with a degree in communication sciences and completed a first level professional master in sociology.
+          <br><br>
+          Nice to meet you.
+          <!--
+            <br><br>
+            <a href="/about">more →</a>
+          -->
+        </p>
+      </div>
+      <div class="order-1">
+        <figure class="text-center">
+          <picture>
+            <source srcset="{{ gravatarUrl }}?s=240 1x, {{ gravatarUrl }}?s=360 1.5x, {{ gravatarUrl }}?s=480 2x, {{ gravatarUrl }}?s=720 3x" />
+            <img
+              class="figure-img img-fluid rounded-circle"
+              src="{{ gravatarUrl }}?s=720"
+              height="240"
+              width="240"
+              alt="Portrait of {{ name }}"
+              loading="lazy"
+              decoding="async"
+            >
+          </picture>
+          <figcaption class="figure-caption">{{ name }}</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
