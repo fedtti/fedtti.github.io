@@ -1,35 +1,9 @@
 <!-- CONTENTS -->
 <main itemprop="mainContentOfPage">
-  <!-- MENU -->
-  <aside id="menu">
-    <ol>
-      <li>
-        <a [class]="isActive === 0 ? 'active' : ''" href="#hero" (click)="toggleActive(0)">
-          <fa-icon [icon]="['fas', 'circle']"></fa-icon>
-        </a>
-      </li>
-      <li>
-        <a [class]="isActive === 1 ? 'active' : ''" href="#about" (click)="toggleActive(1)">
-          <fa-icon [icon]="['fas', 'circle']" title="About"></fa-icon>
-        </a>
-      </li>
-      <li>
-        <a [class]="isActive === 2 ? 'active' : ''" href="#timeline" (click)="toggleActive(2)">
-          <fa-icon [icon]="['fas', 'circle']" title="Timeline"></fa-icon>
-        </a>
-      </li>
-    </ol>
-  </aside>
   <!-- HERO -->
-  <app-hero
-    [name]="profile().name"
-    [role]="profile().role"
-  />
+  <app-hero [name]="profile().name" [role]="profile().role" />
   <!-- ABOUT -->
-  <app-about
-    [name]="profile().name"
-    [email]="profile().email"
-  />
+  <app-about [name]="profile().name" [email]="profile().email" />
   <!-- TIMELINE -->
   <app-timeline />
 </main>
