@@ -1,5 +1,6 @@
 /* ABOUT */
 #about {
+  padding-block-start: 3rem;
   z-index: 10;
 
   h2 {
@@ -16,16 +17,26 @@
     }
   }
 
-      p {
-        font-size: 1.6rem;
-        line-height: 1.5;
+  figure {
+    display: block;
 
-        abbr[title] {
-          border-block-end: 0.0625rem dashed var(--secondary-accent);
-          cursor: help;
-          text-decoration: none;
-        }
-      }
+    figcaption {
+      color: var(--secondary-text);
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+    abbr[title] {
+      border-block-end: 0.0625rem dashed var(--secondary-accent);
+      cursor: help;
+      text-decoration: none;
+    }
+  }
 }
 
 @media screen and (min-width: 576px) {
