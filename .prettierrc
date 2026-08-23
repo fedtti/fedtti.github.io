@@ -1,12 +1,8 @@
 {
+  "experimentalTernaries:": true,
   "printWidth": 100,
   "singleQuote": true,
-  "overrides": [
-    {
-      "files": "*.html",
-      "options": {
-        "parser": "angular"
-      }
-    }
-  ]
+  "objectWrap": "collapse",
+  "arrowParens": "avoid",
+  "overrides": [{ "files": "*.html", "options": { "parser": "angular" } }]
 }
