@@ -1,61 +1,62 @@
+@use 'bootstrap/scss/bootstrap';
 @import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@700&display=swap';
 
 :root {
-              color-scheme: light dark;
-      --primary-background: light-dark(white, #0f172a);
+  color-scheme: light dark;
+  --primary-background: light-dark(white, #0f172a);
 
-            --primary-text: light-dark(#111827, #f9fafb);
-          --secondary-text: light-dark(#4b5563, #cbd5e1);
+  --primary-text: light-dark(#111827, #f9fafb);
+  --secondary-text: light-dark(#4b5563, #cbd5e1);
 
-          --primary-accent: light-dark(#2563eb, #3b82f6);
-        --secondary-accent: light-dark(#059669, #22c55e);
+  --primary-accent: light-dark(#2563eb, #3b82f6);
+  --secondary-accent: light-dark(#059669, #22c55e);
   --secondary-accent-hover: light-dark(#047857, #4ade80);
 
-                   --links: light-dark(#1d4ed8, #60a5fa);
-             --links-hover: light-dark(#1e40af, #93c5fd);
-    --borders-and-dividers: light-dark(#e5e7eb, #334155);
-           --border-strong: light-dark(#d1d5db, #475569);
-                   --error: light-dark(#dc2626, #f87171);
+  --links: light-dark(#1d4ed8, #60a5fa);
+  --links-hover: light-dark(#1e40af, #93c5fd);
+  --borders-and-dividers: light-dark(#e5e7eb, #334155);
+  --border-strong: light-dark(#d1d5db, #475569);
+  --error: light-dark(#dc2626, #f87171);
 
-              --focus-ring: light-dark(#2563eb, #60a5fa);
+  --focus-ring: light-dark(#2563eb, #60a5fa);
 }
 
-[data-bs-theme="light"] {
-      --primary-background: white;
+[data-bs-theme='light'] {
+  --primary-background: white;
 
-            --primary-text: #111827;
-          --secondary-text: #4b5563;
+  --primary-text: #111827;
+  --secondary-text: #4b5563;
 
-          --primary-accent: #2563eb;
-        --secondary-accent: #059669;
+  --primary-accent: #2563eb;
+  --secondary-accent: #059669;
   --secondary-accent-hover: #047857;
 
-                   --links: #1d4ed8;
-             --links-hover: #1e40af;
-    --borders-and-dividers: #e5e7eb;
-           --border-strong: #d1d5db;
-                   --error: #dc2626;
+  --links: #1d4ed8;
+  --links-hover: #1e40af;
+  --borders-and-dividers: #e5e7eb;
+  --border-strong: #d1d5db;
+  --error: #dc2626;
 
-              --focus-ring: #2563eb;
+  --focus-ring: #2563eb;
 }
 
-[data-bs-theme="dark"] {
-      --primary-background: #0f172a;
+[data-bs-theme='dark'] {
+  --primary-background: #0f172a;
 
-            --primary-text: #f9fafb;
-          --secondary-text: #cbd5e1;
+  --primary-text: #f9fafb;
+  --secondary-text: #cbd5e1;
 
-          --primary-accent: #3b82f6;
-        --secondary-accent: #22c55e;
+  --primary-accent: #3b82f6;
+  --secondary-accent: #22c55e;
   --secondary-accent-hover: #4ade80;
 
-                   --links: #60a5fa;
-             --links-hover: #93c5fd;
-    --borders-and-dividers: #334155;
-           --border-strong: #475569;
-                   --error: #f87171;
+  --links: #60a5fa;
+  --links-hover: #93c5fd;
+  --borders-and-dividers: #334155;
+  --border-strong: #475569;
+  --error: #f87171;
 
-              --focus-ring: #60a5fa;
+  --focus-ring: #60a5fa;
 }
 
 * {
@@ -77,7 +78,9 @@ html {
   body {
     background-color: var(--primary-background);
     color: var(--primary-text);
-    font: 400 1rem/1 'IBM Plex Sans', sans-serif;
+    font:
+      400 1rem/1 'IBM Plex Sans',
+      sans-serif;
     z-index: 0;
   }
 }
