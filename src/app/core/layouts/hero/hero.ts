@@ -1,20 +1,10 @@
-import {
-  Component,
-  Input,
-  inject
-} from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import {
-  faBluesky,
-  faGoogle,
-  faDev,
-  faGithub,
-  faLinkedin
-} from '@fortawesome/free-brands-svg-icons';
+import { faGoogle, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-hero',
-  imports: [ FontAwesomeModule ],
+  imports: [FontAwesomeModule],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
@@ -24,6 +14,6 @@ export class HeroComponent {
 
   constructor() {
     const library = inject(FaIconLibrary);
-          library.addIcons(faBluesky, faGoogle, faDev, faGithub, faLinkedin);
+    library.addIcons(faGoogle, faGithub, faLinkedin);
   }
 }
